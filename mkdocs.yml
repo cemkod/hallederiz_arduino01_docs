@@ -1,0 +1,36 @@
+site_name: 'Arduino Hepsi Bir Arada Başlangıç Seti'
+theme:
+  name: material
+  language: tr
+  features:
+    - content.code.copy
+
+nav:
+  - Giriş: giris.md
+  - Modül Listesi: modul-listesi.md
+  - Kurulum:
+    - Linux: linux-kurulum.md
+  - Proje 01 - LED: 01-LED.md
+  - Proje 02 - Buton: 02-buton.md
+  - Proje 03 - Seri iletişim: 03-seri-iletisim.md
+  - Proje 04 - Potansiyometre: 04-pot.md
+  - Proje 05 - Buzzer: 05-buzzer.md
+  - Proje 06 - Mesafe Sensörü: 06-mesafe-sensoru.md
+
+  - Sorun Giderme: sorun-giderme.md
+
+
+markdown_extensions:
+  - footnotes
+  - admonition
+  - def_list
+  - pymdownx.highlight:
+      linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: !relative  # Relative to the current Markdown file
+  - pymdownx.superfences  
+  - pymdownx.tasklist:
+      custom_checkbox: true
