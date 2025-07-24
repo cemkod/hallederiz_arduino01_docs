@@ -1,11 +1,15 @@
 # Proje 01 - LED
 
+## Giriş
+
 Bu projede set üzerindeki LED'i nasıl yakıp söndürebileceğini öğreneceksin.
 
 Arduino'da elektronik devreleri kontrol etmek için bir takım giriş ve 
 çıkış pinleri bulunuyor. Kit üzerindeki kırmızı LED, Arduino'nun 10 numaralı 
 dijital pinine bağlı ufak bir devreden oluşuyor. Bu devrenin şemasını aşağıda
 bulabilirsin.
+
+## Elektronik
 
 <img src="../images/LED.svg" alt="LED devresi" style="height: 400px;">
 
@@ -16,6 +20,8 @@ gerilim olduğunda transistör iletime geçiyor. İletimde olduğunda üstteki b
 kollektörden, emitöre doğru bir akım akmasına izin veriyor. Baz gerilimi 
 kesildiğinde ise transistörden akım akmıyor. Transistör iletime geçtiğinde, 
 kollektöre bağli LED üzerinden bir akım akıyor ve LED yanıyor.
+
+## Kod
 
 Şimdi Arduino IDE'yi bilgisayarında açıp aşağıdaki kodu yazabilirsin. Veya indirdiğin projeler arşivinin içindeki bu kodun hazır halini Arduino IDE'ye yükleyebilirsin.
 
@@ -85,6 +91,8 @@ Kod çalıştığında kit üzerinde bulunan LED 1 saniye aralıklarla yanıp
 sönmeye başlayacak. 
 
 --8<-- "snippets/sorun-giderme.md"
+
+## Egzersizler
 
 Böylece ilk Arduino kodunu çalıştırmış oldun. Bu projede öğrendiklerinle
 aşağıdakileri yapabilir misin?

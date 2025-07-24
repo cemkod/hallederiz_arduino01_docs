@@ -1,8 +1,12 @@
 # Proje 03 - Seri iletişim
 
+## Giriş
+
 Bu projede Arduino ile bilgisayar arasında nasıl seri iletişim yapabileceğini ögreneceksin.
 
 Arduino'yu bilgisayarına bağlayan USB kablosu, Arduino'ya kod yüklemenin yanında bilgisayarla Arduino arasında veri alıp vermeye de yarıyor. Arduino IDE'nin içinde bu iletişimi test edebileceğin bir seri konsol da bulunuyor. Seri konsolun nasıl kullanıldığından da bahsedeceğim. 
+
+## Kod
 
 ``` c
 int sayi = 0;
@@ -33,6 +37,8 @@ void loop() {
 Bu kez kodu yükleyip çalıştırdıktan sonra, ![Seri port ekranı](images/serial_button.png) butonuna basarak Seri port ekranını açman ve iletişim hızını kodda belirttiğimiz gibi 115200 olarak seçmen gerekiyor. Bunu yaptıktan sonra Arduino'dan saniyede bir gelen mesajları göreceksin.
 
 --8<-- "snippets/sorun-giderme.md"
+
+## Egzersizler
 
 Arduino'dan bilgisayara USB bağlantısı üzerinden seri iletişim kurarak nasıl veri gönderebileceğini öğrenmiş oldun. Bu projede öğrendiklerinle aşağıdakileri yapabilir misin?
 

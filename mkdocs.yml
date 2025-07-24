@@ -1,4 +1,11 @@
-site_name: 'Arduino Hepsi Bir Arada Başlangıç Seti'
+site_name: 'Arduino01 Hepsi Bir Arada Başlangıç Seti'
+site_url: https://ogren.halledersiniz.com/arduino01/
+repo_url: https://github.com/cemkod/hallederiz_arduino01_docs
+site_description: 'Halledersiniz Arduino01 Hepsi bir Arada Başlangıç Seti için Dersler'
+site_author: 'Halledersiniz'
+copyright: 'Copyright &copy; 2025 Halledersiniz'
+
+
 theme:
   name: material
   language: tr
@@ -10,12 +17,15 @@ nav:
   - Modül Listesi: modul-listesi.md
   - Kurulum:
     - Linux: linux-kurulum.md
+  - Bileşenler:
+    - LED: k01_led.md
   - Proje 01 - LED: 01-LED.md
   - Proje 02 - Buton: 02-buton.md
   - Proje 03 - Seri iletişim: 03-seri-iletisim.md
   - Proje 04 - Potansiyometre: 04-pot.md
   - Proje 05 - Buzzer: 05-buzzer.md
   - Proje 06 - Mesafe Sensörü: 06-mesafe-sensoru.md
+  - Proje 07 - Araba Simulasyonu: 07-araba-simulasyonu.md
 
   - Sorun Giderme: sorun-giderme.md
 

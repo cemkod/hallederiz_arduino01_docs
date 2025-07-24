@@ -1,0 +1,3788 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="68.732399mm"
+   height="66.192398mm"
+   viewBox="0 0 68.732399 66.192398"
+   version="1.1"
+   id="svg103925"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="buzzer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview103927"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2810466"
+     inkscape:cx="136.99736"
+     inkscape:cy="125.67849"
+     inkscape:window-width="956"
+     inkscape:window-height="1026"
+     inkscape:window-x="960"
+     inkscape:window-y="52"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs103922" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-156.20842,-195.23296)">
+    <path
+       d="m 195.10427,218.02097 a 7.62,7.62 0 0 0 0,15.24"
+       id="path29986"
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 195.10427,233.26097 v -15.24"
+       id="path29988" />
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g29994"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 291.846,115.316 h 5.08"
+         id="path29992" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g30016"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="291.33801"
+         y="115.951"
+         textLength="2.9851"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="end"
+         opacity="0"
+         stroke-opacity="0"
+         id="text29996">1+</text>
+      <g
+         class="stroked-text"
+         id="g30014">
+        <desc
+           id="desc29998">1+</desc>
+        <path
+           d="m 289.4235,115.8955 h -0.7257"
+           id="path30000" />
+        <path
+           d="m 289.0606,115.8955 v -1.27"
+           id="path30002" />
+        <path
+           d="m 289.0606,114.6255 -0.1209,0.1815"
+           id="path30004" />
+        <path
+           d="m 288.9397,114.807 -0.121,0.1209"
+           id="path30006" />
+        <path
+           d="m 288.8187,114.9279 -0.1209,0.0605"
+           id="path30008" />
+        <path
+           d="m 289.9677,115.4117 h 0.9677"
+           id="path30010" />
+        <path
+           d="m 290.4515,115.8955 v -0.9676"
+           id="path30012" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g30020"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 291.846,120.396 h 5.08"
+         id="path30018" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g30160"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="291.33801"
+         y="121.031"
+         textLength="2.9851"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="end"
+         opacity="0"
+         stroke-opacity="0"
+         id="text30022">2-</text>
+      <g
+         class="stroked-text"
+         id="g30048">
+        <desc
+           id="desc30024">2-</desc>
+        <path
+           d="m 288.6978,119.8265 0.0604,-0.0605"
+           id="path30026" />
+        <path
+           d="m 288.7582,119.766 0.121,-0.0605"
+           id="path30028" />
+        <path
+           d="m 288.8792,119.7055 h 0.3024"
+           id="path30030" />
+        <path
+           d="m 289.1816,119.7055 0.1209,0.0605"
+           id="path30032" />
+        <path
+           d="m 289.3025,119.766 0.0605,0.0605"
+           id="path30034" />
+        <path
+           d="m 289.363,119.8265 0.0605,0.1209"
+           id="path30036" />
+        <path
+           d="m 289.4235,119.9474 v 0.121"
+           id="path30038" />
+        <path
+           d="m 289.4235,120.0684 -0.0605,0.1814"
+           id="path30040" />
+        <path
+           d="m 289.363,120.2498 -0.7257,0.7257"
+           id="path30042" />
+        <path
+           d="m 288.6373,120.9755 h 0.7862"
+           id="path30044" />
+        <path
+           d="m 289.9677,120.4917 h 0.9677"
+           id="path30046" />
+      </g>
+      <text
+         x="289.58041"
+         y="127.4182"
+         textLength="7.6416998"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text30050">BUZZER</text>
+      <g
+         class="stroked-text"
+         id="g30150">
+        <desc
+           id="desc30052">BUZZER</desc>
+        <path
+           d="m 286.5869,126.6975 0.1814,0.0605"
+           id="path30054" />
+        <path
+           d="m 286.7683,126.758 0.0605,0.0604"
+           id="path30056" />
+        <path
+           d="m 286.8288,126.8184 0.0604,0.121"
+           id="path30058" />
+        <path
+           d="m 286.8892,126.9394 v 0.1814"
+           id="path30060" />
+        <path
+           d="m 286.8892,127.1208 -0.0604,0.121"
+           id="path30062" />
+        <path
+           d="m 286.8288,127.2418 -0.0605,0.0605"
+           id="path30064" />
+        <path
+           d="m 286.7683,127.3023 -0.121,0.0604"
+           id="path30066" />
+        <path
+           d="m 286.6473,127.3627 h -0.4838"
+           id="path30068" />
+        <path
+           d="m 286.1635,127.3627 v -1.27"
+           id="path30070" />
+        <path
+           d="m 286.1635,126.0927 h 0.4234"
+           id="path30072" />
+        <path
+           d="m 286.5869,126.0927 0.1209,0.0605"
+           id="path30074" />
+        <path
+           d="m 286.7078,126.1532 0.0605,0.0605"
+           id="path30076" />
+        <path
+           d="m 286.7683,126.2137 0.0605,0.1209"
+           id="path30078" />
+        <path
+           d="m 286.8288,126.3346 v 0.121"
+           id="path30080" />
+        <path
+           d="m 286.8288,126.4556 -0.0605,0.1209"
+           id="path30082" />
+        <path
+           d="m 286.7683,126.5765 -0.0605,0.0605"
+           id="path30084" />
+        <path
+           d="m 286.7078,126.637 -0.1209,0.0605"
+           id="path30086" />
+        <path
+           d="m 286.5869,126.6975 h -0.4234"
+           id="path30088" />
+        <path
+           d="m 287.4335,126.0927 v 1.0281"
+           id="path30090" />
+        <path
+           d="m 287.4335,127.1208 0.0605,0.121"
+           id="path30092" />
+        <path
+           d="m 287.494,127.2418 0.0605,0.0605"
+           id="path30094" />
+        <path
+           d="m 287.5545,127.3023 0.1209,0.0604"
+           id="path30096" />
+        <path
+           d="m 287.6754,127.3627 h 0.2419"
+           id="path30098" />
+        <path
+           d="m 287.9173,127.3627 0.121,-0.0604"
+           id="path30100" />
+        <path
+           d="m 288.0383,127.3023 0.0605,-0.0605"
+           id="path30102" />
+        <path
+           d="m 288.0988,127.2418 0.0604,-0.121"
+           id="path30104" />
+        <path
+           d="m 288.1592,127.1208 v -1.0281"
+           id="path30106" />
+        <path
+           d="m 288.6431,126.0927 h 0.8466"
+           id="path30108" />
+        <path
+           d="m 289.4897,126.0927 -0.8466,1.27"
+           id="path30110" />
+        <path
+           d="m 288.6431,127.3627 h 0.8466"
+           id="path30112" />
+        <path
+           d="m 289.8526,126.0927 h 0.8466"
+           id="path30114" />
+        <path
+           d="m 290.6992,126.0927 -0.8466,1.27"
+           id="path30116" />
+        <path
+           d="m 289.8526,127.3627 h 0.8466"
+           id="path30118" />
+        <path
+           d="m 291.183,126.6975 h 0.4234"
+           id="path30120" />
+        <path
+           d="M 291.7878,127.3627 H 291.183"
+           id="path30122" />
+        <path
+           d="m 291.183,127.3627 v -1.27"
+           id="path30124" />
+        <path
+           d="m 291.183,126.0927 h 0.6048"
+           id="path30126" />
+        <path
+           d="m 293.0577,127.3627 -0.4233,-0.6047"
+           id="path30128" />
+        <path
+           d="m 292.332,127.3627 v -1.27"
+           id="path30130" />
+        <path
+           d="m 292.332,126.0927 h 0.4838"
+           id="path30132" />
+        <path
+           d="m 292.8158,126.0927 0.121,0.0605"
+           id="path30134" />
+        <path
+           d="m 292.9368,126.1532 0.0605,0.0605"
+           id="path30136" />
+        <path
+           d="m 292.9973,126.2137 0.0604,0.1209"
+           id="path30138" />
+        <path
+           d="m 293.0577,126.3346 v 0.1815"
+           id="path30140" />
+        <path
+           d="m 293.0577,126.5161 -0.0604,0.1209"
+           id="path30142" />
+        <path
+           d="m 292.9973,126.637 -0.0605,0.0605"
+           id="path30144" />
+        <path
+           d="m 292.9368,126.6975 -0.121,0.0605"
+           id="path30146" />
+        <path
+           d="M 292.8158,126.758 H 292.332"
+           id="path30148" />
+      </g>
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 284.734,105.918 h 2.54"
+         id="path30152" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 284.734,106.934 v -1.016"
+         id="path30154" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 287.274,105.918 v 1.016"
+         id="path30156" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 287.274,106.934 h -2.54"
+         id="path30158" />
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g30166"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 284.734,106.426 h -2.54"
+         id="path30162" />
+      <path
+         d="m 287.274,106.426 h 2.54"
+         id="path30164" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g30364"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="285.72949"
+         y="105.4997"
+         textLength="5.1016998"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text30168">R303</text>
+      <g
+         class="stroked-text"
+         id="g30286">
+        <desc
+           id="desc30170">R303</desc>
+        <path
+           d="m 284.3083,105.4442 -0.4233,-0.6047"
+           id="path30172" />
+        <path
+           d="m 283.5826,105.4442 v -1.27"
+           id="path30174" />
+        <path
+           d="m 283.5826,104.1742 h 0.4838"
+           id="path30176" />
+        <path
+           d="m 284.0664,104.1742 0.121,0.0605"
+           id="path30178" />
+        <path
+           d="m 284.1874,104.2347 0.0605,0.0605"
+           id="path30180" />
+        <path
+           d="m 284.2479,104.2952 0.0604,0.1209"
+           id="path30182" />
+        <path
+           d="m 284.3083,104.4161 v 0.1815"
+           id="path30184" />
+        <path
+           d="m 284.3083,104.5976 -0.0604,0.1209"
+           id="path30186" />
+        <path
+           d="m 284.2479,104.7185 -0.0605,0.0605"
+           id="path30188" />
+        <path
+           d="m 284.1874,104.779 -0.121,0.0605"
+           id="path30190" />
+        <path
+           d="m 284.0664,104.8395 h -0.4838"
+           id="path30192" />
+        <path
+           d="m 284.7317,104.1742 h 0.7862"
+           id="path30194" />
+        <path
+           d="m 285.5179,104.1742 -0.4234,0.4838"
+           id="path30196" />
+        <path
+           d="m 285.0945,104.658 h 0.1815"
+           id="path30198" />
+        <path
+           d="m 285.276,104.658 0.1209,0.0605"
+           id="path30200" />
+        <path
+           d="m 285.3969,104.7185 0.0605,0.0605"
+           id="path30202" />
+        <path
+           d="m 285.4574,104.779 0.0605,0.1209"
+           id="path30204" />
+        <path
+           d="m 285.5179,104.8999 v 0.3024"
+           id="path30206" />
+        <path
+           d="m 285.5179,105.2023 -0.0605,0.121"
+           id="path30208" />
+        <path
+           d="m 285.4574,105.3233 -0.0605,0.0605"
+           id="path30210" />
+        <path
+           d="m 285.3969,105.3838 -0.1209,0.0604"
+           id="path30212" />
+        <path
+           d="m 285.276,105.4442 h -0.3629"
+           id="path30214" />
+        <path
+           d="m 284.9131,105.4442 -0.1209,-0.0604"
+           id="path30216" />
+        <path
+           d="m 284.7922,105.3838 -0.0605,-0.0605"
+           id="path30218" />
+        <path
+           d="m 286.304,104.1742 h 0.121"
+           id="path30220" />
+        <path
+           d="m 286.425,104.1742 0.1209,0.0605"
+           id="path30222" />
+        <path
+           d="m 286.5459,104.2347 0.0605,0.0605"
+           id="path30224" />
+        <path
+           d="m 286.6064,104.2952 0.0605,0.1209"
+           id="path30226" />
+        <path
+           d="m 286.6669,104.4161 0.0605,0.2419"
+           id="path30228" />
+        <path
+           d="m 286.7274,104.658 v 0.3024"
+           id="path30230" />
+        <path
+           d="m 286.7274,104.9604 -0.0605,0.2419"
+           id="path30232" />
+        <path
+           d="m 286.6669,105.2023 -0.0605,0.121"
+           id="path30234" />
+        <path
+           d="m 286.6064,105.3233 -0.0605,0.0605"
+           id="path30236" />
+        <path
+           d="m 286.5459,105.3838 -0.1209,0.0604"
+           id="path30238" />
+        <path
+           d="m 286.425,105.4442 h -0.121"
+           id="path30240" />
+        <path
+           d="m 286.304,105.4442 -0.1209,-0.0604"
+           id="path30242" />
+        <path
+           d="m 286.1831,105.3838 -0.0605,-0.0605"
+           id="path30244" />
+        <path
+           d="m 286.1226,105.3233 -0.0605,-0.121"
+           id="path30246" />
+        <path
+           d="m 286.0621,105.2023 -0.0604,-0.2419"
+           id="path30248" />
+        <path
+           d="M 286.0017,104.9604 V 104.658"
+           id="path30250" />
+        <path
+           d="m 286.0017,104.658 0.0604,-0.2419"
+           id="path30252" />
+        <path
+           d="m 286.0621,104.4161 0.0605,-0.1209"
+           id="path30254" />
+        <path
+           d="m 286.1226,104.2952 0.0605,-0.0605"
+           id="path30256" />
+        <path
+           d="m 286.1831,104.2347 0.1209,-0.0605"
+           id="path30258" />
+        <path
+           d="m 287.1507,104.1742 h 0.7862"
+           id="path30260" />
+        <path
+           d="m 287.9369,104.1742 -0.4234,0.4838"
+           id="path30262" />
+        <path
+           d="m 287.5135,104.658 h 0.1815"
+           id="path30264" />
+        <path
+           d="m 287.695,104.658 0.1209,0.0605"
+           id="path30266" />
+        <path
+           d="m 287.8159,104.7185 0.0605,0.0605"
+           id="path30268" />
+        <path
+           d="m 287.8764,104.779 0.0605,0.1209"
+           id="path30270" />
+        <path
+           d="m 287.9369,104.8999 v 0.3024"
+           id="path30272" />
+        <path
+           d="m 287.9369,105.2023 -0.0605,0.121"
+           id="path30274" />
+        <path
+           d="m 287.8764,105.3233 -0.0605,0.0605"
+           id="path30276" />
+        <path
+           d="m 287.8159,105.3838 -0.1209,0.0604"
+           id="path30278" />
+        <path
+           d="m 287.695,105.4442 h -0.3629"
+           id="path30280" />
+        <path
+           d="m 287.3321,105.4442 -0.1209,-0.0604"
+           id="path30282" />
+        <path
+           d="m 287.2112,105.3838 -0.0605,-0.0605"
+           id="path30284" />
+      </g>
+      <text
+         x="285.9277"
+         y="108.8762"
+         textLength="3.8922"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text30288">22R</text>
+      <g
+         class="stroked-text"
+         id="g30354">
+        <desc
+           id="desc30290">22R</desc>
+        <path
+           d="m 284.3251,107.6717 0.0604,-0.0605"
+           id="path30292" />
+        <path
+           d="m 284.3855,107.6112 0.121,-0.0605"
+           id="path30294" />
+        <path
+           d="m 284.5065,107.5507 h 0.3024"
+           id="path30296" />
+        <path
+           d="m 284.8089,107.5507 0.1209,0.0605"
+           id="path30298" />
+        <path
+           d="m 284.9298,107.6112 0.0605,0.0605"
+           id="path30300" />
+        <path
+           d="m 284.9903,107.6717 0.0605,0.1209"
+           id="path30302" />
+        <path
+           d="m 285.0508,107.7926 v 0.121"
+           id="path30304" />
+        <path
+           d="m 285.0508,107.9136 -0.0605,0.1814"
+           id="path30306" />
+        <path
+           d="m 284.9903,108.095 -0.7257,0.7257"
+           id="path30308" />
+        <path
+           d="m 284.2646,108.8207 h 0.7862"
+           id="path30310" />
+        <path
+           d="m 285.5346,107.6717 0.0604,-0.0605"
+           id="path30312" />
+        <path
+           d="m 285.595,107.6112 0.121,-0.0605"
+           id="path30314" />
+        <path
+           d="m 285.716,107.5507 h 0.3024"
+           id="path30316" />
+        <path
+           d="m 286.0184,107.5507 0.1209,0.0605"
+           id="path30318" />
+        <path
+           d="m 286.1393,107.6112 0.0605,0.0605"
+           id="path30320" />
+        <path
+           d="m 286.1998,107.6717 0.0605,0.1209"
+           id="path30322" />
+        <path
+           d="m 286.2603,107.7926 v 0.121"
+           id="path30324" />
+        <path
+           d="m 286.2603,107.9136 -0.0605,0.1814"
+           id="path30326" />
+        <path
+           d="m 286.1998,108.095 -0.7257,0.7257"
+           id="path30328" />
+        <path
+           d="m 285.4741,108.8207 h 0.7862"
+           id="path30330" />
+        <path
+           d="m 287.5302,108.8207 -0.4233,-0.6047"
+           id="path30332" />
+        <path
+           d="m 286.8045,108.8207 v -1.27"
+           id="path30334" />
+        <path
+           d="m 286.8045,107.5507 h 0.4838"
+           id="path30336" />
+        <path
+           d="m 287.2883,107.5507 0.121,0.0605"
+           id="path30338" />
+        <path
+           d="m 287.4093,107.6112 0.0605,0.0605"
+           id="path30340" />
+        <path
+           d="m 287.4698,107.6717 0.0604,0.1209"
+           id="path30342" />
+        <path
+           d="m 287.5302,107.7926 v 0.1815"
+           id="path30344" />
+        <path
+           d="m 287.5302,107.9741 -0.0604,0.1209"
+           id="path30346" />
+        <path
+           d="m 287.4698,108.095 -0.0605,0.0605"
+           id="path30348" />
+        <path
+           d="m 287.4093,108.1555 -0.121,0.0605"
+           id="path30350" />
+        <path
+           d="m 287.2883,108.216 h -0.4838"
+           id="path30352" />
+      </g>
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 278.638,130.81 h 2.54"
+         id="path30356" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 278.638,131.826 V 130.81"
+         id="path30358" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 281.178,130.81 v 1.016"
+         id="path30360" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 281.178,131.826 h -2.54"
+         id="path30362" />
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g30370"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 278.638,131.318 h -2.54"
+         id="path30366" />
+      <path
+         d="m 281.178,131.318 h 2.54"
+         id="path30368" />
+    </g>
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 183.16627,227.16497 h -1.27"
+       id="path33038" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 182.53127,227.79997 h -1.27"
+       id="path33040" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 182.21377,228.43497 h -0.635"
+       id="path33042" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 181.89627,226.52997 v 0.635"
+       id="path33044" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 181.89627,227.16497 h -1.27"
+       id="path33046" />
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g33072"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 278.638,118.745 v 0"
+         id="path33050" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 287.528,142.24 h -1.27"
+         id="path33052" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 286.893,142.875 h -1.27"
+         id="path33054" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 286.5755,143.51 h -0.635"
+         id="path33056" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 286.258,141.605 v 0.635"
+         id="path33058" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 286.258,142.24 h -1.27"
+         id="path33060" />
+      <path
+         d="m 286.258,141.605 v 0"
+         id="path33062" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 285.75,137.414 v -2.54"
+         id="path33064" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 286.766,137.414 H 285.75"
+         id="path33066" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 285.75,134.874 h 1.016"
+         id="path33068" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 286.766,134.874 v 2.54"
+         id="path33070" />
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g33078"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 286.258,137.414 v 2.54"
+         id="path33074" />
+      <path
+         d="m 286.258,134.874 v -2.54"
+         id="path33076" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g33266"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="282.42749"
+         y="136.4877"
+         textLength="5.1016998"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text33080">R302</text>
+      <g
+         class="stroked-text"
+         id="g33192">
+        <desc
+           id="desc33082">R302</desc>
+        <path
+           d="m 281.0063,136.4322 -0.4233,-0.6047"
+           id="path33084" />
+        <path
+           d="m 280.2806,136.4322 v -1.27"
+           id="path33086" />
+        <path
+           d="m 280.2806,135.1622 h 0.4838"
+           id="path33088" />
+        <path
+           d="m 280.7644,135.1622 0.121,0.0605"
+           id="path33090" />
+        <path
+           d="m 280.8854,135.2227 0.0605,0.0605"
+           id="path33092" />
+        <path
+           d="m 280.9459,135.2832 0.0604,0.1209"
+           id="path33094" />
+        <path
+           d="m 281.0063,135.4041 v 0.1815"
+           id="path33096" />
+        <path
+           d="m 281.0063,135.5856 -0.0604,0.1209"
+           id="path33098" />
+        <path
+           d="m 280.9459,135.7065 -0.0605,0.0605"
+           id="path33100" />
+        <path
+           d="m 280.8854,135.767 -0.121,0.0605"
+           id="path33102" />
+        <path
+           d="m 280.7644,135.8275 h -0.4838"
+           id="path33104" />
+        <path
+           d="m 281.4297,135.1622 h 0.7862"
+           id="path33106" />
+        <path
+           d="m 282.2159,135.1622 -0.4234,0.4838"
+           id="path33108" />
+        <path
+           d="m 281.7925,135.646 h 0.1815"
+           id="path33110" />
+        <path
+           d="m 281.974,135.646 0.1209,0.0605"
+           id="path33112" />
+        <path
+           d="m 282.0949,135.7065 0.0605,0.0605"
+           id="path33114" />
+        <path
+           d="m 282.1554,135.767 0.0605,0.1209"
+           id="path33116" />
+        <path
+           d="m 282.2159,135.8879 v 0.3024"
+           id="path33118" />
+        <path
+           d="m 282.2159,136.1903 -0.0605,0.121"
+           id="path33120" />
+        <path
+           d="m 282.1554,136.3113 -0.0605,0.0605"
+           id="path33122" />
+        <path
+           d="m 282.0949,136.3718 -0.1209,0.0604"
+           id="path33124" />
+        <path
+           d="m 281.974,136.4322 h -0.3629"
+           id="path33126" />
+        <path
+           d="m 281.6111,136.4322 -0.1209,-0.0604"
+           id="path33128" />
+        <path
+           d="m 281.4902,136.3718 -0.0605,-0.0605"
+           id="path33130" />
+        <path
+           d="m 283.002,135.1622 h 0.121"
+           id="path33132" />
+        <path
+           d="m 283.123,135.1622 0.1209,0.0605"
+           id="path33134" />
+        <path
+           d="m 283.2439,135.2227 0.0605,0.0605"
+           id="path33136" />
+        <path
+           d="m 283.3044,135.2832 0.0605,0.1209"
+           id="path33138" />
+        <path
+           d="m 283.3649,135.4041 0.0605,0.2419"
+           id="path33140" />
+        <path
+           d="m 283.4254,135.646 v 0.3024"
+           id="path33142" />
+        <path
+           d="m 283.4254,135.9484 -0.0605,0.2419"
+           id="path33144" />
+        <path
+           d="m 283.3649,136.1903 -0.0605,0.121"
+           id="path33146" />
+        <path
+           d="m 283.3044,136.3113 -0.0605,0.0605"
+           id="path33148" />
+        <path
+           d="m 283.2439,136.3718 -0.1209,0.0604"
+           id="path33150" />
+        <path
+           d="m 283.123,136.4322 h -0.121"
+           id="path33152" />
+        <path
+           d="m 283.002,136.4322 -0.1209,-0.0604"
+           id="path33154" />
+        <path
+           d="m 282.8811,136.3718 -0.0605,-0.0605"
+           id="path33156" />
+        <path
+           d="m 282.8206,136.3113 -0.0605,-0.121"
+           id="path33158" />
+        <path
+           d="m 282.7601,136.1903 -0.0604,-0.2419"
+           id="path33160" />
+        <path
+           d="M 282.6997,135.9484 V 135.646"
+           id="path33162" />
+        <path
+           d="m 282.6997,135.646 0.0604,-0.2419"
+           id="path33164" />
+        <path
+           d="m 282.7601,135.4041 0.0605,-0.1209"
+           id="path33166" />
+        <path
+           d="m 282.8206,135.2832 0.0605,-0.0605"
+           id="path33168" />
+        <path
+           d="m 282.8811,135.2227 0.1209,-0.0605"
+           id="path33170" />
+        <path
+           d="m 283.9092,135.2832 0.0604,-0.0605"
+           id="path33172" />
+        <path
+           d="m 283.9696,135.2227 0.121,-0.0605"
+           id="path33174" />
+        <path
+           d="m 284.0906,135.1622 h 0.3024"
+           id="path33176" />
+        <path
+           d="m 284.393,135.1622 0.1209,0.0605"
+           id="path33178" />
+        <path
+           d="m 284.5139,135.2227 0.0605,0.0605"
+           id="path33180" />
+        <path
+           d="m 284.5744,135.2832 0.0605,0.1209"
+           id="path33182" />
+        <path
+           d="m 284.6349,135.4041 v 0.121"
+           id="path33184" />
+        <path
+           d="m 284.6349,135.5251 -0.0605,0.1814"
+           id="path33186" />
+        <path
+           d="m 284.5744,135.7065 -0.7257,0.7257"
+           id="path33188" />
+        <path
+           d="m 283.8487,136.4322 h 0.7862"
+           id="path33190" />
+      </g>
+      <text
+         x="283.03229"
+         y="138.5197"
+         textLength="3.8922"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text33194">10K</text>
+      <g
+         class="stroked-text"
+         id="g33254">
+        <desc
+           id="desc33196">10K</desc>
+        <path
+           d="m 282.1554,138.4642 h -0.7257"
+           id="path33198" />
+        <path
+           d="m 281.7925,138.4642 v -1.27"
+           id="path33200" />
+        <path
+           d="m 281.7925,137.1942 -0.1209,0.1815"
+           id="path33202" />
+        <path
+           d="m 281.6716,137.3757 -0.121,0.1209"
+           id="path33204" />
+        <path
+           d="m 281.5506,137.4966 -0.1209,0.0605"
+           id="path33206" />
+        <path
+           d="m 282.9415,137.1942 h 0.121"
+           id="path33208" />
+        <path
+           d="m 283.0625,137.1942 0.1209,0.0605"
+           id="path33210" />
+        <path
+           d="m 283.1834,137.2547 0.0605,0.0605"
+           id="path33212" />
+        <path
+           d="m 283.2439,137.3152 0.0605,0.1209"
+           id="path33214" />
+        <path
+           d="m 283.3044,137.4361 0.0605,0.2419"
+           id="path33216" />
+        <path
+           d="m 283.3649,137.678 v 0.3024"
+           id="path33218" />
+        <path
+           d="m 283.3649,137.9804 -0.0605,0.2419"
+           id="path33220" />
+        <path
+           d="m 283.3044,138.2223 -0.0605,0.121"
+           id="path33222" />
+        <path
+           d="m 283.2439,138.3433 -0.0605,0.0605"
+           id="path33224" />
+        <path
+           d="m 283.1834,138.4038 -0.1209,0.0604"
+           id="path33226" />
+        <path
+           d="m 283.0625,138.4642 h -0.121"
+           id="path33228" />
+        <path
+           d="m 282.9415,138.4642 -0.1209,-0.0604"
+           id="path33230" />
+        <path
+           d="m 282.8206,138.4038 -0.0605,-0.0605"
+           id="path33232" />
+        <path
+           d="m 282.7601,138.3433 -0.0605,-0.121"
+           id="path33234" />
+        <path
+           d="m 282.6996,138.2223 -0.0604,-0.2419"
+           id="path33236" />
+        <path
+           d="M 282.6392,137.9804 V 137.678"
+           id="path33238" />
+        <path
+           d="m 282.6392,137.678 0.0604,-0.2419"
+           id="path33240" />
+        <path
+           d="m 282.6996,137.4361 0.0605,-0.1209"
+           id="path33242" />
+        <path
+           d="m 282.7601,137.3152 0.0605,-0.0605"
+           id="path33244" />
+        <path
+           d="m 282.8206,137.2547 0.1209,-0.0605"
+           id="path33246" />
+        <path
+           d="m 283.9091,138.4642 v -1.27"
+           id="path33248" />
+        <path
+           d="m 284.6348,138.4642 -0.5442,-0.7257"
+           id="path33250" />
+        <path
+           d="m 284.6348,137.1942 -0.7257,0.7257"
+           id="path33252" />
+      </g>
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 298.196,142.24 h -1.27"
+         id="path33256" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 297.561,142.875 h -1.27"
+         id="path33258" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 297.2435,143.51 h -0.635"
+         id="path33260" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 296.926,141.605 v 0.635"
+         id="path33262" />
+      <path
+         style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 296.926,142.24 h -1.27"
+         id="path33264" />
+    </g>
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 197.64427,239.10297 v -2.54"
+       id="path33354" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 197.64427,239.10297 2.54,-2.54"
+       id="path33356" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 197.64427,239.10297 2.54,2.54"
+       id="path33358" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 197.64427,241.64297 v -2.54"
+       id="path33360" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 200.18427,241.64297 -1.27,-0.635"
+       id="path33362" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 200.18427,241.64297 -0.635,-1.27"
+       id="path33364" />
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g33466"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="294.06821"
+         y="131.2879"
+         textLength="0.889"
+         font-size="0.7196px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text33368">B</text>
+      <g
+         class="stroked-text"
+         id="g33408">
+        <desc
+           id="desc33370">B</desc>
+        <path
+           d="m 294.1068,130.9236 0.0771,0.0302"
+           id="path33372" />
+        <path
+           d="m 294.1839,130.9538 0.0257,0.0302"
+           id="path33374" />
+        <path
+           d="m 294.2096,130.984 0.0257,0.0605"
+           id="path33376" />
+        <path
+           d="m 294.2353,131.0445 v 0.0907"
+           id="path33378" />
+        <path
+           d="m 294.2353,131.1352 -0.0257,0.0605"
+           id="path33380" />
+        <path
+           d="m 294.2096,131.1957 -0.0257,0.0303"
+           id="path33382" />
+        <path
+           d="m 294.1839,131.226 -0.0514,0.0302"
+           id="path33384" />
+        <path
+           d="m 294.1325,131.2562 h -0.2056"
+           id="path33386" />
+        <path
+           d="m 293.9269,131.2562 v -0.635"
+           id="path33388" />
+        <path
+           d="m 293.9269,130.6212 h 0.1799"
+           id="path33390" />
+        <path
+           d="m 294.1068,130.6212 0.0514,0.0302"
+           id="path33392" />
+        <path
+           d="m 294.1582,130.6514 0.0257,0.0303"
+           id="path33394" />
+        <path
+           d="m 294.1839,130.6817 0.0257,0.0604"
+           id="path33396" />
+        <path
+           d="m 294.2096,130.7421 v 0.0605"
+           id="path33398" />
+        <path
+           d="m 294.2096,130.8026 -0.0257,0.0605"
+           id="path33400" />
+        <path
+           d="m 294.1839,130.8631 -0.0257,0.0302"
+           id="path33402" />
+        <path
+           d="m 294.1582,130.8933 -0.0514,0.0303"
+           id="path33404" />
+        <path
+           d="m 294.1068,130.9236 h -0.1799"
+           id="path33406" />
+      </g>
+      <text
+         x="296.60818"
+         y="128.74789"
+         textLength="0.889"
+         font-size="0.7196px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text33410">C</text>
+      <g
+         class="stroked-text"
+         id="g33444">
+        <desc
+           id="desc33412">C</desc>
+        <path
+           d="m 296.7753,128.6557 -0.0257,0.0303"
+           id="path33414" />
+        <path
+           d="m 296.7496,128.686 -0.0771,0.0302"
+           id="path33416" />
+        <path
+           d="m 296.6725,128.7162 h -0.0514"
+           id="path33418" />
+        <path
+           d="M 296.6211,128.7162 296.544,128.686"
+           id="path33420" />
+        <path
+           d="m 296.544,128.686 -0.0514,-0.0605"
+           id="path33422" />
+        <path
+           d="m 296.4926,128.6255 -0.0257,-0.0605"
+           id="path33424" />
+        <path
+           d="m 296.4669,128.565 -0.0257,-0.121"
+           id="path33426" />
+        <path
+           d="m 296.4412,128.444 v -0.0907"
+           id="path33428" />
+        <path
+           d="m 296.4412,128.3533 0.0257,-0.1209"
+           id="path33430" />
+        <path
+           d="m 296.4669,128.2324 0.0257,-0.0605"
+           id="path33432" />
+        <path
+           d="m 296.4926,128.1719 0.0514,-0.0605"
+           id="path33434" />
+        <path
+           d="m 296.544,128.1114 0.0771,-0.0302"
+           id="path33436" />
+        <path
+           d="m 296.6211,128.0812 h 0.0514"
+           id="path33438" />
+        <path
+           d="m 296.6725,128.0812 0.0771,0.0302"
+           id="path33440" />
+        <path
+           d="m 296.7496,128.1114 0.0257,0.0303"
+           id="path33442" />
+      </g>
+      <text
+         x="296.58249"
+         y="134.46291"
+         textLength="0.83759999"
+         font-size="0.7196px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text33446">E</text>
+      <g
+         class="stroked-text"
+         id="g33458">
+        <desc
+           id="desc33448">E</desc>
+        <path
+           d="m 296.4669,134.0986 h 0.1799"
+           id="path33450" />
+        <path
+           d="m 296.7239,134.4312 h -0.257"
+           id="path33452" />
+        <path
+           d="m 296.4669,134.4312 v -0.635"
+           id="path33454" />
+        <path
+           d="m 296.4669,133.7962 h 0.257"
+           id="path33456" />
+      </g>
+      <path
+         d="m 294.386,131.318 h -2.54"
+         id="path33460" />
+      <path
+         d="m 296.926,128.778 v -2.54"
+         id="path33462" />
+      <path
+         d="m 296.926,133.858 v 2.54"
+         id="path33464" />
+    </g>
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 203.74027,226.65697 2.54,-2.54"
+       id="path36530" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 208.82027,226.65697 h -5.08"
+       id="path36532" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 208.82027,226.65697 -2.54,-2.54"
+       id="path36534" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 203.74027,224.11697 h 5.08"
+       id="path36536" />
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g36544"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 303.022,118.872 v 2.54"
+         id="path36540" />
+      <path
+         d="m 303.022,116.332 v -2.54"
+         id="path36542" />
+    </g>
+    <text
+       x="306.3035"
+       y="115.6597"
+       textLength="5.1016998"
+       font-size="1.6933px"
+       lengthAdjust="spacingAndGlyphs"
+       text-anchor="middle"
+       opacity="0"
+       stroke-opacity="0"
+       id="text36546"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-96.741711,107.78497)">D004</text>
+    <g
+       class="stroked-text"
+       id="g36660"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       transform="translate(-96.741711,107.78497)">
+      <desc
+         id="desc36548">D004</desc>
+      <path
+         d="m 304.1566,115.6042 v -1.27"
+         id="path36550" />
+      <path
+         d="m 304.1566,114.3342 h 0.3024"
+         id="path36552" />
+      <path
+         d="m 304.459,114.3342 0.1814,0.0605"
+         id="path36554" />
+      <path
+         d="m 304.6404,114.3947 0.121,0.121"
+         id="path36556" />
+      <path
+         d="m 304.7614,114.5157 0.0605,0.1209"
+         id="path36558" />
+      <path
+         d="m 304.8219,114.6366 0.0604,0.2419"
+         id="path36560" />
+      <path
+         d="m 304.8823,114.8785 v 0.1814"
+         id="path36562" />
+      <path
+         d="m 304.8823,115.0599 -0.0604,0.2419"
+         id="path36564" />
+      <path
+         d="m 304.8219,115.3018 -0.0605,0.121"
+         id="path36566" />
+      <path
+         d="m 304.7614,115.4228 -0.121,0.121"
+         id="path36568" />
+      <path
+         d="m 304.6404,115.5438 -0.1814,0.0604"
+         id="path36570" />
+      <path
+         d="m 304.459,115.6042 h -0.3024"
+         id="path36572" />
+      <path
+         d="m 305.6685,114.3342 h 0.121"
+         id="path36574" />
+      <path
+         d="m 305.7895,114.3342 0.1209,0.0605"
+         id="path36576" />
+      <path
+         d="m 305.9104,114.3947 0.0605,0.0605"
+         id="path36578" />
+      <path
+         d="m 305.9709,114.4552 0.0605,0.1209"
+         id="path36580" />
+      <path
+         d="m 306.0314,114.5761 0.0605,0.2419"
+         id="path36582" />
+      <path
+         d="m 306.0919,114.818 v 0.3024"
+         id="path36584" />
+      <path
+         d="m 306.0919,115.1204 -0.0605,0.2419"
+         id="path36586" />
+      <path
+         d="m 306.0314,115.3623 -0.0605,0.121"
+         id="path36588" />
+      <path
+         d="m 305.9709,115.4833 -0.0605,0.0605"
+         id="path36590" />
+      <path
+         d="m 305.9104,115.5438 -0.1209,0.0604"
+         id="path36592" />
+      <path
+         d="m 305.7895,115.6042 h -0.121"
+         id="path36594" />
+      <path
+         d="m 305.6685,115.6042 -0.1209,-0.0604"
+         id="path36596" />
+      <path
+         d="m 305.5476,115.5438 -0.0605,-0.0605"
+         id="path36598" />
+      <path
+         d="m 305.4871,115.4833 -0.0605,-0.121"
+         id="path36600" />
+      <path
+         d="m 305.4266,115.3623 -0.0604,-0.2419"
+         id="path36602" />
+      <path
+         d="M 305.3662,115.1204 V 114.818"
+         id="path36604" />
+      <path
+         d="m 305.3662,114.818 0.0604,-0.2419"
+         id="path36606" />
+      <path
+         d="m 305.4266,114.5761 0.0605,-0.1209"
+         id="path36608" />
+      <path
+         d="m 305.4871,114.4552 0.0605,-0.0605"
+         id="path36610" />
+      <path
+         d="m 305.5476,114.3947 0.1209,-0.0605"
+         id="path36612" />
+      <path
+         d="m 306.878,114.3342 h 0.121"
+         id="path36614" />
+      <path
+         d="m 306.999,114.3342 0.1209,0.0605"
+         id="path36616" />
+      <path
+         d="m 307.1199,114.3947 0.0605,0.0605"
+         id="path36618" />
+      <path
+         d="m 307.1804,114.4552 0.0605,0.1209"
+         id="path36620" />
+      <path
+         d="m 307.2409,114.5761 0.0605,0.2419"
+         id="path36622" />
+      <path
+         d="m 307.3014,114.818 v 0.3024"
+         id="path36624" />
+      <path
+         d="m 307.3014,115.1204 -0.0605,0.2419"
+         id="path36626" />
+      <path
+         d="m 307.2409,115.3623 -0.0605,0.121"
+         id="path36628" />
+      <path
+         d="m 307.1804,115.4833 -0.0605,0.0605"
+         id="path36630" />
+      <path
+         d="m 307.1199,115.5438 -0.1209,0.0604"
+         id="path36632" />
+      <path
+         d="m 306.999,115.6042 h -0.121"
+         id="path36634" />
+      <path
+         d="m 306.878,115.6042 -0.1209,-0.0604"
+         id="path36636" />
+      <path
+         d="m 306.7571,115.5438 -0.0605,-0.0605"
+         id="path36638" />
+      <path
+         d="m 306.6966,115.4833 -0.0605,-0.121"
+         id="path36640" />
+      <path
+         d="m 306.6361,115.3623 -0.0604,-0.2419"
+         id="path36642" />
+      <path
+         d="M 306.5757,115.1204 V 114.818"
+         id="path36644" />
+      <path
+         d="m 306.5757,114.818 0.0604,-0.2419"
+         id="path36646" />
+      <path
+         d="m 306.6361,114.5761 0.0605,-0.1209"
+         id="path36648" />
+      <path
+         d="m 306.6966,114.4552 0.0605,-0.0605"
+         id="path36650" />
+      <path
+         d="m 306.7571,114.3947 0.1209,-0.0605"
+         id="path36652" />
+      <path
+         d="m 308.3899,114.7576 v 0.8466"
+         id="path36654" />
+      <path
+         d="m 308.0875,114.2738 -0.3023,0.9071"
+         id="path36656" />
+      <path
+         d="m 307.7852,115.1809 h 0.7861"
+         id="path36658" />
+    </g>
+    <text
+       x="307.34979"
+       y="120.9937"
+       textLength="7.5812001"
+       font-size="1.6933px"
+       lengthAdjust="spacingAndGlyphs"
+       text-anchor="middle"
+       opacity="0"
+       stroke-opacity="0"
+       id="text36662"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-96.741711,107.78497)">1N4148</text>
+    <g
+       class="stroked-text"
+       id="g36766"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       transform="translate(-96.741711,107.78497)">
+      <desc
+         id="desc36664">1N4148</desc>
+      <path
+         d="m 304.6284,120.9382 h -0.7257"
+         id="path36666" />
+      <path
+         d="m 304.2655,120.9382 v -1.27"
+         id="path36668" />
+      <path
+         d="m 304.2655,119.6682 -0.1209,0.1815"
+         id="path36670" />
+      <path
+         d="m 304.1446,119.8497 -0.121,0.1209"
+         id="path36672" />
+      <path
+         d="m 304.0236,119.9706 -0.1209,0.0605"
+         id="path36674" />
+      <path
+         d="m 305.1726,120.9382 v -1.27"
+         id="path36676" />
+      <path
+         d="m 305.1726,119.6682 0.7257,1.27"
+         id="path36678" />
+      <path
+         d="m 305.8983,120.9382 v -1.27"
+         id="path36680" />
+      <path
+         d="m 307.0474,120.0916 v 0.8466"
+         id="path36682" />
+      <path
+         d="m 306.745,119.6078 -0.3023,0.9071"
+         id="path36684" />
+      <path
+         d="m 306.4427,120.5149 h 0.7861"
+         id="path36686" />
+      <path
+         d="m 308.3779,120.9382 h -0.7257"
+         id="path36688" />
+      <path
+         d="m 308.015,120.9382 v -1.27"
+         id="path36690" />
+      <path
+         d="m 308.015,119.6682 -0.1209,0.1815"
+         id="path36692" />
+      <path
+         d="m 307.8941,119.8497 -0.121,0.1209"
+         id="path36694" />
+      <path
+         d="m 307.7731,119.9706 -0.1209,0.0605"
+         id="path36696" />
+      <path
+         d="m 309.4664,120.0916 v 0.8466"
+         id="path36698" />
+      <path
+         d="m 309.164,119.6078 -0.3023,0.9071"
+         id="path36700" />
+      <path
+         d="m 308.8617,120.5149 h 0.7861"
+         id="path36702" />
+      <path
+         d="m 310.3131,120.2125 -0.121,-0.0605"
+         id="path36704" />
+      <path
+         d="m 310.1921,120.152 -0.0605,-0.0604"
+         id="path36706" />
+      <path
+         d="m 310.1316,120.0916 -0.0604,-0.121"
+         id="path36708" />
+      <path
+         d="m 310.0712,119.9706 v -0.0605"
+         id="path36710" />
+      <path
+         d="m 310.0712,119.9101 0.0604,-0.1209"
+         id="path36712" />
+      <path
+         d="m 310.1316,119.7892 0.0605,-0.0605"
+         id="path36714" />
+      <path
+         d="m 310.1921,119.7287 0.121,-0.0605"
+         id="path36716" />
+      <path
+         d="m 310.3131,119.6682 h 0.2419"
+         id="path36718" />
+      <path
+         d="m 310.555,119.6682 0.1209,0.0605"
+         id="path36720" />
+      <path
+         d="m 310.6759,119.7287 0.0605,0.0605"
+         id="path36722" />
+      <path
+         d="m 310.7364,119.7892 0.0605,0.1209"
+         id="path36724" />
+      <path
+         d="m 310.7969,119.9101 v 0.0605"
+         id="path36726" />
+      <path
+         d="m 310.7969,119.9706 -0.0605,0.121"
+         id="path36728" />
+      <path
+         d="m 310.7364,120.0916 -0.0605,0.0604"
+         id="path36730" />
+      <path
+         d="m 310.6759,120.152 -0.1209,0.0605"
+         id="path36732" />
+      <path
+         d="m 310.555,120.2125 h -0.2419"
+         id="path36734" />
+      <path
+         d="m 310.3131,120.2125 -0.121,0.0605"
+         id="path36736" />
+      <path
+         d="m 310.1921,120.273 -0.0605,0.0605"
+         id="path36738" />
+      <path
+         d="m 310.1316,120.3335 -0.0604,0.1209"
+         id="path36740" />
+      <path
+         d="m 310.0712,120.4544 v 0.2419"
+         id="path36742" />
+      <path
+         d="m 310.0712,120.6963 0.0604,0.121"
+         id="path36744" />
+      <path
+         d="m 310.1316,120.8173 0.0605,0.0605"
+         id="path36746" />
+      <path
+         d="m 310.1921,120.8778 0.121,0.0604"
+         id="path36748" />
+      <path
+         d="m 310.3131,120.9382 h 0.2419"
+         id="path36750" />
+      <path
+         d="m 310.555,120.9382 0.1209,-0.0604"
+         id="path36752" />
+      <path
+         d="m 310.6759,120.8778 0.0605,-0.0605"
+         id="path36754" />
+      <path
+         d="m 310.7364,120.8173 0.0605,-0.121"
+         id="path36756" />
+      <path
+         d="m 310.7969,120.6963 v -0.2419"
+         id="path36758" />
+      <path
+         d="m 310.7969,120.4544 -0.0605,-0.1209"
+         id="path36760" />
+      <path
+         d="m 310.7364,120.3335 -0.0605,-0.0605"
+         id="path36762" />
+      <path
+         d="m 310.6759,120.273 -0.1209,-0.0605"
+         id="path36764" />
+    </g>
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 182.91227,220.43397 h -2.032"
+       id="path36924" />
+    <path
+       style="fill:none;stroke:#840000;stroke-width:0.254;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 180.88027,221.70397 h 2.032"
+       id="path36926" />
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g36934"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 278.638,112.522 v -2.54"
+         id="path36930" />
+      <path
+         d="m 278.638,114.046 v 2.54"
+         id="path36932" />
+    </g>
+    <text
+       x="275.9823"
+       y="112.074"
+       textLength="3.3770001"
+       font-size="1.4393px"
+       lengthAdjust="spacingAndGlyphs"
+       text-anchor="middle"
+       opacity="0"
+       stroke-opacity="0"
+       id="text36936"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-96.741711,107.78497)">C19</text>
+    <g
+       class="stroked-text"
+       id="g37022"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       transform="translate(-96.741711,107.78497)">
+      <desc
+         id="desc36938">C19</desc>
+      <path
+         d="m 275.2883,111.8976 -0.0514,0.0605"
+         id="path36940" />
+      <path
+         d="m 275.2369,111.9581 -0.1542,0.0604"
+         id="path36942" />
+      <path
+         d="m 275.0827,112.0185 h -0.1028"
+         id="path36944" />
+      <path
+         d="m 274.9799,112.0185 -0.1542,-0.0604"
+         id="path36946" />
+      <path
+         d="m 274.8257,111.9581 -0.1028,-0.121"
+         id="path36948" />
+      <path
+         d="m 274.7229,111.8371 -0.0514,-0.121"
+         id="path36950" />
+      <path
+         d="m 274.6715,111.7161 -0.0514,-0.2419"
+         id="path36952" />
+      <path
+         d="m 274.6201,111.4742 v -0.1814"
+         id="path36954" />
+      <path
+         d="m 274.6201,111.2928 0.0514,-0.2419"
+         id="path36956" />
+      <path
+         d="m 274.6715,111.0509 0.0514,-0.1209"
+         id="path36958" />
+      <path
+         d="m 274.7229,110.93 0.1028,-0.121"
+         id="path36960" />
+      <path
+         d="m 274.8257,110.809 0.1542,-0.0605"
+         id="path36962" />
+      <path
+         d="m 274.9799,110.7485 h 0.1028"
+         id="path36964" />
+      <path
+         d="m 275.0827,110.7485 0.1542,0.0605"
+         id="path36966" />
+      <path
+         d="m 275.2369,110.809 0.0514,0.0605"
+         id="path36968" />
+      <path
+         d="m 276.3164,112.0185 h -0.6168"
+         id="path36970" />
+      <path
+         d="m 276.008,112.0185 v -1.27"
+         id="path36972" />
+      <path
+         d="m 276.008,110.7485 -0.1028,0.1815"
+         id="path36974" />
+      <path
+         d="m 275.9052,110.93 -0.1028,0.1209"
+         id="path36976" />
+      <path
+         d="m 275.8024,111.0509 -0.1028,0.0605"
+         id="path36978" />
+      <path
+         d="m 276.8305,112.0185 h 0.2056"
+         id="path36980" />
+      <path
+         d="m 277.0361,112.0185 0.1028,-0.0604"
+         id="path36982" />
+      <path
+         d="m 277.1389,111.9581 0.0514,-0.0605"
+         id="path36984" />
+      <path
+         d="m 277.1903,111.8976 0.1028,-0.1815"
+         id="path36986" />
+      <path
+         d="m 277.2931,111.7161 0.0514,-0.2419"
+         id="path36988" />
+      <path
+         d="m 277.3445,111.4742 v -0.4838"
+         id="path36990" />
+      <path
+         d="m 277.3445,110.9904 -0.0514,-0.1209"
+         id="path36992" />
+      <path
+         d="m 277.2931,110.8695 -0.0514,-0.0605"
+         id="path36994" />
+      <path
+         d="m 277.2417,110.809 -0.1028,-0.0605"
+         id="path36996" />
+      <path
+         d="m 277.1389,110.7485 h -0.2056"
+         id="path36998" />
+      <path
+         d="m 276.9333,110.7485 -0.1028,0.0605"
+         id="path37000" />
+      <path
+         d="m 276.8305,110.809 -0.0514,0.0605"
+         id="path37002" />
+      <path
+         d="m 276.7791,110.8695 -0.0514,0.1209"
+         id="path37004" />
+      <path
+         d="m 276.7277,110.9904 v 0.3024"
+         id="path37006" />
+      <path
+         d="m 276.7277,111.2928 0.0514,0.121"
+         id="path37008" />
+      <path
+         d="m 276.7791,111.4138 0.0514,0.0604"
+         id="path37010" />
+      <path
+         d="m 276.8305,111.4742 0.1028,0.0605"
+         id="path37012" />
+      <path
+         d="m 276.9333,111.5347 h 0.2056"
+         id="path37014" />
+      <path
+         d="m 277.1389,111.5347 0.1028,-0.0605"
+         id="path37016" />
+      <path
+         d="m 277.2417,111.4742 0.0514,-0.0604"
+         id="path37018" />
+      <path
+         d="m 277.2931,111.4138 0.0514,-0.121"
+         id="path37020" />
+    </g>
+    <text
+       x="275.33221"
+       y="115.9137"
+       textLength="6.0693002"
+       font-size="1.6933px"
+       lengthAdjust="spacingAndGlyphs"
+       text-anchor="middle"
+       opacity="0"
+       stroke-opacity="0"
+       id="text37024"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-96.741711,107.78497)">100nF</text>
+    <g
+       class="stroked-text"
+       id="g37138"
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       transform="translate(-96.741711,107.78497)">
+      <desc
+         id="desc37026">100nF</desc>
+      <path
+         d="m 273.3668,115.8582 h -0.7257"
+         id="path37028" />
+      <path
+         d="m 273.0039,115.8582 v -1.27"
+         id="path37030" />
+      <path
+         d="m 273.0039,114.5882 -0.1209,0.1815"
+         id="path37032" />
+      <path
+         d="m 272.883,114.7697 -0.121,0.1209"
+         id="path37034" />
+      <path
+         d="m 272.762,114.8906 -0.1209,0.0605"
+         id="path37036" />
+      <path
+         d="m 274.1529,114.5882 h 0.121"
+         id="path37038" />
+      <path
+         d="m 274.2739,114.5882 0.1209,0.0605"
+         id="path37040" />
+      <path
+         d="m 274.3948,114.6487 0.0605,0.0605"
+         id="path37042" />
+      <path
+         d="m 274.4553,114.7092 0.0605,0.1209"
+         id="path37044" />
+      <path
+         d="m 274.5158,114.8301 0.0605,0.2419"
+         id="path37046" />
+      <path
+         d="m 274.5763,115.072 v 0.3024"
+         id="path37048" />
+      <path
+         d="m 274.5763,115.3744 -0.0605,0.2419"
+         id="path37050" />
+      <path
+         d="m 274.5158,115.6163 -0.0605,0.121"
+         id="path37052" />
+      <path
+         d="m 274.4553,115.7373 -0.0605,0.0605"
+         id="path37054" />
+      <path
+         d="m 274.3948,115.7978 -0.1209,0.0604"
+         id="path37056" />
+      <path
+         d="m 274.2739,115.8582 h -0.121"
+         id="path37058" />
+      <path
+         d="m 274.1529,115.8582 -0.1209,-0.0604"
+         id="path37060" />
+      <path
+         d="m 274.032,115.7978 -0.0605,-0.0605"
+         id="path37062" />
+      <path
+         d="m 273.9715,115.7373 -0.0605,-0.121"
+         id="path37064" />
+      <path
+         d="m 273.911,115.6163 -0.0604,-0.2419"
+         id="path37066" />
+      <path
+         d="M 273.8506,115.3744 V 115.072"
+         id="path37068" />
+      <path
+         d="m 273.8506,115.072 0.0604,-0.2419"
+         id="path37070" />
+      <path
+         d="m 273.911,114.8301 0.0605,-0.1209"
+         id="path37072" />
+      <path
+         d="m 273.9715,114.7092 0.0605,-0.0605"
+         id="path37074" />
+      <path
+         d="m 274.032,114.6487 0.1209,-0.0605"
+         id="path37076" />
+      <path
+         d="m 275.3624,114.5882 h 0.121"
+         id="path37078" />
+      <path
+         d="m 275.4834,114.5882 0.1209,0.0605"
+         id="path37080" />
+      <path
+         d="m 275.6043,114.6487 0.0605,0.0605"
+         id="path37082" />
+      <path
+         d="m 275.6648,114.7092 0.0605,0.1209"
+         id="path37084" />
+      <path
+         d="m 275.7253,114.8301 0.0605,0.2419"
+         id="path37086" />
+      <path
+         d="m 275.7858,115.072 v 0.3024"
+         id="path37088" />
+      <path
+         d="m 275.7858,115.3744 -0.0605,0.2419"
+         id="path37090" />
+      <path
+         d="m 275.7253,115.6163 -0.0605,0.121"
+         id="path37092" />
+      <path
+         d="m 275.6648,115.7373 -0.0605,0.0605"
+         id="path37094" />
+      <path
+         d="m 275.6043,115.7978 -0.1209,0.0604"
+         id="path37096" />
+      <path
+         d="m 275.4834,115.8582 h -0.121"
+         id="path37098" />
+      <path
+         d="m 275.3624,115.8582 -0.1209,-0.0604"
+         id="path37100" />
+      <path
+         d="m 275.2415,115.7978 -0.0605,-0.0605"
+         id="path37102" />
+      <path
+         d="m 275.181,115.7373 -0.0605,-0.121"
+         id="path37104" />
+      <path
+         d="m 275.1205,115.6163 -0.0604,-0.2419"
+         id="path37106" />
+      <path
+         d="M 275.0601,115.3744 V 115.072"
+         id="path37108" />
+      <path
+         d="m 275.0601,115.072 0.0604,-0.2419"
+         id="path37110" />
+      <path
+         d="m 275.1205,114.8301 0.0605,-0.1209"
+         id="path37112" />
+      <path
+         d="m 275.181,114.7092 0.0605,-0.0605"
+         id="path37114" />
+      <path
+         d="m 275.2415,114.6487 0.1209,-0.0605"
+         id="path37116" />
+      <path
+         d="m 276.33,115.0116 v 0.8466"
+         id="path37118" />
+      <path
+         d="m 276.33,115.1325 0.0605,-0.0605"
+         id="path37120" />
+      <path
+         d="m 276.3905,115.072 0.121,-0.0604"
+         id="path37122" />
+      <path
+         d="m 276.5115,115.0116 h 0.1814"
+         id="path37124" />
+      <path
+         d="m 276.6929,115.0116 0.1209,0.0604"
+         id="path37126" />
+      <path
+         d="m 276.8138,115.072 0.0605,0.121"
+         id="path37128" />
+      <path
+         d="m 276.8743,115.193 v 0.6652"
+         id="path37130" />
+      <path
+         d="M 277.9024,115.193 H 277.479"
+         id="path37132" />
+      <path
+         d="m 277.479,115.8582 v -1.27"
+         id="path37134" />
+      <path
+         d="m 277.479,114.5882 h 0.6048"
+         id="path37136" />
+    </g>
+    <text
+       x="276.479"
+       y="106.0069"
+       textLength="8.4254999"
+       font-size="2.032px"
+       lengthAdjust="spacingAndGlyphs"
+       text-anchor="end"
+       opacity="0"
+       stroke-opacity="0"
+       id="text66808"
+       style="fill:none;stroke:#0f0f0f;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(-96.741711,107.78497)">VCC_5V</text>
+    <g
+       class="stroked-text"
+       id="g66912"
+       style="fill:none;stroke:#0f0f0f;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       transform="translate(-96.741711,107.78497)">
+      <desc
+         id="desc66810">VCC_5V</desc>
+      <path
+         d="m 268.2508,104.2884 0.508,1.524"
+         id="path66812" />
+      <path
+         d="m 268.7588,105.8124 0.508,-1.524"
+         id="path66814" />
+      <path
+         d="m 270.6457,105.6673 -0.0726,0.0726"
+         id="path66816" />
+      <path
+         d="m 270.5731,105.7399 -0.2177,0.0725"
+         id="path66818" />
+      <path
+         d="m 270.3554,105.8124 h -0.1452"
+         id="path66820" />
+      <path
+         d="m 270.2102,105.8124 -0.2177,-0.0725"
+         id="path66822" />
+      <path
+         d="m 269.9925,105.7399 -0.1451,-0.1452"
+         id="path66824" />
+      <path
+         d="m 269.8474,105.5947 -0.0726,-0.1451"
+         id="path66826" />
+      <path
+         d="m 269.7748,105.4496 -0.0726,-0.2903"
+         id="path66828" />
+      <path
+         d="m 269.7022,105.1593 v -0.2177"
+         id="path66830" />
+      <path
+         d="m 269.7022,104.9416 0.0726,-0.2903"
+         id="path66832" />
+      <path
+         d="m 269.7748,104.6513 0.0726,-0.1452"
+         id="path66834" />
+      <path
+         d="m 269.8474,104.5061 0.1451,-0.1451"
+         id="path66836" />
+      <path
+         d="m 269.9925,104.361 0.2177,-0.0726"
+         id="path66838" />
+      <path
+         d="m 270.2102,104.2884 h 0.1452"
+         id="path66840" />
+      <path
+         d="m 270.3554,104.2884 0.2177,0.0726"
+         id="path66842" />
+      <path
+         d="m 270.5731,104.361 0.0726,0.0726"
+         id="path66844" />
+      <path
+         d="m 272.1697,105.6673 -0.0726,0.0726"
+         id="path66846" />
+      <path
+         d="m 272.0971,105.7399 -0.2177,0.0725"
+         id="path66848" />
+      <path
+         d="m 271.8794,105.8124 h -0.1452"
+         id="path66850" />
+      <path
+         d="m 271.7342,105.8124 -0.2177,-0.0725"
+         id="path66852" />
+      <path
+         d="m 271.5165,105.7399 -0.1451,-0.1452"
+         id="path66854" />
+      <path
+         d="m 271.3714,105.5947 -0.0726,-0.1451"
+         id="path66856" />
+      <path
+         d="m 271.2988,105.4496 -0.0726,-0.2903"
+         id="path66858" />
+      <path
+         d="m 271.2262,105.1593 v -0.2177"
+         id="path66860" />
+      <path
+         d="m 271.2262,104.9416 0.0726,-0.2903"
+         id="path66862" />
+      <path
+         d="m 271.2988,104.6513 0.0726,-0.1452"
+         id="path66864" />
+      <path
+         d="m 271.3714,104.5061 0.1451,-0.1451"
+         id="path66866" />
+      <path
+         d="m 271.5165,104.361 0.2177,-0.0726"
+         id="path66868" />
+      <path
+         d="m 271.7342,104.2884 h 0.1452"
+         id="path66870" />
+      <path
+         d="m 271.8794,104.2884 0.2177,0.0726"
+         id="path66872" />
+      <path
+         d="m 272.0971,104.361 0.0726,0.0726"
+         id="path66874" />
+      <path
+         d="m 272.46,105.9576 h 1.1611"
+         id="path66876" />
+      <path
+         d="m 274.7096,104.2884 h -0.7257"
+         id="path66878" />
+      <path
+         d="m 273.9839,104.2884 -0.0726,0.7257"
+         id="path66880" />
+      <path
+         d="m 273.9113,105.0141 0.0726,-0.0725"
+         id="path66882" />
+      <path
+         d="m 273.9839,104.9416 0.1452,-0.0726"
+         id="path66884" />
+      <path
+         d="m 274.1291,104.869 h 0.3628"
+         id="path66886" />
+      <path
+         d="m 274.4919,104.869 0.1452,0.0726"
+         id="path66888" />
+      <path
+         d="m 274.6371,104.9416 0.0725,0.0725"
+         id="path66890" />
+      <path
+         d="m 274.7096,105.0141 0.0726,0.1452"
+         id="path66892" />
+      <path
+         d="m 274.7822,105.1593 v 0.3628"
+         id="path66894" />
+      <path
+         d="m 274.7822,105.5221 -0.0726,0.1452"
+         id="path66896" />
+      <path
+         d="m 274.7096,105.6673 -0.0725,0.0726"
+         id="path66898" />
+      <path
+         d="m 274.6371,105.7399 -0.1452,0.0725"
+         id="path66900" />
+      <path
+         d="m 274.4919,105.8124 h -0.3628"
+         id="path66902" />
+      <path
+         d="m 274.1291,105.8124 -0.1452,-0.0725"
+         id="path66904" />
+      <path
+         d="m 273.9839,105.7399 -0.0726,-0.0726"
+         id="path66906" />
+      <path
+         d="m 275.2176,104.2884 0.508,1.524"
+         id="path66908" />
+      <path
+         d="m 275.7256,105.8124 0.508,-1.524"
+         id="path66910" />
+    </g>
+    <g
+       style="fill:none;stroke:#0f0f0f;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g67414"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="271.272"
+         y="130.8989"
+         textLength="3.1278"
+         font-size="2.032px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="end"
+         opacity="0"
+         stroke-opacity="0"
+         id="text67358">D3</text>
+      <g
+         class="stroked-text"
+         id="g67412">
+        <desc
+           id="desc67360">D3</desc>
+        <path
+           d="m 268.5592,130.7044 v -1.524"
+           id="path67362" />
+        <path
+           d="m 268.5592,129.1804 h 0.3629"
+           id="path67364" />
+        <path
+           d="m 268.9221,129.1804 0.2177,0.0726"
+           id="path67366" />
+        <path
+           d="m 269.1398,129.253 0.1451,0.1451"
+           id="path67368" />
+        <path
+           d="m 269.2849,129.3981 0.0726,0.1452"
+           id="path67370" />
+        <path
+           d="m 269.3575,129.5433 0.0726,0.2903"
+           id="path67372" />
+        <path
+           d="m 269.4301,129.8336 v 0.2177"
+           id="path67374" />
+        <path
+           d="m 269.4301,130.0513 -0.0726,0.2903"
+           id="path67376" />
+        <path
+           d="m 269.3575,130.3416 -0.0726,0.1451"
+           id="path67378" />
+        <path
+           d="m 269.2849,130.4867 -0.1451,0.1452"
+           id="path67380" />
+        <path
+           d="m 269.1398,130.6319 -0.2177,0.0725"
+           id="path67382" />
+        <path
+           d="m 268.9221,130.7044 h -0.3629"
+           id="path67384" />
+        <path
+           d="m 269.9381,129.1804 h 0.9434"
+           id="path67386" />
+        <path
+           d="m 270.8815,129.1804 -0.508,0.5806"
+           id="path67388" />
+        <path
+           d="m 270.3735,129.761 h 0.2177"
+           id="path67390" />
+        <path
+           d="m 270.5912,129.761 0.1452,0.0726"
+           id="path67392" />
+        <path
+           d="m 270.7364,129.8336 0.0725,0.0725"
+           id="path67394" />
+        <path
+           d="m 270.8089,129.9061 0.0726,0.1452"
+           id="path67396" />
+        <path
+           d="m 270.8815,130.0513 v 0.3628"
+           id="path67398" />
+        <path
+           d="m 270.8815,130.4141 -0.0726,0.1452"
+           id="path67400" />
+        <path
+           d="m 270.8089,130.5593 -0.0725,0.0726"
+           id="path67402" />
+        <path
+           d="m 270.7364,130.6319 -0.1452,0.0725"
+           id="path67404" />
+        <path
+           d="m 270.5912,130.7044 h -0.4354"
+           id="path67406" />
+        <path
+           d="m 270.1558,130.7044 -0.1452,-0.0725"
+           id="path67408" />
+        <path
+           d="m 270.0106,130.6319 -0.0725,-0.0726"
+           id="path67410" />
+      </g>
+    </g>
+    <path
+       d="m 156.28462,195.30916 h 68.58"
+       id="path79476"
+       style="fill:none;stroke:#0000c2;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 156.28462,261.34916 v -66.04"
+       id="path79508"
+       style="fill:none;stroke:#0000c2;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 224.86462,195.30916 v 66.04"
+       id="path79510"
+       style="fill:none;stroke:#0000c2;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 224.86462,261.34916 h -68.58"
+       id="path79516"
+       style="fill:none;stroke:#0000c2;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 185.45227,214.21097 h -3.556"
+       id="path79686"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 186.97627,239.10297 h 2.54"
+       id="path79688"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 189.51627,240.11897 v -1.016"
+       id="path79690"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 189.51627,239.10297 h 5.588"
+       id="path79692"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 181.89627,214.21097 v 3.556"
+       id="path79704"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 189.51627,247.73897 v 1.651"
+       id="path79724"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 200.18427,244.18297 v 5.207"
+       id="path79746"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 206.28027,229.19697 v 2.54"
+       id="path79748"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 179.35627,239.10297 h -4.826"
+       id="path79750"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 181.89627,224.37097 v 2.159"
+       id="path79752"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 200.18427,234.02297 v -2.286"
+       id="path79754"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 193.07227,214.21097 h 7.112"
+       id="path79756"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 200.18427,218.78297 h 6.096"
+       id="path79758"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 200.18427,218.78297 v -4.572"
+       id="path79760"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 181.89627,214.21097 h -2.159"
+       id="path79762"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 206.28027,218.78297 v 2.794"
+       id="path80012"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 206.28027,231.73697 h -6.096"
+       id="path80014"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 200.18427,231.73697 v -3.556"
+       id="path80018"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       d="m 200.18427,223.10097 v -4.318"
+       id="path80020"
+       style="fill:none;stroke:#009600;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <g
+       style="fill:none;stroke:#0000c2;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g86166"
+       transform="translate(-89.333376,111.48916)">
+      <text
+         x="250.19"
+         y="92.968002"
+         textLength="21.1835"
+         font-size="5.7573px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="start"
+         opacity="0"
+         stroke-opacity="0"
+         id="text86064">Buzzer</text>
+      <g
+         class="stroked-text"
+         id="g86164">
+        <desc
+           id="desc86066">Buzzer</desc>
+        <path
+           d="m 252.7576,89.6773 0.6168,0.2419"
+           id="path86068" />
+        <path
+           d="m 253.3744,89.9192 0.2057,0.2419"
+           id="path86070" />
+        <path
+           d="m 253.5801,90.1611 0.2056,0.4838"
+           id="path86072" />
+        <path
+           d="m 253.7857,90.6449 v 0.7257"
+           id="path86074" />
+        <path
+           d="m 253.7857,91.3706 -0.2056,0.4838"
+           id="path86076" />
+        <path
+           d="m 253.5801,91.8544 -0.2057,0.242"
+           id="path86078" />
+        <path
+           d="m 253.3744,92.0964 -0.4112,0.2419"
+           id="path86080" />
+        <path
+           d="m 252.9632,92.3383 h -1.645"
+           id="path86082" />
+        <path
+           d="m 251.3182,92.3383 v -5.08"
+           id="path86084" />
+        <path
+           d="m 251.3182,87.2583 h 1.4394"
+           id="path86086" />
+        <path
+           d="m 252.7576,87.2583 0.4112,0.2419"
+           id="path86088" />
+        <path
+           d="m 253.1688,87.5002 0.2056,0.2419"
+           id="path86090" />
+        <path
+           d="m 253.3744,87.7421 0.2057,0.4838"
+           id="path86092" />
+        <path
+           d="m 253.5801,88.2259 v 0.4838"
+           id="path86094" />
+        <path
+           d="m 253.5801,88.7097 -0.2057,0.4838"
+           id="path86096" />
+        <path
+           d="m 253.3744,89.1935 -0.2056,0.2419"
+           id="path86098" />
+        <path
+           d="m 253.1688,89.4354 -0.4112,0.2419"
+           id="path86100" />
+        <path
+           d="m 252.7576,89.6773 h -1.4394"
+           id="path86102" />
+        <path
+           d="m 257.4868,88.9516 v 3.3867"
+           id="path86104" />
+        <path
+           d="m 255.6362,88.9516 v 2.6609"
+           id="path86106" />
+        <path
+           d="m 255.6362,91.6125 0.2057,0.4839"
+           id="path86108" />
+        <path
+           d="m 255.8419,92.0964 0.4112,0.2419"
+           id="path86110" />
+        <path
+           d="M 256.2531,92.3383 H 256.87"
+           id="path86112" />
+        <path
+           d="m 256.87,92.3383 0.4112,-0.2419"
+           id="path86114" />
+        <path
+           d="m 257.2812,92.0964 0.2056,-0.242"
+           id="path86116" />
+        <path
+           d="m 259.1318,88.9516 h 2.2618"
+           id="path86118" />
+        <path
+           d="m 261.3936,88.9516 -2.2618,3.3867"
+           id="path86120" />
+        <path
+           d="m 259.1318,92.3383 h 2.2618"
+           id="path86122" />
+        <path
+           d="m 262.6273,88.9516 h 2.2618"
+           id="path86124" />
+        <path
+           d="m 264.8891,88.9516 -2.2618,3.3867"
+           id="path86126" />
+        <path
+           d="m 262.6273,92.3383 h 2.2618"
+           id="path86128" />
+        <path
+           d="m 268.179,92.0964 -0.4112,0.2419"
+           id="path86130" />
+        <path
+           d="m 267.7678,92.3383 h -0.8225"
+           id="path86132" />
+        <path
+           d="M 266.9453,92.3383 266.534,92.0964"
+           id="path86134" />
+        <path
+           d="m 266.534,92.0964 -0.2056,-0.4839"
+           id="path86136" />
+        <path
+           d="M 266.3284,91.6125 V 89.6773"
+           id="path86138" />
+        <path
+           d="m 266.3284,89.6773 0.2056,-0.4838"
+           id="path86140" />
+        <path
+           d="m 266.534,89.1935 0.4113,-0.2419"
+           id="path86142" />
+        <path
+           d="m 266.9453,88.9516 h 0.8225"
+           id="path86144" />
+        <path
+           d="m 267.7678,88.9516 0.4112,0.2419"
+           id="path86146" />
+        <path
+           d="m 268.179,89.1935 0.2056,0.4838"
+           id="path86148" />
+        <path
+           d="m 268.3846,89.6773 v 0.4838"
+           id="path86150" />
+        <path
+           d="m 268.3846,90.1611 -2.0562,0.4838"
+           id="path86152" />
+        <path
+           d="M 270.2351,92.3383 V 88.9516"
+           id="path86154" />
+        <path
+           d="m 270.2351,89.9192 0.2057,-0.4838"
+           id="path86156" />
+        <path
+           d="m 270.4408,89.4354 0.2056,-0.2419"
+           id="path86158" />
+        <path
+           d="m 270.6464,89.1935 0.4112,-0.2419"
+           id="path86160" />
+        <path
+           d="m 271.0576,88.9516 h 0.4113"
+           id="path86162" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94300"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="279.12549"
+         y="130.1377"
+         textLength="5.1016998"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94152">R284</text>
+      <g
+         class="stroked-text"
+         id="g94266">
+        <desc
+           id="desc94154">R284</desc>
+        <path
+           d="m 277.7043,130.0822 -0.4233,-0.6047"
+           id="path94156" />
+        <path
+           d="m 276.9786,130.0822 v -1.27"
+           id="path94158" />
+        <path
+           d="m 276.9786,128.8122 h 0.4838"
+           id="path94160" />
+        <path
+           d="m 277.4624,128.8122 0.121,0.0605"
+           id="path94162" />
+        <path
+           d="m 277.5834,128.8727 0.0605,0.0605"
+           id="path94164" />
+        <path
+           d="m 277.6439,128.9332 0.0604,0.1209"
+           id="path94166" />
+        <path
+           d="m 277.7043,129.0541 v 0.1815"
+           id="path94168" />
+        <path
+           d="m 277.7043,129.2356 -0.0604,0.1209"
+           id="path94170" />
+        <path
+           d="m 277.6439,129.3565 -0.0605,0.0605"
+           id="path94172" />
+        <path
+           d="m 277.5834,129.417 -0.121,0.0605"
+           id="path94174" />
+        <path
+           d="m 277.4624,129.4775 h -0.4838"
+           id="path94176" />
+        <path
+           d="m 278.1882,128.9332 0.0604,-0.0605"
+           id="path94178" />
+        <path
+           d="m 278.2486,128.8727 0.121,-0.0605"
+           id="path94180" />
+        <path
+           d="m 278.3696,128.8122 h 0.3024"
+           id="path94182" />
+        <path
+           d="m 278.672,128.8122 0.1209,0.0605"
+           id="path94184" />
+        <path
+           d="m 278.7929,128.8727 0.0605,0.0605"
+           id="path94186" />
+        <path
+           d="m 278.8534,128.9332 0.0605,0.1209"
+           id="path94188" />
+        <path
+           d="m 278.9139,129.0541 v 0.121"
+           id="path94190" />
+        <path
+           d="m 278.9139,129.1751 -0.0605,0.1814"
+           id="path94192" />
+        <path
+           d="m 278.8534,129.3565 -0.7257,0.7257"
+           id="path94194" />
+        <path
+           d="m 278.1277,130.0822 h 0.7862"
+           id="path94196" />
+        <path
+           d="m 279.6396,129.3565 -0.121,-0.0605"
+           id="path94198" />
+        <path
+           d="m 279.5186,129.296 -0.0605,-0.0604"
+           id="path94200" />
+        <path
+           d="m 279.4581,129.2356 -0.0604,-0.121"
+           id="path94202" />
+        <path
+           d="m 279.3977,129.1146 v -0.0605"
+           id="path94204" />
+        <path
+           d="m 279.3977,129.0541 0.0604,-0.1209"
+           id="path94206" />
+        <path
+           d="m 279.4581,128.9332 0.0605,-0.0605"
+           id="path94208" />
+        <path
+           d="m 279.5186,128.8727 0.121,-0.0605"
+           id="path94210" />
+        <path
+           d="m 279.6396,128.8122 h 0.2419"
+           id="path94212" />
+        <path
+           d="m 279.8815,128.8122 0.1209,0.0605"
+           id="path94214" />
+        <path
+           d="m 280.0024,128.8727 0.0605,0.0605"
+           id="path94216" />
+        <path
+           d="m 280.0629,128.9332 0.0605,0.1209"
+           id="path94218" />
+        <path
+           d="m 280.1234,129.0541 v 0.0605"
+           id="path94220" />
+        <path
+           d="m 280.1234,129.1146 -0.0605,0.121"
+           id="path94222" />
+        <path
+           d="m 280.0629,129.2356 -0.0605,0.0604"
+           id="path94224" />
+        <path
+           d="m 280.0024,129.296 -0.1209,0.0605"
+           id="path94226" />
+        <path
+           d="m 279.8815,129.3565 h -0.2419"
+           id="path94228" />
+        <path
+           d="m 279.6396,129.3565 -0.121,0.0605"
+           id="path94230" />
+        <path
+           d="m 279.5186,129.417 -0.0605,0.0605"
+           id="path94232" />
+        <path
+           d="m 279.4581,129.4775 -0.0604,0.1209"
+           id="path94234" />
+        <path
+           d="m 279.3977,129.5984 v 0.2419"
+           id="path94236" />
+        <path
+           d="m 279.3977,129.8403 0.0604,0.121"
+           id="path94238" />
+        <path
+           d="m 279.4581,129.9613 0.0605,0.0605"
+           id="path94240" />
+        <path
+           d="m 279.5186,130.0218 0.121,0.0604"
+           id="path94242" />
+        <path
+           d="m 279.6396,130.0822 h 0.2419"
+           id="path94244" />
+        <path
+           d="m 279.8815,130.0822 0.1209,-0.0604"
+           id="path94246" />
+        <path
+           d="m 280.0024,130.0218 0.0605,-0.0605"
+           id="path94248" />
+        <path
+           d="m 280.0629,129.9613 0.0605,-0.121"
+           id="path94250" />
+        <path
+           d="m 280.1234,129.8403 v -0.2419"
+           id="path94252" />
+        <path
+           d="m 280.1234,129.5984 -0.0605,-0.1209"
+           id="path94254" />
+        <path
+           d="m 280.0629,129.4775 -0.0605,-0.0605"
+           id="path94256" />
+        <path
+           d="m 280.0024,129.417 -0.1209,-0.0605"
+           id="path94258" />
+        <path
+           d="m 281.2119,129.2356 v 0.8466"
+           id="path94260" />
+        <path
+           d="m 280.9095,128.7518 -0.3023,0.9071"
+           id="path94262" />
+        <path
+           d="m 280.6072,129.6589 h 0.7861"
+           id="path94264" />
+      </g>
+      <text
+         x="279.2269"
+         y="133.7682"
+         textLength="2.6826999"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94268">2K</text>
+      <g
+         class="stroked-text"
+         id="g94298">
+        <desc
+           id="desc94270">2K</desc>
+        <path
+           d="m 278.2291,132.5637 0.0604,-0.0605"
+           id="path94272" />
+        <path
+           d="m 278.2895,132.5032 0.121,-0.0605"
+           id="path94274" />
+        <path
+           d="m 278.4105,132.4427 h 0.3024"
+           id="path94276" />
+        <path
+           d="m 278.7129,132.4427 0.1209,0.0605"
+           id="path94278" />
+        <path
+           d="m 278.8338,132.5032 0.0605,0.0605"
+           id="path94280" />
+        <path
+           d="m 278.8943,132.5637 0.0605,0.1209"
+           id="path94282" />
+        <path
+           d="m 278.9548,132.6846 v 0.121"
+           id="path94284" />
+        <path
+           d="m 278.9548,132.8056 -0.0605,0.1814"
+           id="path94286" />
+        <path
+           d="m 278.8943,132.987 -0.7257,0.7257"
+           id="path94288" />
+        <path
+           d="m 278.1686,133.7127 h 0.7862"
+           id="path94290" />
+        <path
+           d="m 279.499,133.7127 v -1.27"
+           id="path94292" />
+        <path
+           d="m 280.2247,133.7127 -0.5442,-0.7257"
+           id="path94294" />
+        <path
+           d="m 280.2247,132.4427 -0.7257,0.7257"
+           id="path94296" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94306"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 278.638,131.318 h -2.54"
+         id="path94302" />
+      <path
+         d="m 281.178,131.318 h 2.54"
+         id="path94304" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94410"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="289.58041"
+         y="127.4182"
+         textLength="7.6416998"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94308">BUZZER</text>
+      <g
+         class="stroked-text"
+         id="g94408">
+        <desc
+           id="desc94310">BUZZER</desc>
+        <path
+           d="m 286.5869,126.6975 0.1814,0.0605"
+           id="path94312" />
+        <path
+           d="m 286.7683,126.758 0.0605,0.0604"
+           id="path94314" />
+        <path
+           d="m 286.8288,126.8184 0.0604,0.121"
+           id="path94316" />
+        <path
+           d="m 286.8892,126.9394 v 0.1814"
+           id="path94318" />
+        <path
+           d="m 286.8892,127.1208 -0.0604,0.121"
+           id="path94320" />
+        <path
+           d="m 286.8288,127.2418 -0.0605,0.0605"
+           id="path94322" />
+        <path
+           d="m 286.7683,127.3023 -0.121,0.0604"
+           id="path94324" />
+        <path
+           d="m 286.6473,127.3627 h -0.4838"
+           id="path94326" />
+        <path
+           d="m 286.1635,127.3627 v -1.27"
+           id="path94328" />
+        <path
+           d="m 286.1635,126.0927 h 0.4234"
+           id="path94330" />
+        <path
+           d="m 286.5869,126.0927 0.1209,0.0605"
+           id="path94332" />
+        <path
+           d="m 286.7078,126.1532 0.0605,0.0605"
+           id="path94334" />
+        <path
+           d="m 286.7683,126.2137 0.0605,0.1209"
+           id="path94336" />
+        <path
+           d="m 286.8288,126.3346 v 0.121"
+           id="path94338" />
+        <path
+           d="m 286.8288,126.4556 -0.0605,0.1209"
+           id="path94340" />
+        <path
+           d="m 286.7683,126.5765 -0.0605,0.0605"
+           id="path94342" />
+        <path
+           d="m 286.7078,126.637 -0.1209,0.0605"
+           id="path94344" />
+        <path
+           d="m 286.5869,126.6975 h -0.4234"
+           id="path94346" />
+        <path
+           d="m 287.4335,126.0927 v 1.0281"
+           id="path94348" />
+        <path
+           d="m 287.4335,127.1208 0.0605,0.121"
+           id="path94350" />
+        <path
+           d="m 287.494,127.2418 0.0605,0.0605"
+           id="path94352" />
+        <path
+           d="m 287.5545,127.3023 0.1209,0.0604"
+           id="path94354" />
+        <path
+           d="m 287.6754,127.3627 h 0.2419"
+           id="path94356" />
+        <path
+           d="m 287.9173,127.3627 0.121,-0.0604"
+           id="path94358" />
+        <path
+           d="m 288.0383,127.3023 0.0605,-0.0605"
+           id="path94360" />
+        <path
+           d="m 288.0988,127.2418 0.0604,-0.121"
+           id="path94362" />
+        <path
+           d="m 288.1592,127.1208 v -1.0281"
+           id="path94364" />
+        <path
+           d="m 288.6431,126.0927 h 0.8466"
+           id="path94366" />
+        <path
+           d="m 289.4897,126.0927 -0.8466,1.27"
+           id="path94368" />
+        <path
+           d="m 288.6431,127.3627 h 0.8466"
+           id="path94370" />
+        <path
+           d="m 289.8526,126.0927 h 0.8466"
+           id="path94372" />
+        <path
+           d="m 290.6992,126.0927 -0.8466,1.27"
+           id="path94374" />
+        <path
+           d="m 289.8526,127.3627 h 0.8466"
+           id="path94376" />
+        <path
+           d="m 291.183,126.6975 h 0.4234"
+           id="path94378" />
+        <path
+           d="M 291.7878,127.3627 H 291.183"
+           id="path94380" />
+        <path
+           d="m 291.183,127.3627 v -1.27"
+           id="path94382" />
+        <path
+           d="m 291.183,126.0927 h 0.6048"
+           id="path94384" />
+        <path
+           d="m 293.0577,127.3627 -0.4233,-0.6047"
+           id="path94386" />
+        <path
+           d="m 292.332,127.3627 v -1.27"
+           id="path94388" />
+        <path
+           d="m 292.332,126.0927 h 0.4838"
+           id="path94390" />
+        <path
+           d="m 292.8158,126.0927 0.121,0.0605"
+           id="path94392" />
+        <path
+           d="m 292.9368,126.1532 0.0605,0.0605"
+           id="path94394" />
+        <path
+           d="m 292.9973,126.2137 0.0604,0.1209"
+           id="path94396" />
+        <path
+           d="m 293.0577,126.3346 v 0.1815"
+           id="path94398" />
+        <path
+           d="m 293.0577,126.5161 -0.0604,0.1209"
+           id="path94400" />
+        <path
+           d="m 292.9973,126.637 -0.0605,0.0605"
+           id="path94402" />
+        <path
+           d="m 292.9368,126.6975 -0.121,0.0605"
+           id="path94404" />
+        <path
+           d="M 292.8158,126.758 H 292.332"
+           id="path94406" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94414"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 291.846,115.316 h 5.08"
+         id="path94412" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94436"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="291.33801"
+         y="115.951"
+         textLength="2.9851"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="end"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94416">1+</text>
+      <g
+         class="stroked-text"
+         id="g94434">
+        <desc
+           id="desc94418">1+</desc>
+        <path
+           d="m 289.4235,115.8955 h -0.7257"
+           id="path94420" />
+        <path
+           d="m 289.0606,115.8955 v -1.27"
+           id="path94422" />
+        <path
+           d="m 289.0606,114.6255 -0.1209,0.1815"
+           id="path94424" />
+        <path
+           d="m 288.9397,114.807 -0.121,0.1209"
+           id="path94426" />
+        <path
+           d="m 288.8187,114.9279 -0.1209,0.0605"
+           id="path94428" />
+        <path
+           d="m 289.9677,115.4117 h 0.9677"
+           id="path94430" />
+        <path
+           d="m 290.4515,115.8955 v -0.9676"
+           id="path94432" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94440"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 291.846,120.396 h 5.08"
+         id="path94438" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94756"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="291.33801"
+         y="121.031"
+         textLength="2.9851"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="end"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94442">2-</text>
+      <g
+         class="stroked-text"
+         id="g94468">
+        <desc
+           id="desc94444">2-</desc>
+        <path
+           d="m 288.6978,119.8265 0.0604,-0.0605"
+           id="path94446" />
+        <path
+           d="m 288.7582,119.766 0.121,-0.0605"
+           id="path94448" />
+        <path
+           d="m 288.8792,119.7055 h 0.3024"
+           id="path94450" />
+        <path
+           d="m 289.1816,119.7055 0.1209,0.0605"
+           id="path94452" />
+        <path
+           d="m 289.3025,119.766 0.0605,0.0605"
+           id="path94454" />
+        <path
+           d="m 289.363,119.8265 0.0605,0.1209"
+           id="path94456" />
+        <path
+           d="m 289.4235,119.9474 v 0.121"
+           id="path94458" />
+        <path
+           d="m 289.4235,120.0684 -0.0605,0.1814"
+           id="path94460" />
+        <path
+           d="m 289.363,120.2498 -0.7257,0.7257"
+           id="path94462" />
+        <path
+           d="m 288.6373,120.9755 h 0.7862"
+           id="path94464" />
+        <path
+           d="m 289.9677,120.4917 h 0.9677"
+           id="path94466" />
+      </g>
+      <text
+         x="300.02469"
+         y="130.9742"
+         textLength="5.1622"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94470">Q103</text>
+      <g
+         class="stroked-text"
+         id="g94592">
+        <desc
+           id="desc94472">Q103</desc>
+        <path
+           d="m 298.6942,131.0397 -0.121,-0.0605"
+           id="path94474" />
+        <path
+           d="m 298.5732,130.9792 -0.1209,-0.1209"
+           id="path94476" />
+        <path
+           d="m 298.4523,130.8583 -0.1814,-0.1815"
+           id="path94478" />
+        <path
+           d="m 298.2709,130.6768 -0.121,-0.0605"
+           id="path94480" />
+        <path
+           d="M 298.1499,130.6163 H 298.029"
+           id="path94482" />
+        <path
+           d="m 298.0894,130.9187 -0.1209,-0.0604"
+           id="path94484" />
+        <path
+           d="m 297.9685,130.8583 -0.121,-0.121"
+           id="path94486" />
+        <path
+           d="m 297.8475,130.7373 -0.0604,-0.2419"
+           id="path94488" />
+        <path
+           d="m 297.7871,130.4954 v -0.4233"
+           id="path94490" />
+        <path
+           d="m 297.7871,130.0721 0.0604,-0.2419"
+           id="path94492" />
+        <path
+           d="m 297.8475,129.8302 0.121,-0.121"
+           id="path94494" />
+        <path
+           d="m 297.9685,129.7092 0.1209,-0.0605"
+           id="path94496" />
+        <path
+           d="m 298.0894,129.6487 h 0.2419"
+           id="path94498" />
+        <path
+           d="m 298.3313,129.6487 0.121,0.0605"
+           id="path94500" />
+        <path
+           d="m 298.4523,129.7092 0.1209,0.121"
+           id="path94502" />
+        <path
+           d="m 298.5732,129.8302 0.0605,0.2419"
+           id="path94504" />
+        <path
+           d="m 298.6337,130.0721 v 0.4233"
+           id="path94506" />
+        <path
+           d="m 298.6337,130.4954 -0.0605,0.2419"
+           id="path94508" />
+        <path
+           d="m 298.5732,130.7373 -0.1209,0.121"
+           id="path94510" />
+        <path
+           d="m 298.4523,130.8583 -0.121,0.0604"
+           id="path94512" />
+        <path
+           d="m 298.3313,130.9187 h -0.2419"
+           id="path94514" />
+        <path
+           d="m 299.8433,130.9187 h -0.7257"
+           id="path94516" />
+        <path
+           d="m 299.4804,130.9187 v -1.27"
+           id="path94518" />
+        <path
+           d="m 299.4804,129.6487 -0.1209,0.1815"
+           id="path94520" />
+        <path
+           d="m 299.3595,129.8302 -0.121,0.1209"
+           id="path94522" />
+        <path
+           d="m 299.2385,129.9511 -0.1209,0.0605"
+           id="path94524" />
+        <path
+           d="m 300.6294,129.6487 h 0.121"
+           id="path94526" />
+        <path
+           d="m 300.7504,129.6487 0.1209,0.0605"
+           id="path94528" />
+        <path
+           d="m 300.8713,129.7092 0.0605,0.0605"
+           id="path94530" />
+        <path
+           d="m 300.9318,129.7697 0.0605,0.1209"
+           id="path94532" />
+        <path
+           d="m 300.9923,129.8906 0.0605,0.2419"
+           id="path94534" />
+        <path
+           d="m 301.0528,130.1325 v 0.3024"
+           id="path94536" />
+        <path
+           d="m 301.0528,130.4349 -0.0605,0.2419"
+           id="path94538" />
+        <path
+           d="m 300.9923,130.6768 -0.0605,0.121"
+           id="path94540" />
+        <path
+           d="m 300.9318,130.7978 -0.0605,0.0605"
+           id="path94542" />
+        <path
+           d="m 300.8713,130.8583 -0.1209,0.0604"
+           id="path94544" />
+        <path
+           d="m 300.7504,130.9187 h -0.121"
+           id="path94546" />
+        <path
+           d="m 300.6294,130.9187 -0.1209,-0.0604"
+           id="path94548" />
+        <path
+           d="m 300.5085,130.8583 -0.0605,-0.0605"
+           id="path94550" />
+        <path
+           d="m 300.448,130.7978 -0.0605,-0.121"
+           id="path94552" />
+        <path
+           d="m 300.3875,130.6768 -0.0604,-0.2419"
+           id="path94554" />
+        <path
+           d="m 300.3271,130.4349 v -0.3024"
+           id="path94556" />
+        <path
+           d="m 300.3271,130.1325 0.0604,-0.2419"
+           id="path94558" />
+        <path
+           d="m 300.3875,129.8906 0.0605,-0.1209"
+           id="path94560" />
+        <path
+           d="m 300.448,129.7697 0.0605,-0.0605"
+           id="path94562" />
+        <path
+           d="m 300.5085,129.7092 0.1209,-0.0605"
+           id="path94564" />
+        <path
+           d="m 301.4761,129.6487 h 0.7862"
+           id="path94566" />
+        <path
+           d="m 302.2623,129.6487 -0.4234,0.4838"
+           id="path94568" />
+        <path
+           d="m 301.8389,130.1325 h 0.1815"
+           id="path94570" />
+        <path
+           d="m 302.0204,130.1325 0.1209,0.0605"
+           id="path94572" />
+        <path
+           d="m 302.1413,130.193 0.0605,0.0605"
+           id="path94574" />
+        <path
+           d="m 302.2018,130.2535 0.0605,0.1209"
+           id="path94576" />
+        <path
+           d="m 302.2623,130.3744 v 0.3024"
+           id="path94578" />
+        <path
+           d="m 302.2623,130.6768 -0.0605,0.121"
+           id="path94580" />
+        <path
+           d="m 302.2018,130.7978 -0.0605,0.0605"
+           id="path94582" />
+        <path
+           d="m 302.1413,130.8583 -0.1209,0.0604"
+           id="path94584" />
+        <path
+           d="m 302.0204,130.9187 h -0.3629"
+           id="path94586" />
+        <path
+           d="m 301.6575,130.9187 -0.1209,-0.0604"
+           id="path94588" />
+        <path
+           d="m 301.5366,130.8583 -0.0605,-0.0605"
+           id="path94590" />
+      </g>
+      <text
+         x="300.31491"
+         y="133.26019"
+         textLength="6.2507"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94594">S9013</text>
+      <g
+         class="stroked-text"
+         id="g94754">
+        <desc
+           id="desc94596">S9013</desc>
+        <path
+           d="m 297.5331,133.1443 0.1814,0.0604"
+           id="path94598" />
+        <path
+           d="m 297.7145,133.2047 h 0.3024"
+           id="path94600" />
+        <path
+           d="m 298.0169,133.2047 0.1209,-0.0604"
+           id="path94602" />
+        <path
+           d="m 298.1378,133.1443 0.0605,-0.0605"
+           id="path94604" />
+        <path
+           d="m 298.1983,133.0838 0.0605,-0.121"
+           id="path94606" />
+        <path
+           d="m 298.2588,132.9628 v -0.1209"
+           id="path94608" />
+        <path
+           d="m 298.2588,132.8419 -0.0605,-0.121"
+           id="path94610" />
+        <path
+           d="m 298.1983,132.7209 -0.0605,-0.0605"
+           id="path94612" />
+        <path
+           d="M 298.1378,132.6604 298.0169,132.6"
+           id="path94614" />
+        <path
+           d="m 298.0169,132.6 -0.2419,-0.0605"
+           id="path94616" />
+        <path
+           d="m 297.775,132.5395 -0.121,-0.0605"
+           id="path94618" />
+        <path
+           d="m 297.654,132.479 -0.0605,-0.0605"
+           id="path94620" />
+        <path
+           d="m 297.5935,132.4185 -0.0604,-0.1209"
+           id="path94622" />
+        <path
+           d="m 297.5331,132.2976 v -0.121"
+           id="path94624" />
+        <path
+           d="m 297.5331,132.1766 0.0604,-0.1209"
+           id="path94626" />
+        <path
+           d="m 297.5935,132.0557 0.0605,-0.0605"
+           id="path94628" />
+        <path
+           d="m 297.654,131.9952 0.121,-0.0605"
+           id="path94630" />
+        <path
+           d="m 297.775,131.9347 h 0.3023"
+           id="path94632" />
+        <path
+           d="m 298.0773,131.9347 0.1815,0.0605"
+           id="path94634" />
+        <path
+           d="m 298.8635,133.2047 h 0.2419"
+           id="path94636" />
+        <path
+           d="m 299.1054,133.2047 0.121,-0.0604"
+           id="path94638" />
+        <path
+           d="m 299.2264,133.1443 0.0604,-0.0605"
+           id="path94640" />
+        <path
+           d="m 299.2868,133.0838 0.121,-0.1815"
+           id="path94642" />
+        <path
+           d="m 299.4078,132.9023 0.0605,-0.2419"
+           id="path94644" />
+        <path
+           d="m 299.4683,132.6604 v -0.4838"
+           id="path94646" />
+        <path
+           d="m 299.4683,132.1766 -0.0605,-0.1209"
+           id="path94648" />
+        <path
+           d="m 299.4078,132.0557 -0.0605,-0.0605"
+           id="path94650" />
+        <path
+           d="m 299.3473,131.9952 -0.1209,-0.0605"
+           id="path94652" />
+        <path
+           d="m 299.2264,131.9347 h -0.2419"
+           id="path94654" />
+        <path
+           d="m 298.9845,131.9347 -0.121,0.0605"
+           id="path94656" />
+        <path
+           d="m 298.8635,131.9952 -0.0605,0.0605"
+           id="path94658" />
+        <path
+           d="m 298.803,132.0557 -0.0604,0.1209"
+           id="path94660" />
+        <path
+           d="m 298.7426,132.1766 v 0.3024"
+           id="path94662" />
+        <path
+           d="m 298.7426,132.479 0.0604,0.121"
+           id="path94664" />
+        <path
+           d="m 298.803,132.6 0.0605,0.0604"
+           id="path94666" />
+        <path
+           d="m 298.8635,132.6604 0.121,0.0605"
+           id="path94668" />
+        <path
+           d="m 298.9845,132.7209 h 0.2419"
+           id="path94670" />
+        <path
+           d="m 299.2264,132.7209 0.1209,-0.0605"
+           id="path94672" />
+        <path
+           d="M 299.3473,132.6604 299.4078,132.6"
+           id="path94674" />
+        <path
+           d="m 299.4078,132.6 0.0605,-0.121"
+           id="path94676" />
+        <path
+           d="m 300.2544,131.9347 h 0.121"
+           id="path94678" />
+        <path
+           d="m 300.3754,131.9347 0.1209,0.0605"
+           id="path94680" />
+        <path
+           d="m 300.4963,131.9952 0.0605,0.0605"
+           id="path94682" />
+        <path
+           d="m 300.5568,132.0557 0.0605,0.1209"
+           id="path94684" />
+        <path
+           d="m 300.6173,132.1766 0.0605,0.2419"
+           id="path94686" />
+        <path
+           d="m 300.6778,132.4185 v 0.3024"
+           id="path94688" />
+        <path
+           d="m 300.6778,132.7209 -0.0605,0.2419"
+           id="path94690" />
+        <path
+           d="m 300.6173,132.9628 -0.0605,0.121"
+           id="path94692" />
+        <path
+           d="m 300.5568,133.0838 -0.0605,0.0605"
+           id="path94694" />
+        <path
+           d="m 300.4963,133.1443 -0.1209,0.0604"
+           id="path94696" />
+        <path
+           d="m 300.3754,133.2047 h -0.121"
+           id="path94698" />
+        <path
+           d="m 300.2544,133.2047 -0.1209,-0.0604"
+           id="path94700" />
+        <path
+           d="m 300.1335,133.1443 -0.0605,-0.0605"
+           id="path94702" />
+        <path
+           d="m 300.073,133.0838 -0.0605,-0.121"
+           id="path94704" />
+        <path
+           d="m 300.0125,132.9628 -0.0604,-0.2419"
+           id="path94706" />
+        <path
+           d="m 299.9521,132.7209 v -0.3024"
+           id="path94708" />
+        <path
+           d="m 299.9521,132.4185 0.0604,-0.2419"
+           id="path94710" />
+        <path
+           d="m 300.0125,132.1766 0.0605,-0.1209"
+           id="path94712" />
+        <path
+           d="m 300.073,132.0557 0.0605,-0.0605"
+           id="path94714" />
+        <path
+           d="m 300.1335,131.9952 0.1209,-0.0605"
+           id="path94716" />
+        <path
+           d="m 301.8873,133.2047 h -0.7257"
+           id="path94718" />
+        <path
+           d="m 301.5244,133.2047 v -1.27"
+           id="path94720" />
+        <path
+           d="m 301.5244,131.9347 -0.1209,0.1815"
+           id="path94722" />
+        <path
+           d="m 301.4035,132.1162 -0.121,0.1209"
+           id="path94724" />
+        <path
+           d="m 301.2825,132.2371 -0.1209,0.0605"
+           id="path94726" />
+        <path
+           d="m 302.3106,131.9347 h 0.7862"
+           id="path94728" />
+        <path
+           d="m 303.0968,131.9347 -0.4234,0.4838"
+           id="path94730" />
+        <path
+           d="m 302.6734,132.4185 h 0.1815"
+           id="path94732" />
+        <path
+           d="m 302.8549,132.4185 0.1209,0.0605"
+           id="path94734" />
+        <path
+           d="m 302.9758,132.479 0.0605,0.0605"
+           id="path94736" />
+        <path
+           d="m 303.0363,132.5395 0.0605,0.1209"
+           id="path94738" />
+        <path
+           d="m 303.0968,132.6604 v 0.3024"
+           id="path94740" />
+        <path
+           d="m 303.0968,132.9628 -0.0605,0.121"
+           id="path94742" />
+        <path
+           d="m 303.0363,133.0838 -0.0605,0.0605"
+           id="path94744" />
+        <path
+           d="m 302.9758,133.1443 -0.1209,0.0604"
+           id="path94746" />
+        <path
+           d="M 302.8549,133.2047 H 302.492"
+           id="path94748" />
+        <path
+           d="m 302.492,133.2047 -0.1209,-0.0604"
+           id="path94750" />
+        <path
+           d="m 302.3711,133.1443 -0.0605,-0.0605"
+           id="path94752" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94764"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 294.386,131.318 h -2.54"
+         id="path94758" />
+      <path
+         d="m 296.926,128.778 v -2.54"
+         id="path94760" />
+      <path
+         d="m 296.926,133.858 v 2.54"
+         id="path94762" />
+    </g>
+    <g
+       style="fill:none;stroke:#006464;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94942"
+       transform="translate(-96.741711,107.78497)">
+      <text
+         x="282.42749"
+         y="136.4877"
+         textLength="5.1016998"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94766">R302</text>
+      <g
+         class="stroked-text"
+         id="g94878">
+        <desc
+           id="desc94768">R302</desc>
+        <path
+           d="m 281.0063,136.4322 -0.4233,-0.6047"
+           id="path94770" />
+        <path
+           d="m 280.2806,136.4322 v -1.27"
+           id="path94772" />
+        <path
+           d="m 280.2806,135.1622 h 0.4838"
+           id="path94774" />
+        <path
+           d="m 280.7644,135.1622 0.121,0.0605"
+           id="path94776" />
+        <path
+           d="m 280.8854,135.2227 0.0605,0.0605"
+           id="path94778" />
+        <path
+           d="m 280.9459,135.2832 0.0604,0.1209"
+           id="path94780" />
+        <path
+           d="m 281.0063,135.4041 v 0.1815"
+           id="path94782" />
+        <path
+           d="m 281.0063,135.5856 -0.0604,0.1209"
+           id="path94784" />
+        <path
+           d="m 280.9459,135.7065 -0.0605,0.0605"
+           id="path94786" />
+        <path
+           d="m 280.8854,135.767 -0.121,0.0605"
+           id="path94788" />
+        <path
+           d="m 280.7644,135.8275 h -0.4838"
+           id="path94790" />
+        <path
+           d="m 281.4297,135.1622 h 0.7862"
+           id="path94792" />
+        <path
+           d="m 282.2159,135.1622 -0.4234,0.4838"
+           id="path94794" />
+        <path
+           d="m 281.7925,135.646 h 0.1815"
+           id="path94796" />
+        <path
+           d="m 281.974,135.646 0.1209,0.0605"
+           id="path94798" />
+        <path
+           d="m 282.0949,135.7065 0.0605,0.0605"
+           id="path94800" />
+        <path
+           d="m 282.1554,135.767 0.0605,0.1209"
+           id="path94802" />
+        <path
+           d="m 282.2159,135.8879 v 0.3024"
+           id="path94804" />
+        <path
+           d="m 282.2159,136.1903 -0.0605,0.121"
+           id="path94806" />
+        <path
+           d="m 282.1554,136.3113 -0.0605,0.0605"
+           id="path94808" />
+        <path
+           d="m 282.0949,136.3718 -0.1209,0.0604"
+           id="path94810" />
+        <path
+           d="m 281.974,136.4322 h -0.3629"
+           id="path94812" />
+        <path
+           d="m 281.6111,136.4322 -0.1209,-0.0604"
+           id="path94814" />
+        <path
+           d="m 281.4902,136.3718 -0.0605,-0.0605"
+           id="path94816" />
+        <path
+           d="m 283.002,135.1622 h 0.121"
+           id="path94818" />
+        <path
+           d="m 283.123,135.1622 0.1209,0.0605"
+           id="path94820" />
+        <path
+           d="m 283.2439,135.2227 0.0605,0.0605"
+           id="path94822" />
+        <path
+           d="m 283.3044,135.2832 0.0605,0.1209"
+           id="path94824" />
+        <path
+           d="m 283.3649,135.4041 0.0605,0.2419"
+           id="path94826" />
+        <path
+           d="m 283.4254,135.646 v 0.3024"
+           id="path94828" />
+        <path
+           d="m 283.4254,135.9484 -0.0605,0.2419"
+           id="path94830" />
+        <path
+           d="m 283.3649,136.1903 -0.0605,0.121"
+           id="path94832" />
+        <path
+           d="m 283.3044,136.3113 -0.0605,0.0605"
+           id="path94834" />
+        <path
+           d="m 283.2439,136.3718 -0.1209,0.0604"
+           id="path94836" />
+        <path
+           d="m 283.123,136.4322 h -0.121"
+           id="path94838" />
+        <path
+           d="m 283.002,136.4322 -0.1209,-0.0604"
+           id="path94840" />
+        <path
+           d="m 282.8811,136.3718 -0.0605,-0.0605"
+           id="path94842" />
+        <path
+           d="m 282.8206,136.3113 -0.0605,-0.121"
+           id="path94844" />
+        <path
+           d="m 282.7601,136.1903 -0.0604,-0.2419"
+           id="path94846" />
+        <path
+           d="M 282.6997,135.9484 V 135.646"
+           id="path94848" />
+        <path
+           d="m 282.6997,135.646 0.0604,-0.2419"
+           id="path94850" />
+        <path
+           d="m 282.7601,135.4041 0.0605,-0.1209"
+           id="path94852" />
+        <path
+           d="m 282.8206,135.2832 0.0605,-0.0605"
+           id="path94854" />
+        <path
+           d="m 282.8811,135.2227 0.1209,-0.0605"
+           id="path94856" />
+        <path
+           d="m 283.9092,135.2832 0.0604,-0.0605"
+           id="path94858" />
+        <path
+           d="m 283.9696,135.2227 0.121,-0.0605"
+           id="path94860" />
+        <path
+           d="m 284.0906,135.1622 h 0.3024"
+           id="path94862" />
+        <path
+           d="m 284.393,135.1622 0.1209,0.0605"
+           id="path94864" />
+        <path
+           d="m 284.5139,135.2227 0.0605,0.0605"
+           id="path94866" />
+        <path
+           d="m 284.5744,135.2832 0.0605,0.1209"
+           id="path94868" />
+        <path
+           d="m 284.6349,135.4041 v 0.121"
+           id="path94870" />
+        <path
+           d="m 284.6349,135.5251 -0.0605,0.1814"
+           id="path94872" />
+        <path
+           d="m 284.5744,135.7065 -0.7257,0.7257"
+           id="path94874" />
+        <path
+           d="m 283.8487,136.4322 h 0.7862"
+           id="path94876" />
+      </g>
+      <text
+         x="283.03229"
+         y="138.5197"
+         textLength="3.8922"
+         font-size="1.6933px"
+         lengthAdjust="spacingAndGlyphs"
+         text-anchor="middle"
+         opacity="0"
+         stroke-opacity="0"
+         id="text94880">10K</text>
+      <g
+         class="stroked-text"
+         id="g94940">
+        <desc
+           id="desc94882">10K</desc>
+        <path
+           d="m 282.1554,138.4642 h -0.7257"
+           id="path94884" />
+        <path
+           d="m 281.7925,138.4642 v -1.27"
+           id="path94886" />
+        <path
+           d="m 281.7925,137.1942 -0.1209,0.1815"
+           id="path94888" />
+        <path
+           d="m 281.6716,137.3757 -0.121,0.1209"
+           id="path94890" />
+        <path
+           d="m 281.5506,137.4966 -0.1209,0.0605"
+           id="path94892" />
+        <path
+           d="m 282.9415,137.1942 h 0.121"
+           id="path94894" />
+        <path
+           d="m 283.0625,137.1942 0.1209,0.0605"
+           id="path94896" />
+        <path
+           d="m 283.1834,137.2547 0.0605,0.0605"
+           id="path94898" />
+        <path
+           d="m 283.2439,137.3152 0.0605,0.1209"
+           id="path94900" />
+        <path
+           d="m 283.3044,137.4361 0.0605,0.2419"
+           id="path94902" />
+        <path
+           d="m 283.3649,137.678 v 0.3024"
+           id="path94904" />
+        <path
+           d="m 283.3649,137.9804 -0.0605,0.2419"
+           id="path94906" />
+        <path
+           d="m 283.3044,138.2223 -0.0605,0.121"
+           id="path94908" />
+        <path
+           d="m 283.2439,138.3433 -0.0605,0.0605"
+           id="path94910" />
+        <path
+           d="m 283.1834,138.4038 -0.1209,0.0604"
+           id="path94912" />
+        <path
+           d="m 283.0625,138.4642 h -0.121"
+           id="path94914" />
+        <path
+           d="m 282.9415,138.4642 -0.1209,-0.0604"
+           id="path94916" />
+        <path
+           d="m 282.8206,138.4038 -0.0605,-0.0605"
+           id="path94918" />
+        <path
+           d="m 282.7601,138.3433 -0.0605,-0.121"
+           id="path94920" />
+        <path
+           d="m 282.6996,138.2223 -0.0604,-0.2419"
+           id="path94922" />
+        <path
+           d="M 282.6392,137.9804 V 137.678"
+           id="path94924" />
+        <path
+           d="m 282.6392,137.678 0.0604,-0.2419"
+           id="path94926" />
+        <path
+           d="m 282.6996,137.4361 0.0605,-0.1209"
+           id="path94928" />
+        <path
+           d="m 282.7601,137.3152 0.0605,-0.0605"
+           id="path94930" />
+        <path
+           d="m 282.8206,137.2547 0.1209,-0.0605"
+           id="path94932" />
+        <path
+           d="m 283.9091,138.4642 v -1.27"
+           id="path94934" />
+        <path
+           d="m 284.6348,138.4642 -0.5442,-0.7257"
+           id="path94936" />
+        <path
+           d="m 284.6348,137.1942 -0.7257,0.7257"
+           id="path94938" />
+      </g>
+    </g>
+    <g
+       style="fill:none;stroke:#840000;stroke-width:0.1524;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="g94948"
+       transform="translate(-96.741711,107.78497)">
+      <path
+         d="m 286.258,137.414 v 2.54"
+         id="path94944" />
+      <path
+         d="m 286.258,134.874 v -2.54"
+         id="path94946" />
+    </g>
+  </g>
+</svg>

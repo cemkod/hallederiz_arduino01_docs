@@ -1,9 +1,13 @@
 # Proje 02 - Buton
 
+## Giriş
+
 Bu projede Kit üzerindeki butonu nasıl okuyabileceğini öğreneceksin.
 
 Arduino'nun dijital pinlerinin giriş olarak da ayarlanabileğini anlatmıştım. Bu 
 kez butonun bağlı olduğu 7 nolu pin'i kullanarak LED'i kontrol etmeyi deneyeceğiz.
+
+## Elektronik 
 
 <img src="../images/buton.svg" alt="Buton devresi" style="height: 400px;">
 
@@ -18,6 +22,8 @@ Butonun da bir tarafı arduino'ya bir tarafı ise şaseye, yani USB'den aldığ�
 besleme geriliminin eksi tarafına bağlı. Böylece butona basıldığında pin üzerinde
 şase ile aynı gerilim seviyesi, yani sıfır volt oluyor. Bu da pin'in değerinin düşük
 (LOW) olarak okunmasını sağlıyor.
+
+## Kod
 
 ``` c
 // Burada butonPin ve LedPin isimli iki tane tamsayı (int) tipinde değişken
@@ -56,6 +62,8 @@ void loop() {
 Kod çalıştığında butona basılı tuttuğun sürece LED yanacak, bıraktığında ise sönecek. 
 
 --8<-- "snippets/sorun-giderme.md"
+
+## Egzersizler
 
 Böylece digitalRead() fonksiyonunu kullanarak nasıl bir girişi okuyabileceğini
 öğrenmiş oldun. Bu projede öğrendiklerinle aşağıdakileri yapabilir misin?

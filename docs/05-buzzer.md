@@ -1,6 +1,13 @@
 # Proje 05 - Buzzer
 
+## Giriş
+
 Bu projede Arduino'nun nasıl ses çıkarabileceğini öğreneceksin. Tabii ki profesyonel bir müzik aleti kadar kaliteli olmayacak ama... internetin en ünlü şarkısını çalmaya yetecek kadar iyi! 🎵
+
+## Elektronik
+
+<img src="../images/buzzer.svg" alt="Buzzer devresi" style="height: 400px;">
+
 
 **Yazılım Kavramı**: 
 - `tone()` fonksiyonu
@@ -31,7 +38,6 @@ const int SI_4 = 987;
 // Es (sessizlik)
 const int ES = -1;
 
-// Transpoze edilmiş melodi (A minor) - Orijinalden 5 yarıton aşağı
 int melodi[] = {
   MI_3, MI_3, RE_3, RE_3,
   DO_4, DO_4, LA_3, MI_3, MI_3, RE_3, RE_3, LA_3, LA_3, SOL_3, FA_3, MI_3,
@@ -79,7 +85,7 @@ void loop() {
 
 --8<-- "snippets/yukleme.md"
 
-Kod çalıştığında buzzer'dan çalan bir melodi duyacaksın. 
+Kod çalıştığında buzzer'dan çalan tanıdık bir melodi duyacaksın. 
 
 --8<-- "snippets/sorun-giderme.md"
 
