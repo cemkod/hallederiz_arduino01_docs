@@ -18,6 +18,16 @@ Bu projede üç farklı modülü birlikte kullanıyoruz:
 
 LCD'nin cursor() ve blink() özelliklerini kullanarak gerçek bir yazı editörü gibi imleç görünümü sağlayacağız. Bu da animasyonu daha gerçekçi kılacak.
 
+## Hatırlayalım
+
+Bu projede **Proje 05 - Buzzer** dersinde öğrendiğin iki önemli kavramı kullanacağız:
+
+**Array (Dizi)**: Aynı türde birden fazla değeri bir arada saklamamızı sağlar. Müzik notalarının frekanslarını ve sürelerini tutmak için kullanacağız.
+
+**For Loop (Döngü)**: Aynı işlemi tekrar tekrar yapmamızı sağlar. Müzik dizisindeki tüm notaları sırayla çalmak için kullanacağız.
+
+Bu kavramları buzzer dersinde detaylı öğrenmiştik. Şimdi onları LCD kontrolü ve animasyonla birleştireceğiz!
+
 ## Kod
 
 ``` c

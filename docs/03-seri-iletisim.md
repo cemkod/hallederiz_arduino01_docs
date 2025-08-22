@@ -6,6 +6,26 @@ Bu projede Arduino ile bilgisayar arasında nasıl seri iletişim yapabileceğin
 
 Arduino'yu bilgisayarına bağlayan USB kablosu, Arduino'ya kod yüklemenin yanında bilgisayarla Arduino arasında veri alıp vermeye de yarıyor. Arduino IDE'nin içinde bu iletişimi test edebileceğin bir seri konsol da bulunuyor. Seri konsolun nasıl kullanıldığından da bahsedeceğim. 
 
+## Yeni Kavramlar
+
+### Serial.begin() Fonksiyonu
+**Serial.begin()** fonksiyonu, Arduino'nun seri haberleşme özelliğini başlatır. Parantez içindeki sayı (örneğin 115200), iletişim hızını belirtir. Bu fonksiyon çalıştırılmadan Arduino bilgisayarla konuşamaz. Telefon konuşması başlamadan önce "Alo?" demek gibi düşünebilirsin.
+
+### Baud Rate (İletişim Hızı)
+**Baud rate**, saniyede kaç bit veri gönderileceğini belirtir. 115200 baud = saniyede 115200 bit demektir. Yaygın hızlar: 9600, 19200, 38400, 57600, 115200. Hem Arduino'da hem de bilgisayar tarafında aynı hız seçilmesi gerekir, yoksa mesajlar anlaşılmaz.
+
+### ++ Artış Operatörü
+**++** operatörü, bir değişkenin değerini 1 artırır. `sayi++` ifadesi `sayi = sayi + 1` ile aynı işi yapar ama daha kısa yazılır. Sayaç uygulamaları için çok kullanışlıdır. Tersine çalışan **--** operatörü de vardır.
+
+### USB Üzerinden Veri İletişimi
+Arduino'daki **USB portu**, aslında seri iletişimi USB protokolüne dönüştürür. Arduino'da bulunan özel çip (USB-Serial dönüştürücü) sayesinde bilgisayar Arduino'yu seri port olarak görür. Bu sayede USB kablosu hem programlama hem de veri iletişimi için kullanılır.
+
+### Arduino IDE Seri Monitor
+**Seri Monitor**, Arduino IDE'nin alt kısmındaki büyüteç simgesiyle açılır. Gelen mesajları gösterir ve Arduino'ya mesaj göndermenize yarar. Sağ alt köşesinden baud rate'i değiştirebilir, satır sonu karakterlerini ayarlayabilirsin.
+
+### Seri İletişim Protokolü
+**Seri iletişim**, verileri tek seferde bir bit olarak gönderir. Her veri paketi start bit ile başlar, 8 bit veri içerir, stop bit ile biter. Telefon hattında konuşma gibi: konuşmaya başladığını belirt, mesajını söyle, bittiğini belirt.
+
 ## Kod
 
 ``` c

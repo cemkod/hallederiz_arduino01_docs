@@ -23,6 +23,23 @@ besleme geriliminin eksi tarafına bağlı. Böylece butona basıldığında pin
 şase ile aynı gerilim seviyesi, yani sıfır volt oluyor. Bu da pin'in değerinin düşük
 (LOW) olarak okunmasını sağlıyor.
 
+## Yeni Kavramlar
+
+### INPUT Sabiti
+**INPUT**, Arduino'nun önceden tanımlanmış bir sabitidir. Bir pini giriş olarak ayarlamak için `pinMode()` fonksiyonunda kullanılır. Bu sabit sayesinde pin üzerinden gelen elektriksel sinyalleri okuyabilirsin.
+
+### Pull-up Direnci 
+**Pull-up direnci**, dijital giriş pinlerinin belirsizlik sorununu çözer. Hiçbir şeye bağlı olmayan bir pin "havada asılı" kalır ve değeri sürekli değişir. Pull-up direnci, buton basılmadığında pini 5V'a çekerek sabit HIGH değer sağlar. Su musluğu kapalıyken bile boruda basınç olması gibi düşünebilirsin.
+
+### Karşılaştırma Operatörü (==)
+**==** operatörü, iki değerin birbirine eşit olup olmadığını kontrol eder. `digitalRead(butonPin) == LOW` ifadesi "buton pininin değeri LOW'a eşit mi?" sorusunu sorar. Eğer eşitse `true` (doğru), değilse `false` (yanlış) sonucu döner.
+
+### Boolean Mantığı
+Arduino'da **HIGH** ve **LOW** değerleri aslında boolean (mantıksal) değerlerdir. HIGH = true (doğru/1), LOW = false (yanlış/0) anlamına gelir. Bu ikili sistem tüm dijital elektroniğin temelidir.
+
+### Dijital Okuma Prensibi
+`digitalRead()` fonksiyonu, pin üzerindeki gerilimi okur ve yorumlar. 3.3V'un üzerindeki gerilimi HIGH, 1.7V'un altındakini LOW olarak kabul eder. Bu sayede elektronik sinyaller sayısal değerlere dönüşür.
+
 ## Kod
 
 ``` c
@@ -69,7 +86,7 @@ Böylece digitalRead() fonksiyonunu kullanarak nasıl bir girişi okuyabileceği
 öğrenmiş oldun. Bu projede öğrendiklerinle aşağıdakileri yapabilir misin?
 
 1. LED'in butona basılmadığı zaman yanıp, basıldığında sönmesini sağlayabilir misin? [^1]
-2. LED'in butona basıldığında 1 saniye yanıp sonra sönmesini sağlayabilir misin? [^2]
+2. LED'in butona her basıldığında 1 saniye yanıp sonra sönmesini sağlayabilir misin? [^2]
 
 [^1]:
   Tek bir kelimeyi değiştirerek yapmak mümkün.

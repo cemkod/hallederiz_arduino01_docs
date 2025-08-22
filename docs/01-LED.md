@@ -9,17 +9,42 @@ Arduino'da elektronik devreleri kontrol etmek için bir takım giriş ve
 dijital pinine bağlı ufak bir devreden oluşuyor. Bu devrenin şemasını aşağıda
 bulabilirsin.
 
-## Elektronik
+## Yeni Kavramlar
+
+### Temel Elektronik Kavramları
+
+Elektronik devrelerde iki temel kavram vardır:
+
+**Gerilim (Voltage)**: Elektrik potansiyeli farkıdır, volt (V) ile ölçülür. Su borusundaki basınç gibi düşünebilirsin. Arduino'da genellikle 5V kullanırız.
+
+**Akım (Current)**: Elektrik yüklerinin hareketidir, amper (A) ile ölçülür. Su borusundaki su akışı gibi düşünebilirsin. LED'lerin yanması için belirli bir akıma ihtiyaçları vardır.
+
+### Programlama Kavramları
+
+Bu projede öğreneceğin temel programlama kavramları:
+
+**Fonksiyonlar**: Belirli bir görevi yapan kod blokları. Arduino'da iki özel tanımlı fonksiyon vardır:
+- `setup()`: Sadece bir kez çalışır (başlangıçta)
+- `loop()`: Sürekli tekrarlanır
+
+Bunlar dışında biz de kodumuzun parçalarını yeniden yazmak zorunda kalmadan, tekrar tekrar kullanılabilir hale getirmek, veya kodun yaptığı işlemleri anlamlı gruplar altında toplamak için kendi fonksiyonlarımızı tanımlayabiliriz.
+
+**void** anahtar kelimesi: Bu fonksiyonun herhangi bir değer döndürmediğini belirtir. Sadece işlem yapar, sonuç döndürmez.
+
+**OUTPUT sabiti**: Arduino'nun önceden tanımlanmış bir sabiti. Bir pini çıkış olarak ayarlamak için kullanılır.
+
+## Devre Açıklaması
 
 <img src="../images/LED.svg" alt="LED devresi" style="height: 400px;">
 
-Devrede Q1 olarak işaretlenmiş eleman bir transistör. Transistörleri elektrikle 
+Devrede Q1 olarak işaretlenmiş eleman bir **transistör**. Transistörleri elektrikle 
 açılıp kapanabilen bir anahtar gibi düşünebilirsin. Şema'da solunda gözüken 
-bacağına baz ismi veriliyor ve bu bacakla, alttaki emitör bacağı arasında bir 
+bacağına **baz** ismi veriliyor ve bu bacakla, alttaki **emitör** bacağı arasında bir 
 gerilim olduğunda transistör iletime geçiyor. İletimde olduğunda üstteki bacağı  
-kollektörden, emitöre doğru bir akım akmasına izin veriyor. Baz gerilimi 
+**kollektör**den, emitöre doğru bir akım akmasına izin veriyor. Baz gerilimi 
 kesildiğinde ise transistörden akım akmıyor. Transistör iletime geçtiğinde, 
 kollektöre bağli LED üzerinden bir akım akıyor ve LED yanıyor.
+
 
 ## Kod
 
