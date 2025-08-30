@@ -6,8 +6,6 @@ Bu projede DHT20 sensörü kullanarak çevredeki sıcaklık ve nem değerlerini 
 
 ## Elektronik
 
-<img src="../images/dht20-lcd.svg" alt="DHT20 ve LCD devresi" style="height: 400px;">
-
 **DHT20 Sensörü**: Bu sensör hem sıcaklık hem de nem ölçümü yapabilen dijital bir sensör. I2C protokolüyle Arduino'ya bağlanır ve hassas ölçümler sağlar. Sensörün içinde kalibre edilmiş dijital sinyal çıkışı vardır.
 
 **I2C Bağlantısı**: DHT20 sensörü I2C protokolüyle çalışır. Bu protokol sadece 2 hat kullanır:

@@ -1,0 +1,84 @@
+/* Custom color scheme matching halledersiniz.com */
+:root {
+  --md-primary-fg-color: rgb(237, 32, 39);
+  --md-primary-fg-color--light: rgb(237, 32, 39);
+  --md-primary-fg-color--dark: rgb(200, 25, 32);
+  --md-accent-fg-color: rgb(237, 32, 39);
+  --md-accent-fg-color--transparent: rgba(237, 32, 39, 0.1);
+}
+
+/* Ensure links and buttons use the red color */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: rgb(237, 32, 39);
+}
+
+/* Code copy button styling */
+.md-clipboard {
+  color: rgb(237, 32, 39);
+}
+
+/* Header and navigation styling */
+.md-header {
+  background-color: rgb(237, 32, 39);
+}
+
+/* Logo styling */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.4rem;
+  width: auto;
+  max-height: 100%;
+}
+
+.md-header__button.md-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.md-header__button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Active tab/section highlighting */
+.md-tabs__link--active {
+  color: rgb(237, 32, 39);
+}
+
+/* SVG schematic backgrounds */
+img[src*="/images/"][src$=".svg"] {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation dividers - Material theme compatible */
+.md-nav__item:has(.md-nav__link[href$="01-LED/"]) {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.md-nav__item:has(.md-nav__link[href$="buradan-nereye/"]) {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.md-nav__item:has(.md-nav__link[href$="kod-yukleme/"]) {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+/* Fallback for browsers that don't support :has() */
+@supports not selector(:has(*)) {
+  .md-nav__item:nth-of-type(4) { /* Proje 01 - LED position */
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}

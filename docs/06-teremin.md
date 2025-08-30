@@ -10,16 +10,21 @@ Bu projede HC-SR04 ultrasonic sensörünü ve önceki projelerden tanıdığın 
 
 ## Elektronik
 
-<img src="../images/mesafe-sensoru.svg" alt="Mesafe sensörü devresi" style="height: 400px;">
-
 HC-SR04 ultrasonic sensörü mesafe ölçmek için sesötesi (ultrasonic) dalgalar kullanır - tıpkı yarasaların geceleyin yön bulmak için kullandığı sistem gibi!
 
 Sensör şu şekilde çalışır:
+
 1. **Trigger (Tetik) pini** - Arduino'nun 6 numaralı pininden gelen sinyal ile sensöre "mesafe ölç" komutu verilir
+
 2. **Echo (Yankı) pini** - Arduino'nun 5 numaralı pininden sensörün ölçüm sonucunu okur
-3. Sensör, trigger sinyali aldığında 40kHz frekansta 8 adet ses dalgası gönderir 
+
+3. Sensör, trigger sinyali aldığında 40kHz frekansta 8 adet ses dalgası 
+gönderir 
+
 4. Bu dalgalar önündeki nesneden yansıyıp geri döner
+
 5. Echo pini, dalganın gidip gelme süresini Arduino'ya bildirir
+
 6. Arduino bu süreyi mesafeye çevirir (ses hızı: yaklaşık 343 m/s)
 
 Devre üzerinde buzzer'ın 3 numaralı pine bağlı olduğunu görüyorsun. Bu pin, PWM (Pulse Width Modulation) destekleyen pinlerden biri ve `tone()` fonksiyonu ile farklı frekanslarda ses üretebiliyor.
@@ -32,9 +37,9 @@ Mesafe sensörünün menzili yaklaşık 2cm ile 400cm arasında. Projemizde bu a
 
 ```c
 /*
-HCSR04 kütüphanesi, HC-SR04 ultrasonic mesafe sensörünü kolayca kullanabilmemizi
-sağlar. Bu kütüphane trigger ve echo pinlerini yönetir, mesafe hesaplamasını
-bizim için yapar.
+HCSR04 kütüphanesi, HC-SR04 ultrasonic mesafe sensörünü kolayca 
+kullanabilmemizi sağlar. Bu kütüphane trigger ve echo pinlerini 
+yönetir, mesafe hesaplamasını bizim için yapar.
 */
 #include <HCSR04.h>
 
@@ -47,8 +52,9 @@ const byte triggerPin = 6;
 const byte echoPin = 5;
 
 /*
-UltraSonicDistanceSensor nesnesi oluşturuyoruz. Bu nesne, mesafe ölçümü için
-gerekli tüm işlemleri bizim için halleder. mesafeOlcer ismini verdik.
+UltraSonicDistanceSensor nesnesi oluşturuyoruz. Bu nesne, mesafe 
+ölçümü için gerekli tüm işlemleri bizim için halleder. 
+mesafeOlcer ismini verdik.
 */
 UltraSonicDistanceSensor mesafeOlcer(triggerPin, echoPin);
 
@@ -105,7 +111,10 @@ notalar[] dizisi, tüm notalarımızı sırayla tutuyor. Bu dizideki sıralama,
 pestten tize doğru gidiyor. Mesafe sensöründen okunan değer bu dizide
 hangi notanın çalınacağını belirleyecek.
 */
-int notalar[] = { DO_3, RE_3, MI_3, FA_3, SOL_3, LA_3, SI_3, DO_4, RE_4, MI_4, FA_4, SOL_4, LA_4, SI_4, DO_5 };
+int notalar[] = { DO_3, RE_3, MI_3, FA_3, 
+  SOL_3, LA_3, SI_3, DO_4, 
+  RE_4, MI_4, FA_4, SOL_4, 
+  LA_4, SI_4, DO_5 };
 
 /*
 nota_adedi değişkeni, dizimizde kaç nota olduğunu tutuyor. Bu değeri

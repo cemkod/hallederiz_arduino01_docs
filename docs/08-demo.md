@@ -6,8 +6,6 @@ Bu projede Arduino ile etkileşimli bir LCD demo animasyonu yapacağız. LCD ekr
 
 ## Elektronik
 
-<img src="../images/lcd-buzzer-led.svg" alt="LCD Demo devresi" style="height: 400px;">
-
 Bu projede üç farklı modülü birlikte kullanıyoruz:
 
 **LCD Ekran (16x2)**: I2C protokolüyle Arduino'ya bağlı. SDA ve SCL pinleri üzerinden veri alışverişi yapıyor. LCD'nin 0x21 adresinde çalıştığını varsayıyoruz.

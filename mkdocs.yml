@@ -1,7 +1,7 @@
-site_name: 'Arduino01 Hepsi Bir Arada Başlangıç Seti'
+site_name: 'Halledersiniz - Arduino01'
 site_url: https://ogren.halledersiniz.com/arduino01/
 repo_url: https://github.com/cemkod/hallederiz_arduino01_docs
-site_description: 'Halledersiniz Arduino01 Hepsi bir Arada Başlangıç Seti için Dersler'
+site_description: 'Halledersiniz - Arduino01'
 site_author: 'Halledersiniz'
 copyright: 'Copyright &copy; 2025 Halledersiniz'
 
@@ -9,29 +9,45 @@ copyright: 'Copyright &copy; 2025 Halledersiniz'
 theme:
   name: material
   language: tr
+  logo: assets/images/halledersiniz-logo.png
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
   features:
     - content.code.copy
+  custom_dir: overrides
 
 nav:
   - Giriş: giris.md
-  - Modül Listesi: modul-listesi.md
-  - Kurulum:
+  - Arduino IDE Kurulumu:
     - Linux: linux-kurulum.md
-  - Bileşenler:
-    - LED: k01_led.md
+
   - Proje 01 - LED: 01-LED.md
   - Proje 02 - Buton: 02-buton.md
   - Proje 03 - Seri iletişim: 03-seri-iletisim.md
   - Proje 04 - Potansiyometre: 04-pot.md
-  - Proje 05 - Buzzer: 05-buzzer.md
-  - Proje 06 - Mesafe Sensörü: 06-mesafe-sensoru.md
-  - Proje 07 - Araba Simulasyonu: 07-araba-simulasyonu.md
+  - Proje 05 - Müzik Kutusu: 05-buzzer.md
+  - Proje 06 - Teremin: 06-teremin.md
+  - Servo sıfırlama: servo-sifirlama.md
+  - Proje 07 - Araba Simülasyonu: 07-araba-simulasyonu.md
   - Proje 08 - LCD Demo Animasyonu: 08-demo.md
-  - Proje 09 - Sıcaklık ve Nem Sensörü: 09-termometre.md
+  - Proje 09 - Termostat: 09-termometre.md
   - Proje 10 - Dijital Su Terazisi: 10-dijital-su-terazisi.md
+  - Proje 11 - Sinirmatik: 11-sinirmatik.md
+  - Proje 12 - Akıllı Ev: 12-akilli-ev.md
+  - Buradan Nereye?: buradan-nereye.md
 
+  - Arduinoya Nasıl Kod Yüklerim?: kod-yukleme.md
   - Sorun Giderme: sorun-giderme.md
+  - Modül Listesi: modul-listesi.md
+  - Kumanda Kodları: kumanda-kodlari.md
+  - Bileşenler:
+    - LED: k01_led.md
 
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 markdown_extensions:
   - footnotes

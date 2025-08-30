@@ -10,3 +10,4 @@ Arduino yazılımının kurulumundan başlayıp, sensörlerin temel mantığına
 
 Arduino dünyanın en sevilen açık kaynak platformlarından biri. Hem öğrenmesi kolay hem de her türlü yaratıcı fikrin için imkan sunuyor. Şimdi ilk projemiz için hazırlıklara geçelim.
 
+> Buraya arduino IDE nedir. bilgisayar lazim falan fisman.
