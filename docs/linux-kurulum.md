@@ -1,47 +1,90 @@
-## Linux Sisteminde Arduino'yu İndirme
+# Linux Sisteminde Arduino IDE Kurulumu
 
-**ADIM 1:**
+## Giriş
 
-Arduino resmi sitesine gir ve Arduino'yu indirmeye başla. Bunun için 'SOFTWARE' (YAZILIM) kısmına tıklaman gerekiyor. Arduino'nun resmi sitesi şu adreste:  
-[https://www.arduino.cc/](https://www.arduino.cc/)
+Bu rehberde Linux bilgisayarında Arduino IDE'yi nasıl kuracağını öğreneceksin. Linux'te Arduino kurmanın en kolay yolu **AppImage** kullanmak. AppImage dosyaları tek başına çalışabilir, kurulum gerektirmez - sadece indirip çift tıklaman yeterli!
 
-**ADIM 2:**
+## ADIM 1: Arduino IDE'yi İndirme
 
-Bilgisayarına uygun Linux sürümünü seç ve indir.
+İlk olarak Arduino'nun resmi sitesine girmen gerekiyor. Bunun için aşağıdaki adrese git:
 
-**ADIM 3:**
+**<a href="https://www.arduino.cc/en/software/" target="_blank">https://www.arduino.cc/en/software/</a>**
 
-Arduino'yu indirmek için 'DOWNLOAD' kısmına tıklayın.
-'JUST DOWNLOAD' (SADECE İNDİR) butonuna tıkladıktan sonra, dosyayı nereye kaydetmek istediğini seç ve indirme işlemini başlat.
+Bu sayfa açıldığında karşına Arduino IDE'nin en güncel sürümü çıkacak. Sayfada **"DOWNLOAD"** yazan büyük yeşil butona tıkla.
 
-**ADIM 4:**
+<img src="../images/linux-install/01-arduino-indirme-sayfasi.png" alt="Arduino indirme sayfası" style="max-width: 100%; height: auto;">
 
-Arduino IDE Kurulumu
-Artık Arduino IDE'yi kurmaya hazırsın!
+Sistem otomatik olarak Linux bilgisayarın için uygun sürümü seçecek. **AppImage** formatını seçtiğinden emin ol - bu en kolay kurulum yöntemi.
 
-1. İndirdiğin Arduino arşiv dosyasını kaydettiğin klasöre git  
-(genellikle burası: `/home/[Kullanıcı-Adı]/Downloads`).
-2. İndirdiğin Arduino arşivini çıkarman gerekecek. Bunu yapmak için:
-   - `Ctrl+Alt+T` kısayoluyla terminali aç
-   - Aşağıdaki komutu çalıştırarak Downloads klasörüne geç:  
-     ```cd /home/[kullanıcı adı]/Downloads```
+## ADIM 2: AppImage ile Kurulum (Önerilen)
 
-   - Arşiv klasörünü çıkarmak için terminalde şu komutu çalıştır:  
-     ```
-     tar xf [Sıkıştırılmış-dosya-adı]
-     ```
-     
-3. Terminalde aşağıdaki komutu çalıştırarak yeni çıkarılan Arduino klasörüne git:  
-   ```
-   cd [Çıkarılan-klasör-adı]
+AppImage dosyası indirildikten sonra kurulum çok basit:
+
+1. **İndirilen dosyayı bul**: Genellikle Downloads klasöründe **arduino-ide_2.3.6_Linux_64bit.AppImage** gibi bir isimde olacak.
+
+2. **Dosyayı çalıştırılabilir yap**:
+   - Dosyaya sağ tıkla
+   - "Properties" (Özellikler) seçeneğine tıkla  
+   - "Permissions" (İzinler) sekmesine git
+   - "Execute" (Çalıştır) kutucuğunu işaretle
+
+   Veya terminal kullanarak:
+   ```bash
+   chmod +x arduino-ide_2.3.6_Linux_64bit.AppImage
    ```
 
-4. Terminalde `ls -l` komutunu çalıştırarak Arduino klasöründeki dosya listesini görebilir ve kuracağımız `install.sh` kurulum scriptini bulabilirsin.
+3. **Dosyayı çift tıklayarak çalıştır**: AppImage otomatik olarak Arduino IDE'yi başlatacak.
 
-Şimdi Arduino'yu kurmaya hazırız! Arduino'yu kurmak için terminalde aşağıdaki komutu sudo yetkisiyle çalıştır:  
-  ```
-  sudo ./install.sh
-  ```
+4. **İsteğe bağlı - Uygulama menüsüne ekle**: İlk çalıştırdığında "Would you like to integrate this AppImage?" diye soracak. "Yes" dersen uygulama menüsüne eklenir.
 
-Kurulum tamamlanana kadar biraz beklemen gerekecek.
+## Alternatif: Manuel Kurulum
+
+Eğer AppImage çalışmazsa, geleneksel yöntemle kurabilirsin:
+
+1. **Tar dosyasını indir**: Download sayfasından "Linux 64 bits" tar.xz dosyasını seç
+
+2. **Terminal aç** (`Ctrl+Alt+T`) ve Downloads klasörüne git:
+   ```bash
+   cd ~/Downloads
+   ```
+
+3. **Arşivi çıkar**:
+   ```bash
+   tar -xf arduino-ide_*_Linux_64bit.tar.xz
+   ```
+
+4. **Kurulum scriptini çalıştır**:
+   ```bash
+   cd arduino-ide_*_Linux_64bit
+   sudo ./install.sh
+   ```
+
+## ADIM 3: Arduino IDE'yi İlk Açış
+
+AppImage kullandıysan, dosyaya çift tıklayarak programı açabilirsin. Manuel kurulum yaptıysan, uygulama menüsünden "Arduino IDE" aratabilir veya terminal'de `arduino-ide` yazabilirsin.
+
+<img src="../images/win-install/04-arduino-ide-arayuz.png" alt="Arduino IDE arayüzü" style="max-width: 100%; height: auto;">
+
+Program ilk açıldığında boş bir kod şablonu göreceksin. Bu normal - Arduino her zaman `setup()` ve `loop()` fonksiyonları ile başlar.
+
+## ADIM 4: Dil Ayarını Türkçeye Çevirme
+
+Arduino IDE varsayılan olarak İngilizce açılır. Eğer Türkçe kullanmak istersen aşağıdaki adımları takip et:
+
+1. **Menüden "File" > "Preferences"** (Dosya > Tercihler) seçeneğine tıkla
+
+2. **Açılan pencerede "Language" (Dil) bölümünü bul**
+
+3. **Açılır menüden "Türkçe"yi seç**
+
+<img src="../images/win-install/05-dil-ayarlari-menusu.png" alt="Dil ayarları menüsü" style="max-width: 100%; height: auto;">
+
+4. **"OK" butonuna bas**
+
+5. **Arduino IDE'yi yeniden başlat** - Program kapanıp açıldıktan sonra Türkçe menülerle karşılaşacaksın.
+
+## Kurulum Tamamlandı!
+
+Tebrikler! Arduino IDE'yi başarıyla kurdun. AppImage yöntemi gerçekten çok basitti - kurulum bile gerekmiyor! Artık Arduino projelerine başlayabilirsin.
+
 

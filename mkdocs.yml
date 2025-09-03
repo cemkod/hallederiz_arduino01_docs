@@ -21,6 +21,8 @@ theme:
 nav:
   - Giriş: giris.md
   - Arduino IDE Kurulumu:
+    - Windows: windows-kurulum.md
+    - macOS: macos-kurulum.md
     - Linux: linux-kurulum.md
 
   - Proje 01 - LED: 01-LED.md
@@ -35,7 +37,7 @@ nav:
   - Proje 09 - Termostat: 09-termometre.md
   - Proje 10 - Dijital Su Terazisi: 10-dijital-su-terazisi.md
   - Proje 11 - Sinirmatik: 11-sinirmatik.md
-  - Proje 12 - Akıllı Ev: 12-akilli-ev.md
+  - Proje 12 - Akıllı Alarm Sistemi: 12-alarm-sistemi.md
   - Buradan Nereye?: buradan-nereye.md
 
   - Arduinoya Nasıl Kod Yüklerim?: kod-yukleme.md
