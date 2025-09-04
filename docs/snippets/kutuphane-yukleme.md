@@ -1,0 +1,2 @@
+!!! note "Kütüphane kurulumu gerekli"
+    Bu projenin çalışması için bazı kütüphanelerin kurulmuş olması  gerektiriyor. Detaylı kütüphane kurulum talimatları için [Kütüphane kurma](kutuphane-kurma.md) sayfasına bakabilirsin.

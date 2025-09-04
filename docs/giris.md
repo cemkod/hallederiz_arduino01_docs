@@ -1,9 +1,9 @@
 # Giriş
 
 !!! info "Yeni Eğitim Sistemi"
-    Bu eğitim sistemini yeni kurduk. Eksik ve hatalarımız olabilir. Eğer aşamalardan herhangi birinde takılırsanız [ogren@halledersiniz.com](mailto:ogren@halledersiniz.com)'a mail atarsanız size hemen geri dönüp yardımcı olacağız ve sitedeki eksiği gidereceğiz.
+    Bu eğitim sitesini yeni kurduk. Eksik ve hatalarımız olabilir. Eğer aşamalardan herhangi birinde takılırsanız [ogren@halledersiniz.com](mailto:ogren@halledersiniz.com)'a mail atarsanız size hemen geri dönüp yardımcı olacağız ve sitedeki eksiği gidereceğiz.
 
-Arduino Hepsi Bir Arada Başlangıç Seti'ne hoş geldin!
+Halledersiniz Arduino 01 eğitim sitesine hoş geldin!
 
 Eğer elektronik dünyasına yeni adım atıyorsan, tam doğru yerdesin. Bu set, Arduino geliştirme kartı ve sensörlerle tanışman için hazırlanmış. Hiç endişelenme - her şeyi sıfırdan, adım adım öğreneceksin.
 

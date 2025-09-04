@@ -32,10 +32,10 @@ Arduino'daki **USB portu**, aslında seri iletişimi USB protokolüne dönüşt�
 int sayi = 0;
 void setup() {
   // Seri iletişime başlamadan önce Serial.begin() fonksiyonunun çağırılması
-  // gerekli. 115200 sayısı baud cinsinden seri iletişimin hızını belirliyor. iletişimin
+  // gerekli. 9600 sayısı baud cinsinden seri iletişimin hızını belirliyor. iletişimin
   // doğru çalışması için bilgisayar tarafında da seçilen hızın aynı olması
   // gerekir. 
-  Serial.begin(115200);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -54,7 +54,7 @@ void loop() {
 
 --8<-- "snippets/yukleme.md"
 
-Bu kez kodu yükleyip çalıştırdıktan sonra, ![Seri port ekranı](images/serial_button.png) butonuna basarak Seri port ekranını açman ve iletişim hızını kodda belirttiğimiz gibi 115200 olarak seçmen gerekiyor. Bunu yaptıktan sonra Arduino'dan saniyede bir gelen mesajları göreceksin.
+Bu kez kodu yükleyip çalıştırdıktan sonra, ![Seri port ekranı](images/serial_button.png) butonuna basarak Seri port ekranını açman ve iletişim hızını kodda belirttiğimiz gibi 9600 olarak seçmen gerekiyor. Bunu yaptıktan sonra Arduino'dan saniyede bir gelen mesajları göreceksin.
 
 --8<-- "snippets/sorun-giderme.md"
 

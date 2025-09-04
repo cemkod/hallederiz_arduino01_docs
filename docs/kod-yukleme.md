@@ -113,50 +113,40 @@ USB portu seçimi için:
 
 Arduino'ya yüklemek istediğin kodu IDE'ye yazman veya açman gerekiyor. İlk deneme için basit bir örnek kullanabilirsin.
 
-### İlk Kod Önerisi: Blink (LED Yakıp Söndürme)
-
-Arduino'daki dahili LED'i yakıp söndüren basit bir kod deneyelim:
-
+Eğer daha önce birşeyler yazıp kaydettiysen ve onu yüklemek istiyorsan:
 1. **Dosya (File)** menüsüne git
-2. **Örnekler (Examples) > 01.Basics > Blink** seçeneğine tıkla
+2. **Aç** seçeneğine tıkla
+3. Kaydettiğin dosyayı seç (ino uzantılı olmalı)
 
-Bu kod Arduino kartındaki dahili LED'i 1 saniyede bir yakıp söndürecek. Bu kod şu şekilde görünür:
+Aşağıdaki kod, kitteki büyük kırmızı LED'i saniyede bir yakıp söndürecek. Direk buradan bu kodu kopyalayıp yapıştırabilirsin veya zaten birşeyler yazdıysan ve onu atmak istiyorsan bir sonraki adıma geçebilirsin.
 
 ```cpp
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(10, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(10, HIGH);
   delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(10, LOW);
   delay(1000);
 }
 ```
 
-### Kendi Kodunu Yazma
-
-Eğer kendi kodunu yazacaksan, IDE'deki kod alanına yazmaya başlayabilirsin. Arduino kodları her zaman `setup()` ve `loop()` fonksiyonlarına sahip olmalı.
-
----
-
 ## 5. Kodu Arduino'ya Yükle
 
-Artık hazırladığın kodu Arduino kartına yükleme zamanı!
+### Adım 1: Kodu Doğrula (Mutlaka gerekli değil ama yap bence)
 
-### Adım 1: Kodu Doğrula (Opsiyonel ama Önerilen)
+Bu buton yüklemeden önce kodunda hata olup olmadığını kontrol etmeni sağlar.
 
-Yüklemeden önce kodunda hata olup olmadığını kontrol et:
-
-1. **Doğrula (Verify) butonuna** ![Verify button](../images/verify_button.png) tıkla
+1. **Doğrula butonuna** ![Verify button](../images/verify_button.png) tıkla
 2. IDE kodunu derleyip hata kontrolü yapacak
 3. **Alt kısımda yeşil "Derleme tamamlandı" mesajı** çıkarsa kod hazır
 4. **Kırmızı hata mesajları** varsa önce bunları düzeltmen gerekir
 
 ### Adım 2: Kodu Yükle
 
-1. **Yükle (Upload) butonuna** ![Upload button](../images/upload_button.png) tıkla
+1. **Yükle butonuna** ![Upload button](../images/upload_button.png) tıkla
 2. IDE kodu derleyecek ve Arduino'ya gönderecek
 3. **Kitin uzerindeki Mavi LEDin  yanıp söndüğünü göreceksin**
 4. **Alt kısımda "Yükleme tamamlandı" mesajı** çıkacak
@@ -169,8 +159,6 @@ Kod başarıyla yüklendiğinde:
 - **Arduino kartı** kodu çalıştırmaya başlar
 - **Blink örneği için**: Arduino'daki dahili LED yanıp sönmeye başlar
 
---8<-- "snippets/yukleme.md"
-
 ---
 
 ## Yaygın Sorunlar ve Çözümleri
@@ -180,19 +168,25 @@ Kod başarıyla yüklendiğinde:
 **Problem**: Port menüsünde Arduino görünmüyor
 
 **Çözüm**:
+
 1. USB kablosunu çıkar, 5 saniye bekle ve tekrar tak
+
 2. Arduino IDE'yi kapat ve yeniden aç  
-3. Windows'ta Cihaz Yöneticisi'ni kontrol et
-4. Farklı bir USB kablosu dene
+
+3. Farklı bir USB kablosu dene
 
 ### "avrdude: stk500_recv(): programmer is not responding" Hatası
 
 **Problem**: Arduino ile iletişim kurulamıyor
 
 **Çözüm**:
+
 1. Doğru port seçildiğinden emin ol
+
 2. Arduino'yu USB'den çıkar ve tekrar tak
+
 3. Arduino IDE'yi yeniden başlat
+
 4. Kart seçiminin "Arduino Uno" olduğunu kontrol et
 
 ### Kod Yüklendikten Sonra Çalışmıyor
@@ -200,22 +194,16 @@ Kod başarıyla yüklendiğinde:
 **Problem**: Kod yüklendi ama Arduino beklediğin gibi çalışmıyor
 
 **Çözüm**:
-1. Arduino'nun güç aldığından emin ol (LED yanıyor mu?)
+
+1. Arduino'nun güç aldığından emin ol (minik kırmızı LED yanıyor mu?)
+
 2. Kodunu tekrar gözden geçir
+
 3. Seri monitörü aç (Araçlar > Seri Monitör) ve çıktıları kontrol et
-4. Arduino'yu resetle (Reset butonuna bas)
+
+4. Arduino'yu resetle (Reset butonu, büyük kırmızı LED'in solunda. Birazcık küçük)
 
 ---
-
-## Sonraki Adımlar
-
-Tebrikler! Artık Arduino'ya kod yüklemeyi öğrendin. Bundan sonra yapabileceklerin:
-
-1. **Kit projelerini dene**: [Proje 01 - LED](01-LED.md) ile başlayabilirsin
-2. **Farklı örnekleri keşfet**: Arduino IDE'deki diğer örnek kodları incele
-3. **Kendi kodlarını yaz**: Basit projelerle deneyim kazan
-
-Arduino'ya kod yüklemek artık senin için rutin bir işlem olacak. Her proje için bu adımları tekrarlayacaksın: kodu yaz, doğrula, yükle, test et!
 
 !!! tip "Pro İpucu"
     Kod yazarken sık sık kaydet (Ctrl+S). Arduino IDE bazen beklenmedik şekilde kapanabilir ve kaydedilmemiş kodunu kaybedebilirsin.
