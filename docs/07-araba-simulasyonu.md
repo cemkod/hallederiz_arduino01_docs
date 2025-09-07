@@ -4,6 +4,54 @@
 
 Bu projede basit bir araba simulasyonu yapacak ve servo motorun nasıl kontrol edildiğini ve dizileri kullanmayı (array) öğreneceksin.
 
+## Yeni Kavramlar
+
+### Servo Kütüphanesi ve nesneler
+**Servo kütüphanesi**, servo motorları kolayca kontrol etmemizi sağlar. `#include <Servo.h>` ile dahil edilir ve `Servo rpmOlcer;` şeklinde bir nesne oluşturulur. 
+
+Nesneler, kendi içlerinde kendilerine dair değişkenler ve fonksiyonlar barındırırlar. 
+
+Bu örnek kodda rpmOlcer isminde, Servo tipindeki nesnede yer alan **attach** ve **write** fonksiyonlarını kullanıyoruz. Bir nesneye ait fonksiyon veya değişkenlere erişmek için "." işareti kullanılır.
+
+### Fonksiyon Organizasyonu
+Karmaşık işlemleri **ayrı fonksiyonlara** bölerek kodun daha okunabilir ve bakımı kolay olmasını sağlıyoruz. `arabaSimulasyonuGuncelle()`, `vitesKontrol()`, `motorSesiGuncelle()` gibi özel fonksiyonlar tanımlayarak her birinin kendine özgü görevi olmasını sağlıyoruz.
+
+```cpp
+void arabaSimulasyonuGuncelle() {
+  ...
+}
+```
+
+Fonksiyonlar bu şekilde tanımlanıyor ve aşağıda belirtildipi gibi çağırılıyor:
+
+```cpp
+arabaSimulasyonuGuncelle();
+```
+
+Bir fonksiyonu çağırdığınızda, program akışı o fonksiyonun içindeki koddan devam ediyor. Fonksiyonun içindeki kod bittikten sonra ise program akışı kaldığı yerden devam eder.
+
+### map() Fonksiyonu
+**map()** fonksiyonu, bir aralıktaki değeri başka bir aralığa çevirir. `map(rpm, 800, 6000, 180, 0)` komutu RPM değerini (800-6000 arası) servo açısına (180-0 derece arası) dönüştürür. Matematikte öğrendiğimiz doğru orantı ve ters orantı yani. 800 rpm 180 derece ve 6000 rpm 0 dereceyse, verdiğim rpm değeri hangi dereceye karşılık gelir sorusunun cevabının verir. 
+
+### constrain() Fonksiyonu
+**constrain()** fonksiyonu, bir değeri belirtilen aralıkta tutar. 
+Değer verilen maksimumdan büyükse, maksimum değeri; verilen minimumdan küçükse, minimum değeri; diğer durumlarda ise değişime uğramaksızın verilen değeri döndürür.
+
+`constrain(rpm, rpmMin[vites], rpmMax[vites])` komutu RPM'in vites sınırlarını aşmasını önler. Simule ettiğimiz araba motorunun hızı 0'dan düşük, veya o vites için belirlenmiş maksimum hızdan daha büyük olamaz.
+
+### Boolean Değişkenler
+**Boolean değişkenler** doğru/yanlış (true/false) değerlerinde birine sahip olabilirler. Birşeyin açık mı kapalı mı olduğunu tutmak için mesela boolean türünde bir değişken kullanabilirsin.
+
+### Değil (!) Operatörü
+`!` veya Değil (NOT) operatörü boolean değeri tersine çevirir. Yani doğruysa yanlış, yanlışşa doğru değer döndürür. 
+
+```cpp
+  bool butonBasili = !digitalRead(BUTON_PIN);
+```
+
+Kodda bunu butonu okurken kullanıyoruz. Çünkü butona basılı olup olmadığı bilgisini saklamak istiyoruz bir değişkende. Ama buton devremiz bir yukarı çeken (pull-up) dirençle bağlı olduğu için, butona basıldığı durumda digitalRead() fonksiyonu yanlış değer döndürür, basılı olmadığında ise doğru değer döndürür. Oysa biz bunun tam tersini, yani butona basılıysa doğru, basılı değilse yanlış olan bir değer istiyoruz. 
+
+
 ## Elektronik
 
 <img src="../images/servo.svg" alt="Servo devresi" style="height: 400px;">
@@ -25,6 +73,8 @@ Servo motor, Arduino'dan gelen PWM (Pulse Width Modulation - Darbe Genişlik Mod
 - **2ms darbe** = 180° (sağ uç)
 
 Bu darbeler her 20ms'de bir (50Hz frekansta) tekrarlanır. Arduino'nun `Servo` kütüphanesi bu karmaşık timing hesaplarını bizim için halleder - sen sadece istediğin açıyı (0-180°) söylemen yeterli!
+
+!!! info "Servoyu elle çevirmemeye dikkat et. Bu dişlilerin zarar görmesine neden olabilir!"
 
 ### Devre Açıklaması
 
@@ -61,8 +111,7 @@ akıllı motorlardır.
 
 /*
 Pin tanımlarımızı const int ile yapıyoruz. const, bu değerlerin
-program boyunca değişmeyeceğini belirtir. Bu hem güvenlik sağlar
-hem de programın daha hızlı çalışmasını destekler.
+program boyunca değişmeyeceğini belirtir. 
 */
 const int BUTON_PIN = 7;    // Gaz pedalı butonu (Proje 02'den tanıdık)
 const int BUZZER_PIN = 3;   // Motor sesi için buzzer (Proje 05'ten tanıdık)
@@ -83,16 +132,6 @@ Araba simülasyonumuzun ana değişkenleri:
 int vites = 0;              // Başlangıçta 1. viteste
 int rpm = 800;              // Rölanti RPM (motor boştayken devir sayısı)
 
-/*
-DİZİLER (ARRAYS) - Önemli Programlama Konsepti!
-
-Diziler, aynı tipte birden fazla değeri organize bir şekilde saklar.
-Bu projede her vites için farklı RPM değerleri tutmamız gerekiyor.
-Diziler sayesinde bu değerleri düzenli şekilde saklayabiliyoruz.
-
-Dizi tanımlama formatı: tip diziAdi[boyut] = { değer1, değer2, ... };
-İndeksler 0'dan başlar: rpmMin[0] = 1.vites, rpmMin[1] = 2.vites...
-*/
 
 // Her vites için minimum RPM değerleri
 const int rpmMin[3] = {
@@ -166,45 +205,15 @@ void setup() {
 }
 
 void loop() {
-  /*
-  MODERN ARDUINO PROGRAMLAMA TEKNİĞİ: Non-Blocking Code
-  
-  Bu kod yapısı delay() kullanmak yerine millis() ile zamanlama yapar.
-  Bu sayede program hiçbir zaman "donmaz" ve birden fazla işi eş zamanlı
-  yapabilir. Gerçek dünya uygulamalarında çok önemli bir tekniktir.
-  */
-  
-  // Şu anki zamanı al (Arduino açıldığından beri geçen milisaniye)
-  unsigned long suankiZaman = millis();
-  
-  /*
-  Zaman kontrolü: Belirli aralıklarla işlem yap
-  
-  Bu if koşulu, son güncellemeden beri yeterli zaman geçip geçmediğini kontrol eder.
-  100ms geçtiyse (yani saniyede 10 kez) simülasyonu güncelle.
-  Bu gerçek araba göstergelerinin güncelleme hızına benzer.
-  */
-  if (suankiZaman - sonGuncelleme >= GUNCELLEME_ARALIGI) {
-    /*
-    FONKSİYON ORGANIZASYONU - Temiz Kod Yazma
-    
-    Karmaşık işlemleri ayrı fonksiyonlara bölmek:
-    1. Kodu daha okunabilir yapar
-    2. Hata bulmayı kolaylaştırır  
-    3. Kod tekrarını önler
-    4. Bakım ve geliştirmeyi kolaylaştırır
-    */
+
     arabaSimulasyonuGuncelle();   // RPM ve vites hesaplamalarını yap
     motorSesiGuncelle();          // Buzzer frekansını güncelle
-    
-    // Son güncelleme zamanını kaydet
-    sonGuncelleme = suankiZaman;
-  }
+
+    delay(GUNCELLEME_ARALIGI);  // 100ms bekle
   
   /*
   loop() fonksiyonunun sonuna geldi, Arduino otomatik olarak
-  tekrar başa dönecek. millis() tabanlı zamanlama sayesinde
-  bu döngü çok hızlı çalışabilir (mikrosaniye seviyesinde).
+  tekrar başa dönecek. 
   */
 }
 
@@ -218,8 +227,8 @@ void arabaSimulasyonuGuncelle() {
   Buton okuma - Pull-up direnci mantığı
   
   Pull-up dirençli butonda:
-  - Buton basılı DEĞİL = digitalWrite() HIGH döndürür  
-  - Buton basılı = digitalWrite() LOW döndürür
+  - Buton basılı DEĞİL = digitalRead() HIGH döndürür  
+  - Buton basılı = digitalRead() LOW döndürür
   
   ! operatörü boolean değeri tersine çevirir:
   - !HIGH = false (basılı değil)
@@ -228,7 +237,7 @@ void arabaSimulasyonuGuncelle() {
   bool butonBasili = !digitalRead(BUTON_PIN);
 
   /*
-  RPM HESAPLAMA - Gerçekçi Motor Davranışı
+  RPM HESAPLAMA 
   
   Gerçek arabalarda gaz pedalına basıldığında motor hemen maksimum
   devire çıkmaz, kademeli olarak artar. Aynı şekilde gaz bırakıldığında
@@ -281,7 +290,7 @@ Gerçek arabalardaki otomatik vites mantığını simüle eder.
 */
 void vitesKontrol() {
   /*
-  VİTES YÜKSELTME LOJİĞİ
+  VİTES YÜKSELTME 
   RPM maksimum sınıra ulaştığında bir üst vitese geç.
   Bu gerçek arabalarda "redline" bölgesinde yapılan işlemdir.
   */
@@ -298,7 +307,7 @@ void vitesKontrol() {
     }
   } 
   /*
-  VİTES DÜŞÜRME LOJİĞİ  
+  VİTES DÜŞÜRME   
   RPM minimum sınıra düştüğünde bir alt vitese geç.
   Motor güç kaybını önlemek için gerekli.
   */
@@ -317,18 +326,16 @@ void vitesKontrol() {
 }
 
 /*
-MOTOR SESİ SİMÜLASYONU
-RPM değerine göre gerçekçi motor sesi üretir.
+MOTOR SESİ 
+RPM değerine göre motor sesi üretir.
 */
 void motorSesiGuncelle() {
   /*
-  FREKANS HESAPLAMA - Gerçekçi Motor Sesi
+  FREKANS HESAPLAMA - Motor Sesi
   
   Gerçek motor sesleri RPM ile doğru orantılıdır.
   Devir sayısı arttıkça ses frekansı da artar.
   
-  rpm / 25 formülü deneysel olarak belirlenmiş, kulağa
-  hoş gelen bir motor sesi frekansı üretir:
   - 800 RPM = 32 Hz (pes ses)
   - 6000 RPM = 240 Hz (tiz ses)
   */
@@ -351,9 +358,9 @@ Kod çalıştığında butona basarak gazı kontrol edebileceksin. Butona bastı
 
 ## Egzersizler
 
-Böylece servo motor kontrolünü, dizileri, millis() zamanlama fonksiyonunu ve karmaşık fonksiyon organizasyonunu öğrenmiş oldun. Bu projede öğrendiklerinle aşağıdakileri yapabilir misin?
+Böylece servo motor kontrolünü, boolean değerleri ve fonksiyonları öğrenmiş oldun. Bu projede öğrendiklerinle aşağıdakileri yapabilir misin?
 
-1. **Servo Motor Kalibrasyonu**: Servo motorun hareket aralığını değiştirerek RPM göstergesinin daha hassas çalışmasını sağlayabilir misin? [^1]
+1. **Servo Motor Kalibrasyonu**: Servo motorun hareket aralığını değiştirerek, ibrenin 180 dereceden daha dar bir aralıkta çalışmasını sağlayabilir misin? [^1]
 
 2. **Seri Monitor Gösterge**: Araba simülasyonunu çalışırken Seri Monitor'da anlık vites ve RPM değerlerini gösterebilir misin? [^2]
 

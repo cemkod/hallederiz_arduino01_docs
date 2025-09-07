@@ -35,14 +35,14 @@ D10 pinine bağlı LED, yüzey seviye olduğunda yanarak görsel geri bildirim s
 
 ## Kod
 
-```c
+```cpp
 /*
 Proje 10 - Dijital Su Terazisi
-Arduino Hepsi Bir Arada Başlangıç Seti
+Halledersiniz Arduino 01
 
-Bu projede LSM6DS3TR ivmeölçer sensörü kullanarak dijital bir su terazisi 
-yapacaksın. LCD ekranda hareket eden bir "O" karakteri ile geleneksel su 
-terazisindeki hava baloncuğunu simüle edeceğiz. Ayrıca eğim açısını da 
+Bu projede LSM6DS3TR ivmeölçer sensörü kullanarak dijital bir su terazisi
+yapacaksın. LCD ekranda hareket eden bir "O" karakteri ile geleneksel su
+terazisindeki hava baloncuğunu simüle edeceğiz. Ayrıca eğim açısını da
 göstereceğiz. Yüzey seviye olduğunda LED yanacak.
 
 LSM6DS3TR sensörü I2C protokolü ile 0x6B adresinden okunuyor.
@@ -52,18 +52,21 @@ LED pin 10'a bağlı ve seviye durumunda yanıyor.
 
 #include <Wire.h>
 #include <Adafruit_LiquidCrystal.h>
-#include "LSM6DS3TR.h"
+#include <Adafruit_LSM6DS3TRC.h>
+#include <Adafruit_Sensor.h>
 
 // LCD MCP23008 I2C adresi (0x21)
-Adafruit_LiquidCrystal lcd(1);
+Adafruit_LiquidCrystal lcd(0x21);
+// Adafruit LSM6DS sensör nesnesi
+Adafruit_LSM6DS3TRC lsm6ds;
 
 // Pin tanımlamaları
 const int ledPin = 10;        // Seviye LED'i
 
 // Değişkenler
-float ivme[3];                // X, Y, Z ekseni ivme değerleri
 float egimAcisi = 0.0;        // X ekseni eğim açısı
 int baloncukPozisyonu = 8;    // Baloncuk karakterinin LCD'deki pozisyonu (0-15)
+int baloncukPozisyonuEski = baloncukPozisyonu; //eski baloncuk pozisyonunu. bununla ekrani guncelleyip guncellemeyecegimize karar verecegiz
 unsigned long sonGuncelleme = 0;
 const int guncellemeAraligi = 100; // 100ms aralıklarla güncelle
 
@@ -74,25 +77,33 @@ void setup() {
   // Pin ayarları
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, LOW);
-  
+
   // Seri iletişim başlat (hata ayıklama için)
   Serial.begin(115200);
   Serial.println("Dijital Su Terazisi Başlatılıyor...");
-  
+
   // I2C iletişimini başlat
   Wire.begin();
-  
+
   // LSM6DS3TR sensörünü başlat
-  lsm6ds3trBaslat();
-  
+  if (!lsm6ds.begin_I2C(0x6B)) {
+    Serial.println("LSM6DS3TR sensörü 0x6B adresinde bulunamadı.");
+    while (1) {
+      delay(10);
+    }
+  }
+  Serial.println("LSM6DS3TR bulundu!");
+
+  // İvmeölçer aralığını 4G olarak ayarla (orijinal koddaki gibi)
+  lsm6ds.setAccelRange(LSM6DS_ACCEL_RANGE_4_G);
+
   // LCD'yi başlat (16x2)
   while (!lcd.begin(16, 2)) {
     Serial.println("LCD başlatılamadı. Bağlantıları kontrol edin.");
     delay(50);
   }
   lcd.clear();
-  
-  
+
   Serial.println("Sistem hazır!");
 }
 
@@ -100,22 +111,28 @@ void loop() {
   // Belirli aralıklarla güncelle
   if (millis() - sonGuncelleme >= guncellemeAraligi) {
     sonGuncelleme = millis();
-    
-    // LSM6DS3TR'den veri oku
-    ivmeVeriOku();
-    
+
+    // Sensör verilerini okumak için event nesneleri oluştur
+    sensors_event_t accel;
+    sensors_event_t gyro;
+    sensors_event_t temp;
+    lsm6ds.getEvent(&accel, &gyro, &temp);
+
     // Eğim açısını hesapla
-    egimAcisi = egimAcisiHesapla();
-    
+    egimAcisi = egimAcisiHesapla(accel);
+
+    // Eski baloncuk pozisyonunu sakla, bunu ekrani guncelleyip guncellemeyecegimizi gormek icin kullanacagiz
+    baloncukPozisyonuEski = baloncukPozisyonu;
     // Baloncuk pozisyonunu hesapla (-45° ile +45° arası)
     baloncukPozisyonu = map(constrain(egimAcisi * 10, -450, 450), -450, 450, 0, 15);
     
+
     // LCD'yi güncelle
     lcdGuncelle();
-    
+
     // Seviye kontrolü ve LED
     seviyeKontrolu();
-    
+
     // Seri porta debug bilgisi gönder
     Serial.print("Eğim: ");
     Serial.print(egimAcisi, 1);
@@ -126,47 +143,15 @@ void loop() {
   }
 }
 
-void lsm6ds3trBaslat() {
-  /*
-  LSM6DS3TR sensörünü başlatmak için control register'larına
-  yazı yazmamız gerekiyor. Accelerometer'ı 104Hz, 4g aralığında ayarlıyoruz.
-  */
-  // Configure accelerometer: 104Hz, 4g range CTRL1_XL ->0100 1000
-  writeRegister(CTRL1_XL, 0x48);
-  // Configure gyroscope: 104Hz, 250dps range (kullanmasak da ayarlayalım)
-  writeRegister(CTRL2_G, 0x40);
-  
-  Serial.println("LSM6DS3TR başlatıldı");
-  
-  // Sensörün dengede olması için kısa bir bekleme
-  delay(100);
-}
-
-void ivmeVeriOku() {
-  /*
-  LSM6DS3TR'den accelerometer verilerini okuyoruz.
-  X, Y, Z eksenleri için 6 byte veri (her eksen için 3 byte)
-  */
-  uint8_t veri[6];
-  
-  // Accelerometer verilerini oku
-  readRegister(OUTX_L_XL, veri, 6);
-  
-  // 16-bit signed değerleri oluştur ve m/s² cinsine çevir
-  for (int i = 0; i < 3; i++) {
-    ivme[i] = (int16_t)(veri[i * 2] | (veri[i * 2 + 1] << 8)) * ACCEL_SENSITIVITY * 9.80;
-  }
-}
-
-float egimAcisiHesapla() {
+float egimAcisiHesapla(sensors_event_t &accelEvent) {
   /*
   Eğim açısını hesaplamak için atan2 fonksiyonunu kullanıyoruz.
-  Bu fonksiyon, X ve Z ivme bileşenlerinden Y ekseni etrafındaki 
-  dönüş açısını hesaplar.
+  Bu fonksiyon, X ve Z ivme bileşenlerinden Y ekseni etrafındaki
+  dönüş açısını hesaplar. Adafruit kütüphanesi verileri m/s^2 olarak verir.
   */
-  float aciRadyan = atan2(ivme[0], ivme[2]); // X ve Z eksenlerini kullan
+  float aciRadyan = atan2(accelEvent.acceleration.x, accelEvent.acceleration.z);
   float aciDerece = aciRadyan * 180.0 / PI;
-  
+
   return aciDerece;
 }
 
@@ -175,13 +160,17 @@ void lcdGuncelle() {
   LCD'nin ilk satırını temizle ve baloncuğu çiz
   İkinci satırda eğim açısını göster
   */
-  
+
   // İlk satır: Baloncuk gösterimi
-  lcd.setCursor(0, 0);
-  lcd.print("                "); // Satırı temizle
-  lcd.setCursor(baloncukPozisyonu, 0);
-  lcd.print("O"); // Baloncuk karakteri
-  
+  if(baloncukPozisyonuEski != baloncukPozisyonu){
+    // baloncuk pozisyonu degismis. bu yuzden satırı güncelliyoruz
+    // bunu yapma nedenimiz ekranı her güncellediğimizde ekranın titremesi, gereksiz titremeden kaçınmak için sadece pozisyon değişince güncelliyoruz
+    lcd.setCursor(0, 0);
+    lcd.print("                "); // Satırı temizle
+    lcd.setCursor(baloncukPozisyonu, 0);
+    lcd.print("O"); // Baloncuk karakteri
+  }
+
   // İkinci satır: Eğim açısı
   lcd.setCursor(0, 1);
   lcd.print("Egim: ");
@@ -189,7 +178,7 @@ void lcdGuncelle() {
     lcd.print("+");
   }
   lcd.print(egimAcisi, 1);
-  lcd.print("    "); // Ekstra boşluklar eski verileri temizler
+  lcd.print("      "); // Ekstra boşluklar eski verileri temizler
 }
 
 void seviyeKontrolu() {
@@ -203,7 +192,6 @@ void seviyeKontrolu() {
     digitalWrite(ledPin, LOW);  // LED'i söndür
   }
 }
-
 ```
 
 ## Kodun Açıklaması

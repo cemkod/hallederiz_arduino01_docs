@@ -2,13 +2,24 @@
 
 ## Giriş
 
-Bu projede Arduino ile etkileşimli bir LCD demo animasyonu yapacağız. LCD ekranında yazı yazma, geri silme, müzik çalma ve LED kontrolü gibi birden fazla özelliği bir arada kullanacaksın. Sanki bilgisayar başında yazı yazıp hata düzeltiyormuş gibi gerçekçi bir animasyon göreceksin!
+Bu projede Arduino ile etkileşimli bir LCD demo animasyonu yapacağız. LCD ekranında yazı yazma, geri silme, müzik çalma ve LED kontrolü gibi birden fazla özelliği bir arada kullanacaksın. Sanki bilgisayar başında yazı yazıp hata düzeltiyormuş gibi gerçekçi bir animasyon göreceksin! Hatta kiti ilk açtığın zaman üzerinde bu kod yüklü halde gelmişti!
 
 ## Elektronik
 
-Bu projede üç farklı modülü birlikte kullanıyoruz:
+Bu projede üç farklı modülü birlikte kullanıyoruz. Ama bu derse kadar farklı bir bağlantı yöntemi kullanıyorduk. Şimdi ilk kez **I2C protokolü** ile tanışacağız!
 
-**LCD Ekran (16x2)**: I2C protokolüyle Arduino'ya bağlı. SDA ve SCL pinleri üzerinden veri alışverişi yapıyor. LCD'nin 0x21 adresinde çalıştığını varsayıyoruz.
+### I2C Protokolü Nedir?
+
+Şu ana kadar tüm projelerimizde modüllerimizi doğrudan Arduino'nun dijital ve analog pinlerine bağlıyorduk. Örneğin LED'i pin 10'a, butonu pin 7'ye bağlamıştık. Her modül için ayrı bir pin kullanmamız gerekiyordu.
+
+**I2C (Inter-Integrated Circuit)** protokolü ise bambaşka çalışır. Sadece **2 hat** kullanarak birden fazla cihazı aynı anda kontrol edebiliriz:
+
+- **SDA (Serial Data)**: Veri hattı - Arduino'nun A4 pinine bağlanır
+- **SCL (Serial Clock)**: Saat sinyali hattı - Arduino'nun A5 pinine bağlanır
+
+I2C'nin büyük avantajı şu: Aynı SDA ve SCL hatlarına birden fazla cihaz bağlayıp, her birine **adres** vererek ayrı ayrı kontrol edebiliriz. Bu sayede pin tasarrufu sağlarız ve daha karmaşık projeler yapabiliriz. Mesela bu kitteki 3 Eksen İvmeölçer, Sıcaklık ve Nem sensörü ve Işık sensörü de aynı pinlere bağlanıyor ama adresleri farklı.
+
+**LCD Ekran (16x2)**: I2C protokolüyle Arduino'ya bağlı. SDA ve SCL pinleri üzerinden veri alışverişi yapıyor. LCD'nin **0x21 adresinde** çalıştığını varsayıyoruz. Bu adres, I2C hattındaki LCD'yi diğer cihazlardan ayırt etmemizi sağlar.
 
 **Buzzer**: Pin 3'e bağlı ve önceki buzzer projesindeki gibi çalışıyor. Müzik notalarını çalmak için tone() fonksiyonunu kullanacağız.
 
@@ -16,21 +27,11 @@ Bu projede üç farklı modülü birlikte kullanıyoruz:
 
 LCD'nin cursor() ve blink() özelliklerini kullanarak gerçek bir yazı editörü gibi imleç görünümü sağlayacağız. Bu da animasyonu daha gerçekçi kılacak.
 
-## Hatırlayalım
-
-Bu projede **Proje 05 - Buzzer** dersinde öğrendiğin iki önemli kavramı kullanacağız:
-
-**Array (Dizi)**: Aynı türde birden fazla değeri bir arada saklamamızı sağlar. Müzik notalarının frekanslarını ve sürelerini tutmak için kullanacağız.
-
-**For Loop (Döngü)**: Aynı işlemi tekrar tekrar yapmamızı sağlar. Müzik dizisindeki tüm notaları sırayla çalmak için kullanacağız.
-
-Bu kavramları buzzer dersinde detaylı öğrenmiştik. Şimdi onları LCD kontrolü ve animasyonla birleştireceğiz!
-
 ## Kod
 
 ``` c
 #include <Adafruit_LiquidCrystal.h>
-Adafruit_LiquidCrystal lcd(1);
+Adafruit_LiquidCrystal lcd(0x21);
 
 const int tick = 200;
 const int buzzerPin = 3;
@@ -102,6 +103,11 @@ void setup() {
   
   /*
   LCD ekranını başlatıyoruz. 16x2 boyutunda (16 karakter, 2 satır).
+  
+  I2C protokolü Arduino'da otomatik olarak başlar. Adafruit_LiquidCrystal
+  kütüphanesi I2C haberleşmesini kendi içinde yönetir. LCD'yi 0x21 
+  adresinde bulup iletişim kurar.
+  
   cursor() fonksiyonu imleç çizgisini görünür kılar.
   blink() fonksiyonu imleci yanıp söndürür.
   */

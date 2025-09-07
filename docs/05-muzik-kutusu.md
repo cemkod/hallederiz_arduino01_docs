@@ -4,6 +4,45 @@
 
 Bu projede Arduino'nun nasıl ses çıkarabileceğini öğreneceksin. Tabii ki profesyonel bir müzik aleti kadar kaliteli olmayacak ama... internetin en ünlü şarkısını çalmaya yetecek kadar iyi! 🎵
 
+## Yeni Kavramlar
+
+### Constantlar (const)
+**const**, değeri değişmeyecek sabitler tanımlamak için kullanılır. `const int DO_3 = 262;` şeklinde tanımlandıktan sonra DO_3'ün değeri program boyunca 262 olarak kalır. Nota frekansları gibi sabit değerler için idealdir. 
+
+Niye değişken olarak tanımlamak yerine bunu yapayım diye merak ediyorsan, arduino'da RAM, yani programın çalışırken kullandığı hafıza çok sınırlıdır. Bu şekilde tanımlanan değerler RAM'de hiç yer kaplamaz.
+
+### Diziler (array)
+**Diziler**, aynı tipte birden fazla değeri tek bir değişken altında saklar. `int melodi[]` şeklinde tanımlanır. İlk eleman 0. sırada, ikinci eleman 1. sırada... şeklinde numaralanır, yani diziler söz konusu olduğunda saymaya alıştığın gibi 1'den değil, 0'dan başlarsın. 
+
+Burada melodi[] dizisi, çalmak istediğimiz notaların frekanslarını sırayla tutuyor.
+
+### Dizi İndeksleme
+**Köşeli parantezlerle** bir dizinin elemanlarına erişebilirsin. `melodi[0]` ilk elemanı, `melodi[i]` i. sıradaki elemanı verir. (Unutma ki, dizilerde saymaya hep 0'dan başlıyoruz). Dizinin istediğimiz elemanını seçmek için kullanılır.
+
+### for Döngüsü
+**For döngüsü**, belirli sayıda tekrar yapılacak işlemler için kullanılır. Üç bölümden oluşur ve parantez içinde noktalı virgülle ayrılır:
+
+```cpp
+for (int i = 0; i < notaSayisi; i++) {
+  ...
+}
+```
+
+1. **Başlangıç (int i = 0)**: Döngü başlarken bir kez çalışır. Burada sayaç değişkeni i'ye sıfır değerini atıyoruz.
+2. **Koşul (i < notaSayisi)**: Her döngüde kontrol edilir. Koşul doğru olduğu sürece döngü devam eder. Bu örnekte i, notaSayısı değişkeninin değerinden küçük olduğu sürece döngü devam eder.
+3. **Artış (i++)**: Her döngü tamamlandıktan sonra çalışır. Burada i değişkenini 1 artırarak bir sonraki elemana geçmemizi sağlar.
+
+Bu sayede melodi dizisindeki tüm notaları (0'dan notaSayisi-1'e kadar)  için küme parantezleri {} arasındaki kod bloğu çalışıyor.
+
+### tone() Fonksiyonu
+**tone()** fonksiyonu, buzzerdan belirtilen frekansta ses çıkarır. `tone(pin, frekans, süre)` şeklinde kullanılır. 
+
+### noTone() Fonksiyonu
+**noTone()** fonksiyonu, buzzerdaki sesi durdurur. 
+
+### Matematik İşlemleri
+**Çarpma (*) operatörü**, sayısal değerleri çarpmak için kullanılır. `sureler[i] * 0.3` gibi ifadelerle notalar arası boşluklar hesaplanır.
+
 ## Elektronik
 
 <img src="../images/buzzer.svg" alt="Buzzer devresi" style="height: 400px;">
@@ -150,6 +189,8 @@ void loop() {
 --8<-- "snippets/yukleme.md"
 
 Kod çalıştığında buzzer'dan çalan tanıdık bir melodi duyacaksın. 
+
+<img src="../images/rickroll.gif" alt="Never gonna give you up!" style="width: 100%; max-width: 400px;">
 
 --8<-- "snippets/sorun-giderme.md"
 

@@ -21,7 +21,7 @@ Arduino'yu bilgisayarına bağlayan USB kablosu, Arduino'ya kod yüklemenin yan�
 Arduino'daki **USB portu**, aslında seri iletişimi USB protokolüne dönüştürür. Arduino'da bulunan özel çip (USB-Serial dönüştürücü) sayesinde bilgisayar Arduino'yu seri port olarak görür. Bu sayede USB kablosu hem programlama hem de veri iletişimi için kullanılır.
 
 ### Arduino IDE Seri Monitor
-**Seri Monitor**, Arduino IDE'nin alt kısmındaki büyüteç simgesiyle açılır. Gelen mesajları gösterir ve Arduino'ya mesaj göndermenize yarar. Sağ alt köşesinden baud rate'i değiştirebilir, satır sonu karakterlerini ayarlayabilirsin.
+**Seri Monitor**, Arduino IDE'nin sağ üst kısmındaki büyüteç simgesiyle açılır. Gelen mesajları gösterir ve Arduino'ya mesaj göndermenize yarar. Sağ alt köşesinden baud rate'i değiştirebilir, satır sonu karakterlerini ayarlayabilirsin.
 
 ### Seri İletişim Protokolü
 **Seri iletişim**, verileri tek seferde bir bit olarak gönderir. Her veri paketi start bit ile başlar, 8 bit veri içerir, stop bit ile biter. Telefon hattında konuşma gibi: konuşmaya başladığını belirt, mesajını söyle, bittiğini belirt.
@@ -56,7 +56,11 @@ void loop() {
 
 Bu kez kodu yükleyip çalıştırdıktan sonra, ![Seri port ekranı](images/serial_button.png) butonuna basarak Seri port ekranını açman ve iletişim hızını kodda belirttiğimiz gibi 9600 olarak seçmen gerekiyor. Bunu yaptıktan sonra Arduino'dan saniyede bir gelen mesajları göreceksin.
 
+![Seri Monitor Penceresi](images/serial_penceresi.png)
+
 --8<-- "snippets/sorun-giderme.md"
+
+!!! info "Eğer kod yüklerken hata verirse bu seri port ekranının açık olmasından kaynaklanabilir. Bu durumda seri port ekranını yanındaki Xe basarak kapat. Arduinoyu usbden çıkar, geri tak ve kodu tekrar yüklemeyi dene."
 
 ## Egzersizler
 

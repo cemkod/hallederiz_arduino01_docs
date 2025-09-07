@@ -10,7 +10,7 @@ Bu projede HC-SR04 ultrasonic sensörünü ve önceki projelerden tanıdığın 
 
 ## Elektronik
 
-HC-SR04 ultrasonic sensörü mesafe ölçmek için sesötesi (ultrasonic) dalgalar kullanır - tıpkı yarasaların geceleyin yön bulmak için kullandığı sistem gibi!
+HC-SR04 ultrasonic sensörü mesafe ölçmek için sesötesi (ultrasonic) dalgalar kullanır - tıpkı yarasaların karanlıkta yön bulmak için kullandığı sistem gibi!
 
 Sensör şu şekilde çalışır:
 
@@ -32,6 +32,21 @@ Devre üzerinde buzzer'ın 3 numaralı pine bağlı olduğunu görüyorsun. Bu p
 Mesafe sensörünün menzili yaklaşık 2cm ile 400cm arasında. Projemizde bu aralığı 2-32cm olarak sınırladık çünkü müzik yapmak için çok uzun mesafeler pratik değil.
 
 ## Kod
+
+Bu projede ilk defa bir "kütüphane" kullanacağız.  Kütüphaneler, belirli bir iş için yazılmış, kendi projelerinizde kullanabileceğin hazır kodlardır. 
+
+O kod için gereken bir kütüphane kurulu değilse, şöyle bir hata mesajı alırsın:
+
+```Compilation error: HCSR04.h: No such file or directory```
+
+Kütüphane kurulumu gerektiren tüm projelerde aşağıdaki bilgi kutusu olacak. 
+
+!!! note "Kütüphane kurulumu gerekli"
+    Bu projenin çalışması için bazı kütüphanelerin kurulmuş olması  gerektiriyor. Detaylı kütüphane kurulum talimatları için [Kütüphane kurma](kutuphane-kurma.md) sayfasına bakabilirsin.
+
+Bu proje için gerekli kütüphane:
+
+- **HCSR04 Martin Sosic**
 
 Şimdi Arduino IDE'yi açıp aşağıdaki kodu yazabilirsin:
 

@@ -29,9 +29,9 @@ nav:
   - Proje 02 - Buton: 02-buton.md
   - Proje 03 - Seri iletişim: 03-seri-iletisim.md
   - Proje 04 - Potansiyometre: 04-pot.md
-  - Proje 05 - Müzik Kutusu: 05-buzzer.md
+  - Proje 05 - Müzik Kutusu: 05-muzik-kutusu.md
   - Proje 06 - Teremin: 06-teremin.md
-  - Servo sıfırlama: servo-sifirlama.md
+#  - Servo sıfırlama: servo-sifirlama.md
   - Proje 07 - Araba Simülasyonu: 07-araba-simulasyonu.md
   - Proje 08 - LCD Demo Animasyonu: 08-demo.md
   - Proje 09 - Termostat: 09-termometre.md
@@ -41,6 +41,7 @@ nav:
   - Buradan Nereye?: buradan-nereye.md
 
   - Arduinoya Nasıl Kod Yüklerim?: kod-yukleme.md
+  - Arduinoya Nasıl Enerji Veririm?: enerji-verme.md
   - Kütüphane Kurma: kutuphane-kurma.md
   - Sorun Giderme: sorun-giderme.md
   - Modül Listesi: modul-listesi.md

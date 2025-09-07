@@ -26,6 +26,9 @@ Arduino 01 kitine program yüklemek için birçok bileşenin doğru çalışmas�
 * **Mac'te**: `/dev/tty.usbmodem621` gibi görünecek.
 * **Linux'te**: `/dev/ttyACM0` şeklinde olacak.
 
+!!! info "Seri port ekranının açık olması da program yüklemeni engelliyor olabilir. Bu durumda seri port ekranını yanındaki Xe basarak kapat. Arduinoyu usbden çıkar, geri tak ve kodu tekrar yüklemeyi dene."
+
+
 !!! tip "Port görünmüyorsa"
     Eğer kartın için uygun port görünmüyorsa, sürücü sorunu olabilir. Aşağıdaki "Sürücüler" bölümüne bak.
 
