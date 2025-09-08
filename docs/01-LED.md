@@ -1,5 +1,7 @@
 # Proje 01 - LED
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uEuO0QjLU_E?modestbranding=1&controls=1&rel=0&iv_load_policy=3&cc_load_policy=0&disablekb=1&playlist=uEuO0QjLU_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Giriş
 
 Bu projede set üzerindeki LED'i nasıl yakıp söndürebileceğini öğreneceksin.
