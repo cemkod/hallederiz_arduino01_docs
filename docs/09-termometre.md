@@ -18,6 +18,14 @@ I2C'nin avantajı, birden fazla cihazın aynı 2 hat üzerinde farklı adreslerl
 
 ## Kod
 
+!!! note "Kütüphane kurulumu gerekli"
+    Bu projenin çalışması için bazı kütüphanelerin kurulmuş olması  gerektiriyor. Detaylı kütüphane kurulum talimatları için [Kütüphane kurma](kutuphane-kurma.md) sayfasına bakabilirsin.
+
+Bu proje için gerekli kütüphaneler:
+
+- **Adafruit LiquidCrystal Attiny85**
+- **DHT20 Rob Tillaart**
+
 ``` c
 // Gerekli kütüphaneleri dahil ediyoruz
 #include <DHT20.h>                    // DHT20 sensörü için kütüphane

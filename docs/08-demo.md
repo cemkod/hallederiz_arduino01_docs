@@ -27,7 +27,124 @@ I2C'nin büyük avantajı şu: Aynı SDA ve SCL hatlarına birden fazla cihaz ba
 
 LCD'nin cursor() ve blink() özelliklerini kullanarak gerçek bir yazı editörü gibi imleç görünümü sağlayacağız. Bu da animasyonu daha gerçekçi kılacak.
 
+## Yeni Kavramlar
+
+### String Veri Tipi ve Manipülasyonu
+
+**String Sınıfı**: Arduino'da metinsel verileri saklamak ve işlemek için kullanılır. Karakterlerin bir araya gelmesiyle oluşur ve birçok yararlı fonksiyona sahiptir.
+
+**charAt() Fonksiyonu**: Bir String içindeki belirli pozisyondaki karakteri döndürür. `"MERHABA".charAt(0)` ifadesi 'M' karakterini verir. Dizi indeksleri gibi 0'dan başlar.
+
+**length() Fonksiyonu**: String'in kaç karakterden oluştuğunu verir. 
+
+#### Switch-Case 
+**Switch-Case**, bir değişkenin farklı değerlerini kontrol etmek için kullanılan programlama yapısıdır. Çoklu `if-else` zinciri yerine daha temiz ve hızlı bir alternatif sunar.
+
+**Kullanımı:**
+```c
+switch (değişken) {
+  case değer1:
+    // Değişken = değer1 ise yapılacak işlemler
+    break;
+  case değer2:
+    // Değişken = değer2 ise yapılacak işlemler
+    break;
+  default:
+    // Hiçbiri uymazsa yapılacak işlemler
+    break;
+}
+```
+
+#### Break'in Önemi
+
+**`break`** komutu çok kritiktir! Break yazmazsan, program bir sonraki case'leri de çalıştırır. Bu genellikle istenmeyen bir durumdur.
+
+```c
+switch (sayi) {
+  case 1:
+    Serial.println("Bir");
+    // break yok! Aşağıya devam eder
+  case 2:
+    Serial.println("İki");
+    // sayi=1 olsa bile "İki" de yazdırılır!
+}
+```
+
+### State Machine (Durum Makinesi) Programlama
+
+#### State Machine Nedir?
+
+**State Machine** (Durum Makinesi), bir sistemin farklı durumlar arasında geçiş yaparak çalışmasını sağlayan programlama tekniğidir. Sistem belirli kurallara göre bir durumdan diğerine geçer ve her durumda farklı davranışlar sergiler.
+
+Mesela bir yayalar için bir trafik ışığı yaptığınızı düşünelim. Yayalar için olan trafik ışığının iki farklı durumu vardır:
+ 
+![Trafik Işığı Durum Makinesi](images/Trafik Isigi Durum Makinesi.svg)
+
+Herhangi bir zamanda ışık bu durumlardan birindedir ve hangi durumda olduğuna göre, diğer duruma geçmesi de bazı geçiş kurallarına bağlıdır:
+
+- **Kırmızı → Yeşil**: Kırımızı yandıktan sonra 3dk bekle ve yeşile geç.
+- **Yeşil → Kırmızı**: Yeşil yandıktan sonra 1dk bekle ve kırmızıya geç.
+
+Bundan çok daha karmaşık durumları olan makineler de düşünebiliriz. Mesela sadece para çekilebilen basit bir bankamatiği ele alalım.
+
+![ATM Durum Makinesi](images/ATM Durum Makinesi.svg)
+
+- **Kart Bekleme**: Makina ilk açışdığında bu durumdadır.
+  - **Kart Bekleme → Şifre İsteme**: Birisi gelip kart takınca makina şifre isteme durumuna geçer.
+- **Şifre İsteme**: Bu durumda makina ekranda şifrenizi girin gibi bir ibare gösterir ve kullanıcının şifre girmesini bekler.
+  - **Şifre İsteme → Çekim miktarı**: Doğru şifre girildiğinde makina çekim miktarı durumuna geçer.
+  - **Şifre İsteme → Kart Bekleme**: Kullanıcı şifre girerken iptal tuşuna basarsa veya 3 kez hata şifre girerse makina kartı geri verir ve kart bekleme durumuna geri döner.
+- **Çekim miktarı**: Bu durumda makina ekranda kullanıcının ne kadar parası olduğunu gösterir ve çekeceği miktarı girmesini bekler.
+  - **Çekim miktarı → Para verme**: Kullanıcı geçerli bir miktar girip tamam tuşuna basında makina Para verme durumuna geçer.
+  - **Çekim miktarı → Kart Bekleme**: Kullanıcı 3 kez hatalı miktar girer veya iptal tuşuna basarsa makina kartı geri verir ve kart bekleme durumuna geri döner.
+- **Para verme**: Bu durumda makina kullanıcının istediği kadar parayı sayar ve para çekme gözüne gönderir.
+  - **Para verme → Kart Bekleme**: Makina parayı para çekme gözüne aktardıktan sonra kullanıcıya kartını geri verir ve kart bekleme durumuna geri döner.
+
+Etrafında birçok elektronik cihaza baktığında her yerde durum makineleri görmeye başlayacaksın. Durum makineleri karmaşık davranışları olan makineler tasarlamak için çok sık kullanılan bir yöntemdir.
+
+**Arduino'da Tipik Kullanım Alanları:**
+- Her türlü animasyon
+- Hareket kontrolü ve robot kontrol sistemleri
+- Kullanıcı arayüzü (buton basışları ve menü sistemleri)
+
+
+#### Bu Projedeki State Machine
+
+![Demo Durum Makinesi](images/Demo Durum Makinesi.svg)
+
+Her durum kendi işini yapar ve bittiğinde bir sonraki duruma geçer. 
+
+### Zamanlama ve millis() Kullanımı
+
+**millis() Fonksiyonu**: Arduino'nun açıldığından beri geçen milisaniyeleri verir. Bu projede durumların arasındaki geçişler zamana bağlı olduğu için bu fonksiyonu kullanıyoruz.
+
+**Bu Projedeki Kullanım Amacı**: Animasyonun zamanlaması komutların işlem sürelerinden etkilenmesin diye `millis()` kullanıyoruz. Örneğin `beep()` fonksiyonu içinde kısa bir `delay()` var. Eğer `delay(tick)` kullansaydık, buzzerda beklediğimiz süreyi de bekleyeceğimiz süreden düşmemiz gerekirdi. Bu şekilde yaptığımızda beep fonksiyonu içindeki bekleme sürelerini güncellesek bile animasyonumuz aynı hızda oynar.
+
+### LCD Kontrol ve Görsel Efektler
+
+![16x2 LCD Ekran](images/LCD.svg)
+
+**Cursor Kontrol Fonksiyonları**: 
+
+- `cursor()`: Alt çizgi şeklinde imleç gösterir
+
+- `blink()`: İmleci yanıp söndürür  
+
+- `noCursor()` ve `noBlink()`: Bu efektleri kapatır
+
+**setCursor(x, y)**: LCD'de imleç pozisyonunu ayarlar. x = sütun (0-15), y = satır (0-1). Bu sayede ekranın herhangi bir yerine yazı yazabilirsin.
+
+**Karakter Silme Tekniği**: Bir karakteri silmek için o pozisyona boşluk karakteri (' ') yazdırırız. LCD'de gerçek silme komutu yoktur.
+
 ## Kod
+
+
+!!! note "Kütüphane kurulumu gerekli"
+    Bu projenin çalışması için bazı kütüphanelerin kurulmuş olması  gerektiriyor. Detaylı kütüphane kurulum talimatları için [Kütüphane kurma](kutuphane-kurma.md) sayfasına bakabilirsin.
+
+Bu proje için gerekli kütüphane:
+
+- **Adafruit LiquidCrystal Attiny85**
 
 ``` c
 #include <Adafruit_LiquidCrystal.h>

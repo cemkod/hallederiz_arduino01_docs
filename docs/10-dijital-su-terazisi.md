@@ -35,6 +35,15 @@ D10 pinine bağlı LED, yüzey seviye olduğunda yanarak görsel geri bildirim s
 
 ## Kod
 
+!!! note "Kütüphane kurulumu gerekli"
+    Bu projenin çalışması için bazı kütüphanelerin kurulmuş olması  gerektiriyor. Detaylı kütüphane kurulum talimatları için [Kütüphane kurma](kutuphane-kurma.md) sayfasına bakabilirsin.
+
+Bu proje için gerekli kütüphaneler:
+
+- **Adafruit LSM6DS**
+- **Adafruit BusIO**
+- **Adafruit Unified Sensor**
+
 ```cpp
 /*
 Proje 10 - Dijital Su Terazisi
