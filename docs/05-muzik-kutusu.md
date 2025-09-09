@@ -63,23 +63,22 @@ Buzzer'dan çıkacak sesin frekansı, Arduino'nun `tone()` fonksiyonuyla belirle
 
 ``` c
 // Nota frekanslarını constant olarak tanımlayalım
-// 3. Oktav
-const int DO_3 = 262;
-const int RE_3 = 294;
-const int MI_3 = 330;
-const int FA_3 = 349;
-const int SOL_3 = 392;
-const int LA_3 = 440;
-const int SI_3 = 494;
-
-// 4. Oktav
-const int DO_4 = 523;
-const int RE_4 = 587;
-const int MI_4 = 659;
-const int FA_4 = 698;
-const int SOL_4 = 784;
-const int LA_4 = 880;
-const int SI_4 = 987;
+const int NOTE_GS3 = 208;
+const int NOTE_AS3 = 233;
+const int NOTE_B3 = 247;
+const int NOTE_C4 = 262;
+const int NOTE_CS4 = 277;
+const int NOTE_DS4 = 311;   
+const int NOTE_F4 = 349;
+const int NOTE_GS4 = 415;  
+const int NOTE_AS4 = 466; 
+const int NOTE_B4 = 494;
+const int NOTE_C5 = 523; 
+const int NOTE_CS5 = 554;
+const int NOTE_DS5 = 622; 
+const int NOTE_F5 = 698;
+const int NOTE_FS5 = 740;
+const int NOTE_GS5 = 831; 
 
 // Es (sessizlik)
 const int ES = -1;
@@ -90,15 +89,16 @@ Burada melodi[] dizisi, çalmak istediğimiz notaların frekanslarını sırayla
 Her bir nota, dizinin bir elemanı olarak saklanıyor. Dizideki ilk eleman 0. sırada,
 ikinci eleman 1. sırada... şeklinde devam eder.
 */
-int melodi[] = {
-  MI_3, MI_3, RE_3, RE_3,
-  DO_4, DO_4, LA_3, MI_3, MI_3, RE_3, RE_3, LA_3, LA_3, SOL_3, FA_3, MI_3,
-  SOL_3, SOL_3, SOL_3, SOL_3,
-  SOL_3, LA_3, FA_3, MI_3, RE_3, RE_3, RE_3, LA_3, SOL_3,
-  MI_3, MI_3, RE_3, RE_3,
-  DO_4, DO_4, LA_3, MI_3, MI_3, RE_3, RE_3, RE_4, FA_3, SOL_3, FA_3, MI_3,
-  SOL_3, SOL_3, SOL_3, SOL_3,
-  SOL_3, LA_3, FA_3, MI_3, RE_3, ES, RE_3, LA_3, SOL_3, ES
+
+int melodi[] =
+{ NOTE_AS4, NOTE_AS4, NOTE_GS4, NOTE_GS4,
+  NOTE_F5, NOTE_F5, NOTE_DS5, NOTE_AS4, NOTE_AS4, NOTE_GS4, NOTE_GS4, NOTE_DS5, NOTE_DS5, NOTE_CS5, NOTE_C5, NOTE_AS4,
+  NOTE_CS5, NOTE_CS5, NOTE_CS5, NOTE_CS5,
+  NOTE_CS5, NOTE_DS5, NOTE_C5, NOTE_AS4, NOTE_GS4, NOTE_GS4, NOTE_GS4, NOTE_DS5, NOTE_CS5,
+  NOTE_AS4, NOTE_AS4, NOTE_GS4, NOTE_GS4,
+  NOTE_F5,  NOTE_F5, NOTE_DS5, NOTE_AS4, NOTE_AS4, NOTE_GS4, NOTE_GS4, NOTE_GS5, NOTE_C5, NOTE_CS5, NOTE_C5, NOTE_AS4,
+  NOTE_CS5, NOTE_CS5, NOTE_CS5, NOTE_CS5,
+  NOTE_CS5, NOTE_DS5, NOTE_C5, NOTE_AS4, NOTE_GS4, ES, NOTE_GS4, NOTE_DS5, NOTE_CS5, ES
 };
 
 /*
@@ -106,8 +106,8 @@ sureler[] dizisi, her notanın ne kadar süre çalınacağını milisaniye cinsi
 melodi[] dizisindeki her nota ile aynı sıradaki süre birbirine karşılık gelir.
 Örneğin: melodi[0] notası, sureler[0] süre kadar çalınır.
 */
-int sureler[] = {
-  100, 100, 100, 100,
+int sureler[] =
+{ 100, 100, 100, 100,
   300, 300, 600, 100, 100, 100, 100, 300, 300, 300, 100, 200,
   100, 100, 100, 100,
   300, 300, 300, 100, 200, 200, 200, 400, 800,
@@ -118,7 +118,7 @@ int sureler[] = {
 };
 
 int buzzerPin = 3;
-int notaSayisi = 54; // Toplam nota sayısı
+int notaSayisi = 59; // Toplam nota sayısı
 
 void setup() {
   /*
@@ -135,7 +135,7 @@ void loop() {
   1. Başlangıç: int i = 0 (i değişkenini 0'dan başlat)
   2. Koşul: i < notaSayisi (i, toplam nota sayısından küçük olduğu sürece devam et)
   3. Artış: i++ (her döngüde i'yi 1 artır)
-  
+
   Bu sayede melodi dizisindeki tüm notaları sırayla çalmış oluyoruz.
   */
   for (int i = 0; i < notaSayisi; i++) {
@@ -146,7 +146,7 @@ void loop() {
       1. buzzerPin: Ses çıkacak pin numarası
       2. melodi[i]: Çalınacak notanın frekansı (Hz cinsinden)
       3. sureler[i]: Notanın çalınma süresi (milisaniye)
-      
+
       Frekans ne kadar yüksekse, ses o kadar tiz olur.
       Örneğin: DO_3 (262 Hz) → RE_3 (294 Hz) daha tizdir.
       */
@@ -158,7 +158,7 @@ void loop() {
       */
       noTone(buzzerPin);
     }
-    
+
     /*
     ÖNEMLİ: tone() fonksiyonu ses çalmaya başlar ama kodun devam etmesini beklemez!
     Eğer delay() koymazsak, kod hemen bir sonraki notaya geçer ve her nota sadece 
@@ -167,7 +167,7 @@ void loop() {
     çalmasını sağlıyoruz.
     */
     delay(sureler[i]);
-    
+
     /*
     Notayı temiz bir şekilde bitirmek için noTone() çağırıyoruz.
     Sonra kısa bir ara (delay(sureler[i] * 0.3)) vererek notalar 
@@ -177,7 +177,7 @@ void loop() {
     noTone(buzzerPin);
     delay(sureler[i] * 0.3);
   }
-  
+
   /*
   Melodi bittiğinde 2 saniye (2000 milisaniye) bekleriz.
   Bu sayede melodi tekrar çalmadan önce bir duraklama olur.
@@ -189,8 +189,6 @@ void loop() {
 --8<-- "snippets/yukleme.md"
 
 Kod çalıştığında buzzer'dan çalan tanıdık bir melodi duyacaksın. 
-
-<img src="../images/rickroll.gif" alt="Never gonna give you up!" style="width: 100%; max-width: 400px;">
 
 --8<-- "snippets/sorun-giderme.md"
 
