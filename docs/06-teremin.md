@@ -27,7 +27,7 @@ gönderir
 
 6. Arduino bu süreyi mesafeye çevirir (ses hızı: yaklaşık 343 m/s)
 
-Devre üzerinde buzzer'ın 3 numaralı pine bağlı olduğunu görüyorsun. Bu pin, PWM (Pulse Width Modulation) destekleyen pinlerden biri ve `tone()` fonksiyonu ile farklı frekanslarda ses üretebiliyor.
+Devre üzerinde buzzer'ın 3 numaralı pine bağlı olduğunu görüyorsun. Bu pin, `tone()` fonksiyonu ile farklı frekanslarda sinyal üretebildiğin pinlerden biri. (Diğeri de pin 11)
 
 Mesafe sensörünün menzili yaklaşık 2cm ile 400cm arasında. Projemizde bu aralığı 2-32cm olarak sınırladık çünkü müzik yapmak için çok uzun mesafeler pratik değil.
 
