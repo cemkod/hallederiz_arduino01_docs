@@ -43,6 +43,7 @@ Bu proje için gerekli kütüphaneler:
 - **Adafruit LSM6DS**
 - **Adafruit BusIO**
 - **Adafruit Unified Sensor**
+- **Adafruit LiquidCrystal Attiny85**
 
 ```cpp
 /*
