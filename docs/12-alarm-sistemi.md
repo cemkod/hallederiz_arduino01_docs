@@ -55,6 +55,14 @@ Kit ile birlikte gelen IR kumandadan gelen sinyalleri alır. CH+ butonu sistem k
 
 ## Kod
 
+!!! note "Kütüphane kurulumu gerekli"
+    Bu projenin çalışması için bazı kütüphanelerin kurulmuş olması  gerektiriyor. Detaylı kütüphane kurulum talimatları için [Kütüphane kurma](kutuphane-kurma.md) sayfasına bakabilirsin.
+
+Bu proje için gerekli kütüphaneler:
+
+- **Adafruit LiquidCrystal Attiny85**
+- **IRRemote shiriff z3t0**
+
 ```c
 /*
 Bu projede gelişmiş bir alarm sistemi yapacaksin. Sistem PIR hareket sensörü, LED, 
@@ -63,7 +71,7 @@ buzzer ve IR kumanda kullanarak tam işlevli bir güvenlik sistemi oluşturuyor.
 Sistem Özellikleri:
 - CH+ butonu ile sistem devreye alınır (5 saniye geri sayım)
 - Hareket algılandığında 5 saniye uyarı süresi
-- 4 haneli kod (1-3-3-7) ile sistem kapatılır
+- 4 haneli kod (1-2-3-4) ile sistem kapatılır
 - LED ile sistem durumu gösterimi
 - Non-blocking kod yapisi ile smooth çalişma
 
@@ -75,6 +83,14 @@ Sistem Özellikleri:
 - Güvenlik sistemi mantığı
 */
 
+/*
+ÖNEMLI: IRremote kütüphanesi ile tone() fonksiyonu arasında timer çakışması
+yaşanıyor. Her ikisi de varsayılan olarak Timer2 kullanıyor. Bu sorunu çözmek 
+için IRremote'u Timer1 kullanacak şekilde yapılandırıyoruz.
+IR_USE_AVR_TIMER1 tanımı ile IRremote Timer1'i, tone() Timer2'yi kullanacak.
+*/
+#define IR_USE_AVR_TIMER1  // IRremote Timer1 kullansın, tone() Timer2'de kalsın
+#define DECODE_NEC
 #include <IRremote.hpp>
 #include <Adafruit_LiquidCrystal.h>   // LCD ekran için kütüphane
 
@@ -108,11 +124,12 @@ AlarmState currentState = DISARMED;    // Başlangıç durumu: sistem kapalı
 unsigned long stateChangeTime = 0;    // Durum değişiklik zamanı
 unsigned long lastBeepTime = 0;       // Son bip zamanı  
 unsigned long lastLedTime = 0;        // LED yanıp sönme zamanı
+unsigned long lastCountdownUpdate = 0; // Son LCD countdown güncelleme zamanı
 int beepCount = 0;                    // Bip sayacı
 bool ledState = false;                // LED durumu (yanıp sönme için)
 
 /*******************Şifre Sistemi*******************/
-const int CODE_LENGTH = 4;            // Şifre uzunluğu
+const int CODE_LENGTH = 4;            // Şifre uzunluği
 int secretCode[CODE_LENGTH] = {1, 3, 3, 7};  // Gizli kod: 1-3-3-7 sırası
 int enteredCode[CODE_LENGTH];         // Girilen kod dizisi
 int codePosition = 0;                 // Kod girişinde hangi pozisyondayız
@@ -206,7 +223,6 @@ void loop() {
   // LED yanıp sönme kontrolleri
   updateStatusLED();
   
-  
   // Kısa gecikme (CPU yükünü azaltmak için)
   delay(10);
 }
@@ -217,8 +233,12 @@ Gelen buton kodlarını kontrol eder ve uygun işlemleri yapar.
 */
 void handleIRRemote() {
   if (IrReceiver.decode()) {
-    uint32_t buttonCode = IrReceiver.decodedIRData.decodedRawData;
-    
+    if (IrReceiver.decodedIRData.flags & IRDATA_FLAGS_IS_REPEAT) {
+      IrReceiver.resume();  // Bir sonraki sinyali almaya hazırlan
+      return;
+    }
+    IrReceiver.printIRResultShort(&Serial);
+    uint32_t buttonCode = IrReceiver.decodedIRData.command;
     Serial.print("IR Buton: 0x");
     Serial.println(buttonCode, HEX);
     
@@ -226,13 +246,12 @@ void handleIRRemote() {
     if (buttonCode == BUTTON_CH_PLUS && currentState == DISARMED) {
       startArming();
     }
-    // Şifre butonları (1, 3, 7)
+    // Şifre butonları (1, 2, 3, 4)
     else if (currentState == ALARM) {
       handlePasswordInput(buttonCode);
     }
-    
     IrReceiver.resume();  // Bir sonraki sinyali almaya hazırlan
-    delay(250);           // Buton bounce'unu engellemek için gecikme
+  
   }
 }
 
@@ -259,6 +278,7 @@ void handleMotionSensor() {
     
     if (currentState == ARMED) {
       Serial.println("HAREKET ALGILANDI! Uyarı süresi başladı...");
+      
       startAlarm();
     }
   }
@@ -295,6 +315,11 @@ void handleStateMachine() {
           lastBeepTime = currentTime;
           Serial.print("Geri sayım: ");
           Serial.println(6 - beepCount);
+        }
+        // Her saniyede LCD'yi güncelle
+        if (currentTime - lastCountdownUpdate >= 1000) {
+          updateLCDCountdown();
+          lastCountdownUpdate = currentTime;
         }
       } else {
         // 5 saniye doldu - sistem devrede
@@ -388,6 +413,7 @@ void changeState(AlarmState newState) {
     case ARMING:
       beepCount = 0;
       lastBeepTime = 0;
+      lastCountdownUpdate = 0;
       break;
     case ALARM:
       codePosition = 0;
@@ -479,6 +505,11 @@ void checkPassword() {
   }
   
   if (codeCorrect) {
+    // Şifre doğru - sistemi kapat
+    currentState = DISARMED;
+    stateChangeTime = millis();
+    codePosition = 0;
+    
     Serial.println("ŞİFRE DOĞRU! Sistem kapatıldı.");
     
     // LCD'de başarı mesajı göster
@@ -497,8 +528,8 @@ void checkPassword() {
     
     delay(2000);  // Mesajı 2 saniye göster
     
-    // Şifre doğru - sistemi kapat
-    changeState(DISARMED);
+    printSystemStatus();
+    updateLCD();  // Final durumu göster
   } else {
     // Şifre yanlış - tekrar dene
     codePosition = 0;
@@ -605,7 +636,7 @@ void updateLCDPasswordEntry() {
     for (int i = codePosition; i < CODE_LENGTH; i++) {
       lcd.print("-");
     }
-    lcd.print("    ");  // Temizleme boşlukları
+    lcd.print("     ");  // Temizleme boşlukları
   } else {
     lcd.print("4 haneli sifre  ");
   }
