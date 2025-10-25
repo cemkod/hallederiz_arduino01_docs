@@ -9,7 +9,7 @@ kez butonun bağlı olduğu 7 nolu pin'i kullanarak LED'i kontrol etmeyi deneyec
 
 ## Elektronik 
 
-<img src="../images/buton.svg" alt="Buton devresi" style="height: 400px;">
+<img src="../images/buton.svg" alt="Buton devresi">
 
 Şemaya bakacak olursan, Arduino'nun 7 nolu pininin, R8 direnci üzerinden 5 voltluk
 besleme gerilimine bağlı olduğunu farkedeceksin. Bu direnç butona basılmadığı durumda

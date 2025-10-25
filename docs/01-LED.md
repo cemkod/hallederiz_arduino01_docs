@@ -37,7 +37,7 @@ Bunlar dışında biz de kodumuzun parçalarını yeniden yazmak zorunda kalmada
 
 ## Devre Açıklaması
 
-<img src="../images/LED.svg" alt="LED devresi" style="height: 400px;">
+<img src="../images/LED.svg" alt="LED devresi">
 
 Devrede Q1 olarak işaretlenmiş eleman bir **transistör**. Transistörleri elektrikle 
 açılıp kapanabilen bir anahtar gibi düşünebilirsin. Şema'da solunda gözüken 

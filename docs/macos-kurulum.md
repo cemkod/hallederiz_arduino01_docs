@@ -14,7 +14,7 @@ macOS'te program kurma işi genellikle çok kolay. App Store'dan uygulama indirm
 
 Bu sayfa açıldığında karşına Arduino IDE'nin en güncel sürümü çıkacak. Sayfada **"DOWNLOAD"** yazan büyük yeşil butona tıkla.
 
-<img src="../images/mac-install/01-arduino-indirme-sayfasi.png" alt="Arduino indirme sayfası" style="max-width: 100%; height: auto;">
+<img src="../images/mac-install/01-arduino-indirme-sayfasi.png" alt="Arduino indirme sayfası">
 
 Sistem otomatik olarak macOS bilgisayarın için uygun sürümü seçecek. Açılır menüden "macOS" seçildiğinden emin ol. Intel Mac mi Apple Silicon (M1/M2) Mac mi kullanıyorsan ona göre doğru sürümü seçecek.
 
@@ -28,7 +28,7 @@ Dosya adı **"arduino-ide_2.3.6_macOS_64bit.dmg"** gibi bir şey olacak. Bu .dmg
 
 .dmg dosyasını açtıktan sonra karşına çok basit bir kurulum penceresi çıkacak. Bu pencerede Arduino IDE simgesini göreyecesin ve yanında da Applications klasörü simgesi olacak.
 
-<img src="../images/mac-install/03-macos-drag-drop-kurulum.png" alt="macOS drag-drop kurulumu" style="max-width: 100%; height: auto;">
+<img src="../images/mac-install/03-macos-drag-drop-kurulum.png" alt="macOS drag-drop kurulumu">
 
 Yapman gereken tek şey:
 
@@ -46,7 +46,7 @@ Kurulum bittikten sonra Arduino IDE'yi açmak için birkaç yol var:
 2. **Applications klasöründen**: Finder'da Applications klasörüne git ve Arduino IDE'yi bul
 3. **Spotlight'tan**: Cmd+Space tuşlarına basıp "Arduino" yaz ve Enter'a bas
 
-<img src="../images/win-install/04-arduino-ide-arayuz.png" alt="Arduino IDE arayüzü" style="max-width: 100%; height: auto;">
+<img src="../images/win-install/04-arduino-ide-arayuz.png" alt="Arduino IDE arayüzü">
 
 Program ilk açıldığında macOS seni uyarabilir: "Arduino IDE is an app downloaded from the Internet. Are you sure you want to open it?" Bu normal bir güvenlik uyarısı. **"Open"** butonuna tıklaman yeterli.
 
@@ -60,7 +60,7 @@ Arduino IDE varsayılan olarak İngilizce açılır. Eğer Türkçe kullanmak is
 2. **Açılan pencerede "Language" (Dil) bölümünü bul**
 3. **Açılır menüden "Türkçe"yi seç**
 
-<img src="../images/win-install/05-dil-ayarlari-menusu.png" alt="Dil ayarları menüsü" style="max-width: 100%; height: auto;">
+<img src="../images/win-install/05-dil-ayarlari-menusu.png" alt="Dil ayarları menüsü">
 
 4. **"OK" butonuna bas**
 5. **Arduino IDE'yi yeniden başlat** - Program kapanıp açıldıktan sonra Türkçe menülerle karşılaşacaksın.

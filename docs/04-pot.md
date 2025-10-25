@@ -13,7 +13,7 @@ Bir potansiyometre, üzerinde kayar bir kontak olan bir dirençtir. Bu kontak di
 
 Potansiyometrenin 3 bacağı bulunur. Direncin iki ucunda iki bacak ve ortada da kayar kontağin bağlı olduğu bacak. 100KΩ'luk bir potansiyometren var diyelim. Bu potansiyometreyi en kısık olduğu konuma ayarlarsan, kayar kontağa yakın olan bacakla kayar kontak arasındaki direnç 0'a yakın, diğer bacakla kayar kontak arasında direnç ise 100KΩ'a yakın olur. Potansiyometre'yi ortaya ayarlarsan, her iki tarafın direnci de eşit ve 50KΩ olur. 
 
-<img src="../images/potansiyometre.svg" alt="Potansiyometre devresi" style="height: 400px;">
+<img src="../images/potansiyometre.svg" alt="Potansiyometre devresi">
 
 Genellikle potansiyometreler, aynı bu şemadaki gibi, uç bacaklarından birine besleme gerilimi, birine de şase bağlanarak kullanılır. Bu şekilde kayar kontakta 0 ile besleme gerilimi arasında ayarlanabilir bir gerilim elde edilir. 
 

@@ -45,7 +45,7 @@ Bu sayede melodi dizisindeki tüm notaları (0'dan notaSayisi-1'e kadar)  için 
 
 ## Elektronik
 
-<img src="../images/buzzer.svg" alt="Buzzer devresi" style="height: 400px;">
+<img src="../images/buzzer.svg" alt="Buzzer devresi">
 
 Devrede Q103 olarak işaretlenmiş eleman bir NPN transistör. LED devresinde gördüğün transistörle aynı çalışma prensibi var - elektrikle açılıp kapanabilen bir anahtar gibi düşünebilirsin. 
 

@@ -54,7 +54,7 @@ Kodda bunu butonu okurken kullanıyoruz. Çünkü butona basılı olup olmadığ
 
 ## Elektronik
 
-<img src="../images/servo.svg" alt="Servo devresi" style="height: 400px;">
+<img src="../images/servo.svg" alt="Servo devresi">
 
 Bu projede servo motor kullanarak gerçekçi bir araba simülasyonu yapacağız. Servo motor, belirli açılarda konum alabilen özel bir motor türüdür - tıpkı araba gösterge panelindeki RPM ölçer ibresi gibi!
 

@@ -12,7 +12,7 @@ Bu rehberde Linux bilgisayarında Arduino IDE'yi nasıl kuracağını öğrenece
 
 Bu sayfa açıldığında karşına Arduino IDE'nin en güncel sürümü çıkacak. Sayfada **"DOWNLOAD"** yazan büyük yeşil butona tıkla.
 
-<img src="../images/linux-install/01-arduino-indirme-sayfasi.png" alt="Arduino indirme sayfası" style="max-width: 100%; height: auto;">
+<img src="../images/linux-install/01-arduino-indirme-sayfasi.png" alt="Arduino indirme sayfası">
 
 Sistem otomatik olarak Linux bilgisayarın için uygun sürümü seçecek. **AppImage** formatını seçtiğinden emin ol - bu en kolay kurulum yöntemi.
 
@@ -63,7 +63,7 @@ Eğer AppImage çalışmazsa, geleneksel yöntemle kurabilirsin:
 
 AppImage kullandıysan, dosyaya çift tıklayarak programı açabilirsin. Manuel kurulum yaptıysan, uygulama menüsünden "Arduino IDE" aratabilir veya terminal'de `arduino-ide` yazabilirsin.
 
-<img src="../images/win-install/04-arduino-ide-arayuz.png" alt="Arduino IDE arayüzü" style="max-width: 100%; height: auto;">
+<img src="../images/win-install/04-arduino-ide-arayuz.png" alt="Arduino IDE arayüzü">
 
 Program ilk açıldığında boş bir kod şablonu göreceksin. Bu normal - Arduino her zaman `setup()` ve `loop()` fonksiyonları ile başlar.
 
@@ -77,7 +77,7 @@ Arduino IDE varsayılan olarak İngilizce açılır. Eğer Türkçe kullanmak is
 
 3. **Açılır menüden "Türkçe"yi seç**
 
-<img src="../images/win-install/05-dil-ayarlari-menusu.png" alt="Dil ayarları menüsü" style="max-width: 100%; height: auto;">
+<img src="../images/win-install/05-dil-ayarlari-menusu.png" alt="Dil ayarları menüsü">
 
 4. **"OK" butonuna bas**
 

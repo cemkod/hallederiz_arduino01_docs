@@ -47,6 +47,23 @@
   color: rgb(237, 32, 39);
 }
 
+/* Responsive image styling */
+/* Mobile-first: full width responsive images */
+.md-content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Desktop: fixed height to prevent images (especially SVGs) from being too small */
+@media (min-width: 768px) {
+  .md-content img {
+    width: auto;
+    height: 400px;
+    max-width: 100%;
+  }
+}
+
 /* SVG schematic backgrounds */
 img[src*="/images/"][src$=".svg"] {
   background-color: white;

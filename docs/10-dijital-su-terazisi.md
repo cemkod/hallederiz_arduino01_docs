@@ -10,6 +10,48 @@ Bu proje ile öğreneceklerin:
 - LCD ekranda dinamik gösterim
 - Matematiksel fonksiyonları kullanma (atan2, map)
 
+## Yeni Kavramlar
+
+### İvmeölçer ve Açı Hesaplama Matematiği
+
+**İvmeölçer Çalışma Prensibi**: İvmeölçer, yerçekimi kuvvetinin farklı eksenlere olan yansımalarını ölçer. Sensör düz durduğunda yerçekimi kuvveti sadece Z eksenine etki eder. Ancak sensör eğildiğinde, aynı yerçekimi kuvveti hem X hem de Z eksenine farklı oranlarda yansır.
+
+<img src="../images/Ivmeolcer-atan.svg" alt="İvmeölçer açı hesaplama prensibi">
+
+Yukarıdaki diyagramda gösterildiği gibi:
+- Yerçekimi kuvveti her zaman aynı büyüklükte ve aşağı yönlü
+- Sensör α açısıyla eğildiğinde, bu kuvvet X ve Z eksenlerine farklı oranlarda yansır
+- X ekseni ölçümü: `acceleration.x`
+- Z ekseni ölçümü: `acceleration.z`
+
+### atan2() Fonksiyonu ile Açı Hesaplama
+
+**atan2() fonksiyonu**, iki boyutlu koordinat sisteminde açı, verilen x ve y uzunluklarindan açıyı hesaplamak için kullanılan matematiksel fonksiyondur. atan2 fonksiyonu açıyı radyan cinsinden verir.
+
+**Radyan** Açıları ölçmekte kullandığın 0-360 derece sisteminin bir alternatifidir. Bu sistemde açılar 0 ile 360 derece yerine, 0 ile 2π radyan arasında bir değer alır. Matematik ve programlamada bazen açılar için bu sistemi kullanırız.
+
+- Tam bir daire (360°) = 2π radyan
+
+- Yarım daire (180°) = π radyan
+
+- Dik açı (90°) = π/2 radyan
+
+- Arduino'da `PI` sabiti π sayısını temsil eder (yaklaşık 3.14159)
+
+- Dereceye çevirmek için `180.0 / PI` ile çarpılır (çünkü π radyan = 180°)
+
+
+```c
+float aciRadyan = atan2(accelEvent.acceleration.x, accelEvent.acceleration.z);
+float aciDerece = aciRadyan * 180.0 / PI;
+```
+
+- Sensör sola eğilirse: X negatif, Z pozitif → Negatif açı
+
+- Sensör sağa eğilirse: X pozitif, Z pozitif → Pozitif açı
+
+- Sensör düz durur: X sıfıra yakın, Z maksimum → Açı sıfıra yakın
+
 ## Elektronik
 
 ### LSM6DS3TR İvmeölçer Sensörü
@@ -22,16 +64,9 @@ LSM6DS3TR, 3 eksende ivme ve açısal hız ölçebilen bir sensör. Bu projede s
 - **SDA**: I2C veri hattı (Arduino A4 pini)
 - **I2C Adresi**: 0x6B
 
-### MCP23008 I2C LCD Kontrolcüsü
-
-LCD ekran doğrudan Arduino'ya bağlanmak yerine MCP23008 I2C genişletici entegresi üzerinden kontrol ediliyor. Bu sayede sadece 2 pin (SDA/SCL) kullanarak LCD'yi yönetebiliyoruz.
-
-- **I2C Adresi**: 0x21
-- **LCD Boyutu**: 16x2 karakter
-
 ### LED Göstergesi
 
-D10 pinine bağlı LED, yüzey seviye olduğunda yanarak görsel geri bildirim sağlıyor.
+D10 pinine bağlı LED, yüzey terazide olduğunda yanarak görsel geri bildirim sağlıyor.
 
 ## Kod
 
@@ -209,7 +244,9 @@ void seviyeKontrolu() {
 ### I2C İletişimi
 
 Bu projede iki farklı I2C cihazı kullanıyoruz:
+
 - **MPU-6050 (0x68)**: İvmeölçer sensörü
+
 - **MCP23008 (0x21)**: LCD kontrolcüsü
 
 I2C protokolü, sadece 2 hat (SDA/SCL) kullanarak birden fazla cihazla iletişim kurmamızı sağlıyor.
@@ -243,15 +280,14 @@ if (millis() - sonGuncelleme >= guncellemeAraligi) {
 
 ## Egzersizler
 
-1. **Y Ekseni Ekleme**: Kodu değiştirerek Y ekseni eğimini de ölçmeyi dene. LCD'nin üçüncü ve dördüncü satırlarını kullanabilirsin. ^1
+1. **Y Ekseni Ekleme**: Kodu değiştirerek Y ekseni eğimini de ölçmeyi dene. ^1
 
 2. **Hassasiyet Ayarlama**: `seviyeToleransi` değişkenini değiştirerek LED'in ne kadar hassas olacağını ayarla. ^2
 
 3. **Sesli Uyarı**: Buzzer ekleyerek yüzey seviye olduğunda sesli uyarı ver. ^3
 
-4. **Kalibrasyon**: Başlangıçta 5 saniyelik kalibrasyon süresi ekle ve o andaki açıyı sıfır referansı olarak kullan. ^4
+4. **Kalibrasyon**: Setin üzerindeki butona basıldığında o anda ölçülen değeri sıfır kabul etmesini sağlayabilir misin? Böylece ölçülen bir eğimi başka bir yere taşımak çok kolay olur.
 
-5. **Ortalama Filtresi**: Son 5 ölçümün ortalamasını alarak daha kararlı okumalar elde et. ^5
 
 --8<-- "snippets/sorun-giderme.md"
 
@@ -260,5 +296,4 @@ if (millis() - sonGuncelleme >= guncellemeAraligi) {
 ^1: Y ekseni için `atan2(ivmeX, ivmeZ)` formülünü kullan
 ^2: Hassas uygulamalarda 0.5°, genel kullanımda 5° dene  
 ^3: `tone()` fonksiyonu ile 1000Hz frekansında 200ms ses çıkar
-^4: `for` döngüsü ile 50 ölçüm al ve ortalamasını hesapla
-^5: Array kullanarak son 5 değeri sakla ve ortalamasını al
+^4: Butona basıldığındaki değeri bir değişkende saklayıp, ölçümlerin o değerden farkını kullan.

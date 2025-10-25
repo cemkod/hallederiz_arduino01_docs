@@ -6,7 +6,7 @@ Arduino 01 kitine güç vermek için birden fazla metod var. Bu rehberde farklı
 
 ## Bilgisayar ile Güç Verme
 
-<img src="../images/power/power1.png" alt="Bilgisayar USB bağlantısı" style="height: 300px;">
+<img src="../images/power/power1.png" alt="Bilgisayar USB bağlantısı">
 
 Kiti programlarken bilgisayara USB ile bağlandığında bilgisayarın aynı zamanda kite güç verdiğini de göreceksin. Bu yöntem özellikle geliştirme aşamasında çok pratik:
 
@@ -18,7 +18,7 @@ USB portu üzerinden gelen 5V gerilim, kitinin tüm modüllerini çalıştırmay
 
 ## Duvar Adaptörü ile Güç Verme
 
-<img src="../images/power/power2.png" alt="Duvar adaptörü bağlantısı" style="height: 300px;">
+<img src="../images/power/power2.png" alt="Duvar adaptörü bağlantısı">
 
 Derslerde de öğrendiğin gibi, kite bir kere kodu yükledikten sonra artık bilgisayara ihtiyacın yok. Bu durumda herhangi bir **5V (minimum 500mA)** USB adaptörünü kullanabilirsin:
 
@@ -28,7 +28,7 @@ Derslerde de öğrendiğin gibi, kite bir kere kodu yükledikten sonra artık bi
 
 ## Powerbank ile Mobil Güç
 
-<img src="../images/power/power3.png" alt="Powerbank bağlantısı" style="height: 300px;">
+<img src="../images/power/power3.png" alt="Powerbank bağlantısı">
 
 Kiti mobil hale getirmenin en kolay yöntemi powerbank kullanmak. Telefon şarj etmek için kullanılan powerbankler bu iş için ideal:
 
