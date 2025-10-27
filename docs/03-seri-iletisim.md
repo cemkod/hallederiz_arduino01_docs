@@ -54,7 +54,7 @@ void loop() {
 
 --8<-- "snippets/yukleme.md"
 
-Bu kez kodu yükleyip çalıştırdıktan sonra, ![Seri port ekranı](images/serial_button.png) butonuna basarak Seri port ekranını açman ve iletişim hızını kodda belirttiğimiz gibi 9600 olarak seçmen gerekiyor. Bunu yaptıktan sonra Arduino'dan saniyede bir gelen mesajları göreceksin.
+Bu kez kodu yükleyip çalıştırdıktan sonra, ![Seri port ekranı](images/serial_button.png){: .inline-icon} butonuna basarak Seri port ekranını açman ve iletişim hızını kodda belirttiğimiz gibi 9600 olarak seçmen gerekiyor. Bunu yaptıktan sonra Arduino'dan saniyede bir gelen mesajları göreceksin.
 
 ![Seri Monitor Penceresi](images/serial_penceresi.png)
 

@@ -54,6 +54,7 @@ extra_css:
   - assets/stylesheets/extra.css
 
 markdown_extensions:
+  - attr_list
   - footnotes
   - admonition
   - def_list

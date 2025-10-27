@@ -139,14 +139,14 @@ void loop() {
 
 Bu buton yüklemeden önce kodunda hata olup olmadığını kontrol etmeni sağlar.
 
-1. **Doğrula butonuna** ![Verify button](../images/verify_button.png) tıkla
+1. **Doğrula butonuna** ![Verify button](../images/verify_button.png){: .inline-icon} tıkla
 2. IDE kodunu derleyip hata kontrolü yapacak
 3. **Alt kısımda yeşil "Derleme tamamlandı" mesajı** çıkarsa kod hazır
 4. **Kırmızı hata mesajları** varsa önce bunları düzeltmen gerekir
 
 ### Adım 2: Kodu Yükle
 
-1. **Yükle butonuna** ![Upload button](../images/upload_button.png) tıkla
+1. **Yükle butonuna** ![Upload button](../images/upload_button.png){: .inline-icon} tıkla
 2. IDE kodu derleyecek ve Arduino'ya gönderecek
 3. **Kitin uzerindeki Mavi LEDin  yanıp söndüğünü göreceksin**
 4. **Alt kısımda "Yükleme tamamlandı" mesajı** çıkacak

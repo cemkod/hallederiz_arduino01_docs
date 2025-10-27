@@ -64,6 +64,16 @@
   }
 }
 
+/* Inline icon styling - keeps buttons and small icons at natural size */
+.md-content img.inline-icon {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  display: inline;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
 /* SVG schematic backgrounds */
 img[src*="/images/"][src$=".svg"] {
   background-color: white;
