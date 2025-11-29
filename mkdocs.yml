@@ -38,6 +38,10 @@ nav:
   - Proje 10 - Dijital Su Terazisi: 10-dijital-su-terazisi.md
   - Proje 11 - Sinirmatik: 11-sinirmatik.md
   - Proje 12 - Akıllı Alarm Sistemi: 12-alarm-sistemi.md
+
+  - Gelişmiş Projeler:
+    - G1 - Yararsız Makine: gelismis-projeler/useless-machine.md
+
   - Buradan Nereye?: buradan-nereye.md
 
   - Arduinoya Nasıl Kod Yüklerim?: kod-yukleme.md
